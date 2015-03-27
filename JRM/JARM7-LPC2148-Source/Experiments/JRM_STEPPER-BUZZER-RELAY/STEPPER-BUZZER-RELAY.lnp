@@ -1,0 +1,4 @@
+--device DARMP "startup.o" "step-relay-buz.o" --library_type=microlib --strict --scatter "STEPPER-BUZZER-RELAY.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\STEPPER-BUZZER-RELAY.map" -o "STEPPER-BUZZER-RELAY.axf"

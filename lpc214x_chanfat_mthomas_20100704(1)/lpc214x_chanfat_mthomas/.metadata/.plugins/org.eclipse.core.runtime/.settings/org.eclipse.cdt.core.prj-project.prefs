@@ -1,0 +1,12 @@
+#Sat Jul 03 13:22:10 CEST 2010
+indexer/indexerId=org.eclipse.cdt.core.domsourceindexer
+indexer/indexUnusedHeadersWithDefaultLang=false
+indexer/skipImplicitReferences=false
+indexer/filesToParseUpFront=stdarg.h, stddef.h, sys/types.h
+indexer/skipTypeReferences=false
+indexer/skipReferences=false
+indexer/indexAllFiles=false
+indexer/skipMacroReferences=false
+eclipse.preferences.version=1
+indexer/useHeuristicIncludeResolution=true
+indexer/preferenceScope=1

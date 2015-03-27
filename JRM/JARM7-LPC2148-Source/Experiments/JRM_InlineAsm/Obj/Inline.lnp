@@ -1,0 +1,4 @@
+--device DARMP ".\obj\startup.o" ".\obj\retarget.o" ".\obj\serial.o" ".\obj\inline.o" --library_type=microlib --strict --scatter ".\Obj\Inline.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\Lst\Inline.map" -o ".\Obj\Inline.axf"

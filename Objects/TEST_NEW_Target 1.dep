@@ -1,0 +1,4 @@
+Dependencies for Project 'TEST_NEW', Target 'Target 1': (DO NOT MODIFY !)
+F (.\Startup.s)(0x53465958)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\Philips--pd "__UVISION_VERSION SETA 514"--list .\listings\startup.lst --xref -o .\objects\startup.o --depend .\objects\startup.d)
+F (.\TEST_NEW.cpp)(0x54ED975E)(--cpp -c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --split_sections-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\Philips-D__UVISION_VERSION="514"-o .\objects\test_new.o --omf_browse .\objects\test_new.crf --depend .\objects\test_new.d)
+I (C:\Keil_v5\ARM\Inc\Philips\LPC214X.h)(0x53465962)

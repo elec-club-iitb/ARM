@@ -1,0 +1,4 @@
+--device DARMP ".\obj\startup.o" ".\obj\retarget.o" ".\obj\main.o" ".\obj\timer.o" ".\obj\buzzer.o" --library_type=microlib --strict --scatter ".\Obj\TimeDelay.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\Lst\TimeDelay.map" -o ".\Obj\TimeDelay.axf"

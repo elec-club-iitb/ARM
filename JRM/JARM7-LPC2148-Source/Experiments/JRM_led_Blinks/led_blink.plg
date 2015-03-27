@@ -1,0 +1,18 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+G:\001 - jarm7board\JARM7-KIT-CD\Source\Experiments\JRM_led_Blinks\led_blink.uvproj
+Project File Date:  10/21/2010
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling Startup.s...
+compiling led_blink.c...
+led_blink.c(8): warning:  #940-D: missing return statement at end of non-void function "wait"
+led_blink.c(30): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=864 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"led_blink.axf" - 0 Error(s), 2 Warning(s).

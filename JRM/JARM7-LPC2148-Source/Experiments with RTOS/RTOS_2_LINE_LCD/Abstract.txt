@@ -1,0 +1,2 @@
+Experiment 1 
+Displaying two different messages in LCD display in two lines.

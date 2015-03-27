@@ -1,0 +1,23 @@
+*** Creating Trace Output File '.\Obj\I2C_Serial_EEPROM.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\obj\startup.o"'
+### List of Objects: adding '".\obj\retarget.o"'
+### List of Objects: adding '".\obj\main.o"'
+### List of Objects: adding '".\obj\i2c.o"'
+### List of Objects: adding '".\obj\lcd.o"'
+### ADS-LD Command completed:
+--device DARMP ".\obj\startup.o" ".\obj\retarget.o" ".\obj\main.o" ".\obj\i2c.o" ".\obj\lcd.o" --library_type=microlib --strict --scatter ".\Obj\I2C_Serial_EEPROM.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\Lst\I2C_Serial_EEPROM.map" -o ".\Obj\I2C_Serial_EEPROM.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\Obj\I2C_Serial_EEPROM.axf'
+### ADS-LD Command File: '.\Obj\I2C_Serial_EEPROM.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\Obj\I2C_Serial_EEPROM.lnp', Handle=0x000002C8
+### Writing '.lnp' file
+### ADS-LD Command file '.\Obj\I2C_Serial_EEPROM.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

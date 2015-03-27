@@ -1,0 +1,1334 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+<title>Static Call Graph - [.\obj\study_expt.axf]</title></head>
+<body><HR>
+<H1>Static Call Graph for image .\obj\study_expt.axf</H1><HR>
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, RVCT4.0 [Build 524]: Last Updated: Fri Sep 24 20:10:44 2010
+<BR><P>
+<H3>Maximum Stack Usage =        208 bytes + Unknown(Functions without stacksize, Untraceable Function Pointers)</H3><H3>
+Call chain for Maximum Stack Depth:</H3>
+main &rArr; OSInit &rArr; OSTmr_Init &rArr; OSTaskCreateExt &rArr; OS_TCBInit
+<P>
+<H3>
+Functions with no stack information
+</H3><UL>
+ <LI><a href="#[b8c56c]">OS_CPU_SR_Save</a>
+ <LI><a href="#[b8c5a8]">OS_CPU_SR_Restore</a>
+ <LI><a href="#[b8a76c]">OSStartHighRdy</a>
+ <LI><a href="#[b8a898]">OSCtxSw</a>
+ <LI><a href="#[b8a7a8]">OSIntCtxSw</a>
+ <LI><a href="#[b87f1c]">OS_CPU_ARM_ExceptResetHndlr</a>
+ <LI><a href="#[b8c260]">OS_CPU_ARM_ExceptUndefInstrHndlr</a>
+ <LI><a href="#[b8c29c]">OS_CPU_ARM_ExceptSwiHndlr</a>
+ <LI><a href="#[b8c2d8]">OS_CPU_ARM_ExceptPrefetchAbortHndlr</a>
+ <LI><a href="#[b8c38c]">OS_CPU_ARM_ExceptDataAbortHndlr</a>
+ <LI><a href="#[b87ee0]">OS_CPU_ARM_ExceptAddrAbortHndlr</a>
+ <LI><a href="#[b8c314]">OS_CPU_ARM_ExceptIrqHndlr</a>
+ <LI><a href="#[b8c350]">OS_CPU_ARM_ExceptFiqHndlr</a>
+ <LI><a href="#[b8c224]">ResetHndlr</a>
+</UL>
+</UL>
+<P>
+<H3>
+Function Pointers
+</H3><UL>
+ <LI><a href="#[b8c224]">ResetHndlr</a>
+ <LI><a href="#[b8c260]">OS_CPU_ARM_ExceptUndefInstrHndlr</a>
+ <LI><a href="#[b8c29c]">OS_CPU_ARM_ExceptSwiHndlr</a>
+ <LI><a href="#[b8c2d8]">OS_CPU_ARM_ExceptPrefetchAbortHndlr</a>
+ <LI><a href="#[b8c38c]">OS_CPU_ARM_ExceptDataAbortHndlr</a>
+ <LI><a href="#[b8c314]">OS_CPU_ARM_ExceptIrqHndlr</a>
+ <LI><a href="#[b8c350]">OS_CPU_ARM_ExceptFiqHndlr</a>
+ <LI><a href="#[b8ef24]">main</a>
+ <LI><a href="#[b906d0]">AppTaskStart</a>
+ <LI><a href="#[b8cc74]">VIC_DummyWDT</a>
+ <LI><a href="#[b8ccb0]">VIC_DummyTIMER0</a>
+ <LI><a href="#[b8ccec]">VIC_DummyTIMER1</a>
+ <LI><a href="#[b8cd28]">VIC_DummyUART0</a>
+ <LI><a href="#[b8cd64]">VIC_DummyUART1</a>
+ <LI><a href="#[b8cda0]">VIC_DummyPWM0</a>
+ <LI><a href="#[b8cddc]">VIC_DummyI2C</a>
+ <LI><a href="#[b8ce18]">VIC_DummySPI</a>
+ <LI><a href="#[b8ce54]">VIC_DummyRTC</a>
+ <LI><a href="#[b8ce90]">VIC_DummyEINT0</a>
+ <LI><a href="#[b8cecc]">VIC_DummyEINT1</a>
+ <LI><a href="#[b8cf08]">VIC_DummyEINT2</a>
+ <LI><a href="#[b88354]">OSTmr_Task</a>
+ <LI><a href="#[b8c260]">OS_CPU_ARM_ExceptUndefInstrHndlr</a>
+ <LI><a href="#[b8c29c]">OS_CPU_ARM_ExceptSwiHndlr</a>
+ <LI><a href="#[b8c2d8]">OS_CPU_ARM_ExceptPrefetchAbortHndlr</a>
+ <LI><a href="#[b8c38c]">OS_CPU_ARM_ExceptDataAbortHndlr</a>
+ <LI><a href="#[b87ee0]">OS_CPU_ARM_ExceptAddrAbortHndlr</a>
+ <LI><a href="#[b8c314]">OS_CPU_ARM_ExceptIrqHndlr</a>
+ <LI><a href="#[b8c350]">OS_CPU_ARM_ExceptFiqHndlr</a>
+ <LI><a href="#[146817c]">__I$use$semihosting</a>
+ <LI><a href="#[b87ea4]">OSTaskSwHook</a>
+ <LI><a href="#[b8aba4]">OSIntExit</a>
+ <LI><a href="#[b8c83c]">OS_CPU_ExceptHndlr</a>
+ <LI><a href="#[b84970]">__main</a>
+</UL>
+<P>
+<H3>
+Global Symbols
+</H3>
+<P><STRONG><a name="[b84970]"></a>__main</STRONG> (ARM, 8 bytes, Stack size 0 bytes, __main.o(!!!main))
+<BR><BR>[Calls]<UL><LI><a href="#[b84844]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
+<LI><a href="#[146547c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+</UL>
+
+<P><STRONG><a name="[146547c]"></a>__scatterload</STRONG> (ARM, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter))
+<BR><BR>[Called By]<UL><LI><a href="#[b84970]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+</UL>
+
+<P><STRONG><a name="[1465440]"></a>__scatterload_rt2</STRONG> (ARM, 52 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b84844]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
+</UL>
+
+<P><STRONG><a name="[1465404]"></a>__scatterload_null</STRONG> (ARM, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+
+<P><STRONG><a name="[1465260]"></a>__scatterload_copy</STRONG> (ARM, 40 bytes, Stack size unknown bytes, __scatter_copy.o(!!handler_copy), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[1465260]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_copy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1465260]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_copy
+</UL>
+
+<P><STRONG><a name="[1465170]"></a>__scatterload_zeroinit</STRONG> (ARM, 44 bytes, Stack size unknown bytes, __scatter_zi.o(!!handler_zi), UNUSED)
+
+<P><STRONG><a name="[b8332c]"></a>__rt_lib_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit.o(.ARM.Collect$$libinit$$00000000))
+<BR><BR>[Calls]<UL><LI><a href="#[146835c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_init (via Veneer)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b84178]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_li (via Veneer)
+</UL>
+
+<P><STRONG><a name="[1468d34]"></a>__rt_lib_init_alloca_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002A))
+
+<P><STRONG><a name="[1468dac]"></a>__rt_lib_init_argv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000028))
+
+<P><STRONG><a name="[146916c]"></a>__rt_lib_init_atexit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000017))
+
+<P><STRONG><a name="[1469004]"></a>__rt_lib_init_clock_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001D))
+
+<P><STRONG><a name="[1468c44]"></a>__rt_lib_init_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002E))
+
+<P><STRONG><a name="[1468cbc]"></a>__rt_lib_init_exceptions_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002C))
+
+<P><STRONG><a name="[146907c]"></a>__rt_lib_init_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001B))
+
+<P><STRONG><a name="[1468f8c]"></a>__rt_lib_init_getenv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001F))
+
+<P><STRONG><a name="[1469568]"></a>__rt_lib_init_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000006))
+
+<P><STRONG><a name="[14693c4]"></a>__rt_lib_init_lc_collate_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000D))
+
+<P><STRONG><a name="[146934c]"></a>__rt_lib_init_lc_ctype_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000F))
+
+<P><STRONG><a name="[14692d4]"></a>__rt_lib_init_lc_monetary_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000011))
+
+<P><STRONG><a name="[146925c]"></a>__rt_lib_init_lc_numeric_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000013))
+
+<P><STRONG><a name="[14691e4]"></a>__rt_lib_init_lc_time_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000015))
+
+<P><STRONG><a name="[1469478]"></a>__rt_lib_init_rand_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000A))
+
+<P><STRONG><a name="[1468c08]"></a>__rt_lib_init_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002F))
+
+<P><STRONG><a name="[14690f4]"></a>__rt_lib_init_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000019))
+
+<P><STRONG><a name="[1468f14]"></a>__rt_lib_init_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000021))
+
+<P><STRONG><a name="[14694f0]"></a>__rt_lib_init_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000008))
+
+<P><STRONG><a name="[1466d18]"></a>__rt_lib_shutdown</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown.o(.ARM.Collect$$libshutdown$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[1467f60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit_ls (via Veneer)
+</UL>
+
+<P><STRONG><a name="[14659e0]"></a>__rt_lib_shutdown_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000006))
+
+<P><STRONG><a name="[1465800]"></a>__rt_lib_shutdown_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000E))
+
+<P><STRONG><a name="[14657c4]"></a>__rt_lib_shutdown_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F))
+
+<P><STRONG><a name="[146592c]"></a>__rt_lib_shutdown_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000009))
+
+<P><STRONG><a name="[1465a94]"></a>__rt_lib_shutdown_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000003))
+
+<P><STRONG><a name="[14658b4]"></a>__rt_lib_shutdown_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000B))
+
+<P><STRONG><a name="[b84844]"></a>__rt_entry</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtentry.o(.ARM.Collect$$rtentry$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[b84970]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+<LI><a href="#[1465440]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_rt2
+</UL>
+
+<P><STRONG><a name="[b8422c]"></a>__rt_entry_presh_1</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$00000002))
+
+<P><STRONG><a name="[b83d40]"></a>__rt_entry_sh</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtentry7.o(.ARM.Collect$$rtentry$$00000007))
+
+<P><STRONG><a name="[b84178]"></a>__rt_entry_li</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$0000000A))
+<BR><BR>[Calls]<UL><LI><a href="#[b8332c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[b841b4]"></a>__rt_entry_postsh_1</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$00000009))
+
+<P><STRONG><a name="[b840c4]"></a>__rt_entry_main</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$0000000D))
+<BR><BR>[Calls]<UL><LI><a href="#[b839bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit (via BX)
+</UL>
+
+<P><STRONG><a name="[b84100]"></a>__rt_entry_postli_1</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$0000000C))
+
+<P><STRONG><a name="[b82a08]"></a>__rt_exit</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtexit.o(.ARM.Collect$$rtexit$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[b839bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit (via Veneer)
+</UL>
+
+<P><STRONG><a name="[1467f60]"></a>__rt_exit_ls</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000003))
+<BR><BR>[Calls]<UL><LI><a href="#[1466d18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_shutdown (via Veneer)
+</UL>
+
+<P><STRONG><a name="[1467f9c]"></a>__rt_exit_prels_1</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000002))
+
+<P><STRONG><a name="[1467f24]"></a>__rt_exit_exit</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000004))
+<BR><BR>[Calls]<UL><LI><a href="#[146826c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sys_exit
+</UL>
+
+<P><STRONG><a name="[b8ef9c]"></a>draw_graph_on_glcd</STRONG> (ARM, 8 bytes, Stack size 0 bytes, app.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b8e9c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;put_pixel
+</UL>
+
+<P><STRONG><a name="[b8ef60]"></a>scaledown_adc_value</STRONG> (ARM, 20 bytes, Stack size 0 bytes, app.o(.text), UNUSED)
+
+<P><STRONG><a name="[b8ef24]"></a>main</STRONG> (ARM, 136 bytes, Stack size 32 bytes, app.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 208 + Unknown Stack Size
+<LI>Call Chain = main &rArr; OSInit &rArr; OSTmr_Init &rArr; OSTaskCreateExt &rArr; OS_TCBInit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b8eb64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskNameSet
+<LI><a href="#[b8eba0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskCreateExt
+<LI><a href="#[b8ebdc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSStart
+<LI><a href="#[b8ec18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSInit
+<LI><a href="#[b8ed08]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_IntDisAll
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> rtentry2.o(.ARM.Collect$$rtentry$$0000000D)
+</UL>
+<P><STRONG><a name="[b8eee8]"></a>App_TaskCreateHook</STRONG> (ARM, 4 bytes, Stack size 0 bytes, app.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b8a6f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskCreateHook
+</UL>
+
+<P><STRONG><a name="[b8eeac]"></a>App_TaskDelHook</STRONG> (ARM, 4 bytes, Stack size 0 bytes, app.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[b88b10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskDelHook
+</UL>
+
+<P><STRONG><a name="[b8ee70]"></a>App_TaskIdleHook</STRONG> (ARM, 4 bytes, Stack size 0 bytes, app.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[b8a6b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskIdleHook
+</UL>
+
+<P><STRONG><a name="[b8ee34]"></a>App_TaskStatHook</STRONG> (ARM, 4 bytes, Stack size 0 bytes, app.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[b8a67c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskStatHook
+</UL>
+
+<P><STRONG><a name="[b8edf8]"></a>App_TaskSwHook</STRONG> (ARM, 4 bytes, Stack size 0 bytes, app.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b87ea4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskSwHook
+</UL>
+
+<P><STRONG><a name="[b8edbc]"></a>App_TCBInitHook</STRONG> (ARM, 4 bytes, Stack size 0 bytes, app.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b8a730]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTCBInitHook
+</UL>
+
+<P><STRONG><a name="[b8ed80]"></a>App_TimeTickHook</STRONG> (ARM, 4 bytes, Stack size 0 bytes, app.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[b8a604]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeTickHook
+</UL>
+
+<P><STRONG><a name="[b8eab0]"></a>clear_frame_buf</STRONG> (ARM, 60 bytes, Stack size 0 bytes, lcd_app.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b906d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppTaskStart
+</UL>
+
+<P><STRONG><a name="[b8e240]"></a>lcd_goto_xy</STRONG> (ARM, 16 bytes, Stack size 0 bytes, lcd_app.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = lcd_goto_xy &rArr; LCD_SET_PAGE
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b8e0d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SET_PAGE
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b8e9c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;put_pixel
+</UL>
+
+<P><STRONG><a name="[b8e9c0]"></a>put_pixel</STRONG> (ARM, 136 bytes, Stack size 24 bytes, lcd_app.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = put_pixel &rArr; lcd_goto_xy &rArr; LCD_SET_PAGE
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b8e09c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WRITE_DATA
+<LI><a href="#[b8e240]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_goto_xy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b8e1c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_circle
+<LI><a href="#[b8e204]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_line
+<LI><a href="#[b8ef9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;draw_graph_on_glcd
+<LI><a href="#[b906d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppTaskStart
+</UL>
+
+<P><STRONG><a name="[b8e204]"></a>lcd_draw_line</STRONG> (ARM, 464 bytes, Stack size 56 bytes, lcd_app.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 84<LI>Call Chain = lcd_draw_line &rArr; put_pixel &rArr; lcd_goto_xy &rArr; LCD_SET_PAGE
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b8e9c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;put_pixel
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b8e9fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_xy_axis
+</UL>
+
+<P><STRONG><a name="[b8e1c8]"></a>lcd_draw_circle</STRONG> (ARM, 396 bytes, Stack size 56 bytes, lcd_app.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b8e9c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;put_pixel
+</UL>
+
+<P><STRONG><a name="[b8e18c]"></a>is_valid_ascii</STRONG> (ARM, 24 bytes, Stack size 0 bytes, lcd_app.o(.text), UNUSED)
+
+<P><STRONG><a name="[b8e150]"></a>lcd_display_char</STRONG> (ARM, 68 bytes, Stack size 16 bytes, lcd_app.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = lcd_display_char
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b8e024]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_width_of_char
+<LI><a href="#[b8e060]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_data_from_data_table
+<LI><a href="#[b8e09c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WRITE_DATA
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b8e114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_display_string
+</UL>
+
+<P><STRONG><a name="[b8e114]"></a>lcd_display_string</STRONG> (ARM, 44 bytes, Stack size 8 bytes, lcd_app.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = lcd_display_string &rArr; lcd_display_char
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b8e150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_display_char
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b8e9fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_xy_axis
+</UL>
+
+<P><STRONG><a name="[b8ea38]"></a>init_glcd_ports</STRONG> (ARM, 40 bytes, Stack size 0 bytes, lcd_app.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b906d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppTaskStart
+</UL>
+
+<P><STRONG><a name="[b8e9fc]"></a>init_xy_axis</STRONG> (ARM, 108 bytes, Stack size 8 bytes, lcd_app.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 92<LI>Call Chain = init_xy_axis &rArr; lcd_draw_line &rArr; put_pixel &rArr; lcd_goto_xy &rArr; LCD_SET_PAGE
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b8e0d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SET_PAGE
+<LI><a href="#[b8e114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_display_string
+<LI><a href="#[b8e204]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_draw_line
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b906d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppTaskStart
+</UL>
+
+<P><STRONG><a name="[b8e024]"></a>get_width_of_char</STRONG> (ARM, 20 bytes, Stack size 0 bytes, 8x8.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b8e150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_display_char
+</UL>
+
+<P><STRONG><a name="[b8e060]"></a>get_data_from_data_table</STRONG> (ARM, 32 bytes, Stack size 0 bytes, 8x8.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b8e150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_display_char
+</UL>
+
+<P><STRONG><a name="[b8d700]"></a>LCD_WRITE_CMD</STRONG> (ARM, 124 bytes, Stack size 0 bytes, 64x128glcd.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b8e0d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SET_PAGE
+<LI><a href="#[b8ec90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_INIT
+</UL>
+
+<P><STRONG><a name="[b8e09c]"></a>LCD_WRITE_DATA</STRONG> (ARM, 124 bytes, Stack size 0 bytes, 64x128glcd.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b8e150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_display_char
+<LI><a href="#[b8e9c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;put_pixel
+<LI><a href="#[b8eccc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CLEAR
+</UL>
+
+<P><STRONG><a name="[b8d6c4]"></a>LCD_READ_DATA</STRONG> (ARM, 152 bytes, Stack size 0 bytes, 64x128glcd.o(.text), UNUSED)
+
+<P><STRONG><a name="[b8ec90]"></a>LCD_INIT</STRONG> (ARM, 228 bytes, Stack size 4 bytes, 64x128glcd.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = LCD_INIT
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b8d700]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WRITE_CMD
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b906d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppTaskStart
+</UL>
+
+<P><STRONG><a name="[b8e0d8]"></a>LCD_SET_PAGE</STRONG> (ARM, 44 bytes, Stack size 4 bytes, 64x128glcd.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = LCD_SET_PAGE
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b8d700]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WRITE_CMD
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b8e240]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_goto_xy
+<LI><a href="#[b8e9fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_xy_axis
+<LI><a href="#[b8eccc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CLEAR
+</UL>
+
+<P><STRONG><a name="[b8eccc]"></a>LCD_CLEAR</STRONG> (ARM, 96 bytes, Stack size 8 bytes, 64x128glcd.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = LCD_CLEAR &rArr; LCD_SET_PAGE
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b8e09c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WRITE_DATA
+<LI><a href="#[b8e0d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SET_PAGE
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b906d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppTaskStart
+</UL>
+
+<P><STRONG><a name="[b8ea74]"></a>init_adc0</STRONG> (ARM, 40 bytes, Stack size 0 bytes, adc.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b906d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppTaskStart
+</UL>
+
+<P><STRONG><a name="[b8d250]"></a>init_adc1</STRONG> (ARM, 4 bytes, Stack size 0 bytes, adc.o(.text), UNUSED)
+
+<P><STRONG><a name="[b8eaec]"></a>adc_read</STRONG> (ARM, 120 bytes, Stack size 0 bytes, adc.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b906d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppTaskStart
+</UL>
+
+<P><STRONG><a name="[b8c968]"></a>BSP_CPU_PclkFreq</STRONG> (ARM, 64 bytes, Stack size 0 bytes, bsp.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b8ed44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_Init
+</UL>
+
+<P><STRONG><a name="[b8c92c]"></a>Tmr_TickISR_Handler</STRONG> (ARM, 16 bytes, Stack size 0 bytes, bsp.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b8c620]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeTick
+</UL>
+
+<P><STRONG><a name="[b8c8f0]"></a>uart0_init</STRONG> (ARM, 72 bytes, Stack size 8 bytes, bsp.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
+<LI>Call Chain = uart0_init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b85294]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b8ed44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_Init
+</UL>
+
+<P><STRONG><a name="[b8c8b4]"></a>uart1_init</STRONG> (ARM, 72 bytes, Stack size 8 bytes, bsp.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
+<LI>Call Chain = uart1_init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b85294]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b8ed44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_Init
+</UL>
+
+<P><STRONG><a name="[b8ec54]"></a>LED_Off</STRONG> (ARM, 128 bytes, Stack size 0 bytes, bsp.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b8ed44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_Init
+<LI><a href="#[b906d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppTaskStart
+</UL>
+
+<P><STRONG><a name="[b8ed44]"></a>BSP_Init</STRONG> (ARM, 288 bytes, Stack size 24 bytes, bsp.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40 + Unknown Stack Size
+<LI>Call Chain = BSP_Init &rArr; BSP_PLL_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b85294]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
+<LI><a href="#[b8c5e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_InitExceptVect
+<LI><a href="#[b8c8b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart1_init
+<LI><a href="#[b8c8f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart0_init
+<LI><a href="#[b8c968]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_CPU_PclkFreq
+<LI><a href="#[b8cbfc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_PLL_Init
+<LI><a href="#[b8cc38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VIC_Init
+<LI><a href="#[b8ec54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_Off
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b906d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppTaskStart
+</UL>
+
+<P><STRONG><a name="[b8c878]"></a>BSP_CPU_ClkFreq</STRONG> (ARM, 28 bytes, Stack size 0 bytes, bsp.o(.text), UNUSED)
+
+<P><STRONG><a name="[b8c83c]"></a>OS_CPU_ExceptHndlr</STRONG> (ARM, 64 bytes, Stack size 16 bytes, bsp.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = OS_CPU_ExceptHndlr
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> os_cpu_a.o(CODE)
+</UL>
+<P><STRONG><a name="[b8ed08]"></a>BSP_IntDisAll</STRONG> (ARM, 16 bytes, Stack size 0 bytes, bsp.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b8ef24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[b8c800]"></a>LED_On</STRONG> (ARM, 128 bytes, Stack size 0 bytes, bsp.o(.text), UNUSED)
+
+<P><STRONG><a name="[b8c7c4]"></a>LED_Toggle</STRONG> (ARM, 236 bytes, Stack size 0 bytes, bsp.o(.text), UNUSED)
+
+<P><STRONG><a name="[b8c788]"></a>PB_GetStatus</STRONG> (ARM, 32 bytes, Stack size 0 bytes, bsp.o(.text), UNUSED)
+
+<P><STRONG><a name="[b8c74c]"></a>ADC_GetStatus</STRONG> (ARM, 28 bytes, Stack size 0 bytes, bsp.o(.text), UNUSED)
+
+<P><STRONG><a name="[b8c710]"></a>uart1_putc</STRONG> (ARM, 24 bytes, Stack size 0 bytes, bsp.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[b8c6d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart1_puts
+</UL>
+
+<P><STRONG><a name="[b8c6d4]"></a>uart1_puts</STRONG> (ARM, 40 bytes, Stack size 4 bytes, bsp.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b8c710]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart1_putc
+</UL>
+
+<P><STRONG><a name="[b8c698]"></a>uart0_putc</STRONG> (ARM, 24 bytes, Stack size 0 bytes, bsp.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[b8c65c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart0_puts
+</UL>
+
+<P><STRONG><a name="[b8c65c]"></a>uart0_puts</STRONG> (ARM, 40 bytes, Stack size 4 bytes, bsp.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b8c698]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart0_putc
+</UL>
+
+<P><STRONG><a name="[b8adc0]"></a>OS_StrCopy</STRONG> (ARM, 48 bytes, Stack size 0 bytes, os_core.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b88174]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrNameGet
+<LI><a href="#[b881ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrCreate
+<LI><a href="#[b88c00]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskNameGet
+<LI><a href="#[b89a4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMemNameSet
+<LI><a href="#[b89a88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMemNameGet
+<LI><a href="#[b8ad0c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSEventNameSet
+<LI><a href="#[b8ad84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSEventNameGet
+<LI><a href="#[b8eb64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskNameSet
+</UL>
+
+<P><STRONG><a name="[b8ad84]"></a>OSEventNameGet</STRONG> (ARM, 128 bytes, Stack size 16 bytes, os_core.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b8adc0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_StrCopy
+<LI><a href="#[b8c56c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[b8c5a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+</UL>
+
+<P><STRONG><a name="[b8ad48]"></a>OS_StrLen</STRONG> (ARM, 36 bytes, Stack size 0 bytes, os_core.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b881ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrCreate
+<LI><a href="#[b89a4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMemNameSet
+<LI><a href="#[b8ad0c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSEventNameSet
+<LI><a href="#[b8eb64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskNameSet
+</UL>
+
+<P><STRONG><a name="[b8ad0c]"></a>OSEventNameSet</STRONG> (ARM, 140 bytes, Stack size 16 bytes, os_core.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16 + Unknown Stack Size
+<LI>Call Chain = OSEventNameSet
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b8ad48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_StrLen
+<LI><a href="#[b8adc0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_StrCopy
+<LI><a href="#[b8c56c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[b8c5a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b8a5c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_Init
+</UL>
+
+<P><STRONG><a name="[b8acd0]"></a>OS_TaskStatStkChk</STRONG> (ARM, 96 bytes, Stack size 24 bytes, os_core.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b8a640]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskStkChk
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b8ac94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_TaskStat
+</UL>
+
+<P><STRONG><a name="[b8ac94]"></a>OS_TaskStat</STRONG> (ARM, 160 bytes, Stack size 24 bytes, os_core.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b85294]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
+<LI><a href="#[b8a67c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskStatHook
+<LI><a href="#[b8acd0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_TaskStatStkChk
+<LI><a href="#[b8c56c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[b8c5a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<LI><a href="#[b8eb28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeDly
+</UL>
+
+<P><STRONG><a name="[b8ac58]"></a>OS_TaskIdle</STRONG> (ARM, 36 bytes, Stack size 8 bytes, os_core.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b8a6b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskIdleHook
+<LI><a href="#[b8c56c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[b8c5a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+</UL>
+
+<P><STRONG><a name="[b8ac1c]"></a>OS_MemClr</STRONG> (ARM, 32 bytes, Stack size 0 bytes, os_core.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b8a58c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_MemInit
+<LI><a href="#[b8a5c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_Init
+<LI><a href="#[b8ec18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSInit
+</UL>
+
+<P><STRONG><a name="[b8ec18]"></a>OSInit</STRONG> (ARM, 448 bytes, Stack size 32 bytes, os_core.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 176 + Unknown Stack Size
+<LI>Call Chain = OSInit &rArr; OSTmr_Init &rArr; OSTaskCreateExt &rArr; OS_TCBInit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b8a58c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_MemInit
+<LI><a href="#[b8a5c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_Init
+<LI><a href="#[b8a7e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSInitHookEnd
+<LI><a href="#[b8a820]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSInitHookBegin
+<LI><a href="#[b8a85c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSDebugInit
+<LI><a href="#[b8ac1c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_MemClr
+<LI><a href="#[b8eb64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskNameSet
+<LI><a href="#[b8eba0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskCreateExt
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b8ef24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[b8abe0]"></a>OSIntEnter</STRONG> (ARM, 36 bytes, Stack size 0 bytes, os_core.o(.text), UNUSED)
+
+<P><STRONG><a name="[b8aba4]"></a>OSIntExit</STRONG> (ARM, 148 bytes, Stack size 16 bytes, os_core.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16 + Unknown Stack Size
+<LI>Call Chain = OSIntExit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b8a7a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSIntCtxSw
+<LI><a href="#[b8b900]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_SchedNew
+<LI><a href="#[b8c56c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[b8c5a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> os_cpu_a.o(CODE)
+</UL>
+<P><STRONG><a name="[b8ab68]"></a>OSSchedLock</STRONG> (ARM, 68 bytes, Stack size 8 bytes, os_core.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b8c56c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[b8c5a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+</UL>
+
+<P><STRONG><a name="[b8ab2c]"></a>OS_Sched</STRONG> (ARM, 176 bytes, Stack size 16 bytes, os_core.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16 + Unknown Stack Size
+<LI>Call Chain = OS_Sched
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b8a898]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSCtxSw
+<LI><a href="#[b8b900]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_SchedNew
+<LI><a href="#[b8c56c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[b8c5a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b88714]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeDlyResume
+<LI><a href="#[b88b88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskSuspend
+<LI><a href="#[b88bc4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskResume
+<LI><a href="#[b88c78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskDel
+<LI><a href="#[b88cf0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskCreate
+<LI><a href="#[b88d2c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskChangePrio
+<LI><a href="#[b89164]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPost
+<LI><a href="#[b891a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPendAbort
+<LI><a href="#[b891dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPend
+<LI><a href="#[b89218]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemDel
+<LI><a href="#[b8aaf0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSchedUnlock
+<LI><a href="#[b8eb28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeDly
+<LI><a href="#[b8eba0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskCreateExt
+</UL>
+
+<P><STRONG><a name="[b8aaf0]"></a>OSSchedUnlock</STRONG> (ARM, 88 bytes, Stack size 8 bytes, os_core.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b8ab2c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_Sched
+<LI><a href="#[b8c56c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[b8c5a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+</UL>
+
+<P><STRONG><a name="[b8ebdc]"></a>OSStart</STRONG> (ARM, 64 bytes, Stack size 8 bytes, os_core.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
+<LI>Call Chain = OSStart
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b8a76c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSStartHighRdy
+<LI><a href="#[b8b900]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_SchedNew
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b8ef24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[b8aab4]"></a>OSStatInit</STRONG> (ARM, 68 bytes, Stack size 8 bytes, os_core.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b8c56c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[b8c5a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<LI><a href="#[b8eb28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeDly
+</UL>
+
+<P><STRONG><a name="[b8c620]"></a>OSTimeTick</STRONG> (ARM, 232 bytes, Stack size 24 bytes, os_core.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b8a604]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeTickHook
+<LI><a href="#[b8c56c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[b8c5a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b8c92c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tmr_TickISR_Handler
+</UL>
+
+<P><STRONG><a name="[b8aa78]"></a>OSVersion</STRONG> (ARM, 8 bytes, Stack size 0 bytes, os_core.o(.text), UNUSED)
+
+<P><STRONG><a name="[b8aa3c]"></a>OS_Dummy</STRONG> (ARM, 4 bytes, Stack size 0 bytes, os_core.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[b88c78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskDel
+</UL>
+
+<P><STRONG><a name="[b8aa00]"></a>OS_EventTaskRdy</STRONG> (ARM, 172 bytes, Stack size 20 bytes, os_core.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = OS_EventTaskRdy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b89164]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPost
+<LI><a href="#[b891a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPendAbort
+<LI><a href="#[b89218]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemDel
+</UL>
+
+<P><STRONG><a name="[b8a9c4]"></a>OS_EventTaskWait</STRONG> (ARM, 116 bytes, Stack size 8 bytes, os_core.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = OS_EventTaskWait
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b891dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPend
+</UL>
+
+<P><STRONG><a name="[b8a988]"></a>OS_EventTOAbort</STRONG> (ARM, 80 bytes, Stack size 0 bytes, os_core.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b891dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPend
+</UL>
+
+<P><STRONG><a name="[b8a94c]"></a>OS_EventWaitListInit</STRONG> (ARM, 40 bytes, Stack size 0 bytes, os_core.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b89254]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemCreate
+</UL>
+
+<P><STRONG><a name="[b8a910]"></a>OS_MemCopy</STRONG> (ARM, 32 bytes, Stack size 0 bytes, os_core.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b8a910]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_MemCopy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b88b4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskQuery
+<LI><a href="#[b8a910]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_MemCopy
+</UL>
+
+<P><STRONG><a name="[b8a8d4]"></a>OS_TCBInit</STRONG> (ARM, 324 bytes, Stack size 56 bytes, os_core.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56 + Unknown Stack Size
+<LI>Call Chain = OS_TCBInit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b8a6f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskCreateHook
+<LI><a href="#[b8a730]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTCBInitHook
+<LI><a href="#[b8c56c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[b8c5a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b88cf0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskCreate
+<LI><a href="#[b8eba0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskCreateExt
+</UL>
+
+<P><STRONG><a name="[b89b00]"></a>OSMemCreate</STRONG> (ARM, 152 bytes, Stack size 32 bytes, os_mem.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b8c56c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[b8c5a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+</UL>
+
+<P><STRONG><a name="[b89ac4]"></a>OSMemGet</STRONG> (ARM, 92 bytes, Stack size 16 bytes, os_mem.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b8c56c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[b8c5a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+</UL>
+
+<P><STRONG><a name="[b89a88]"></a>OSMemNameGet</STRONG> (ARM, 96 bytes, Stack size 24 bytes, os_mem.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b8adc0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_StrCopy
+<LI><a href="#[b8c56c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[b8c5a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+</UL>
+
+<P><STRONG><a name="[b89a4c]"></a>OSMemNameSet</STRONG> (ARM, 112 bytes, Stack size 24 bytes, os_mem.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b8ad48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_StrLen
+<LI><a href="#[b8adc0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_StrCopy
+<LI><a href="#[b8c56c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[b8c5a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+</UL>
+
+<P><STRONG><a name="[b89a10]"></a>OSMemPut</STRONG> (ARM, 84 bytes, Stack size 16 bytes, os_mem.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b8c56c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[b8c5a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+</UL>
+
+<P><STRONG><a name="[b899d4]"></a>OSMemQuery</STRONG> (ARM, 88 bytes, Stack size 16 bytes, os_mem.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b8c56c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[b8c5a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+</UL>
+
+<P><STRONG><a name="[b8a58c]"></a>OS_MemInit</STRONG> (ARM, 108 bytes, Stack size 8 bytes, os_mem.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = OS_MemInit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b8ac1c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_MemClr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b8ec18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSInit
+</UL>
+
+<P><STRONG><a name="[b89290]"></a>OSSemAccept</STRONG> (ARM, 60 bytes, Stack size 16 bytes, os_sem.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b8c56c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[b8c5a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+</UL>
+
+<P><STRONG><a name="[b89254]"></a>OSSemCreate</STRONG> (ARM, 116 bytes, Stack size 16 bytes, os_sem.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16 + Unknown Stack Size
+<LI>Call Chain = OSSemCreate
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b8a94c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_EventWaitListInit
+<LI><a href="#[b8c56c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[b8c5a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b8a5c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_Init
+</UL>
+
+<P><STRONG><a name="[b89218]"></a>OSSemDel</STRONG> (ARM, 284 bytes, Stack size 40 bytes, os_sem.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b8aa00]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_EventTaskRdy
+<LI><a href="#[b8ab2c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_Sched
+<LI><a href="#[b8c56c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[b8c5a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+</UL>
+
+<P><STRONG><a name="[b891dc]"></a>OSSemPend</STRONG> (ARM, 240 bytes, Stack size 32 bytes, os_sem.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48 + Unknown Stack Size
+<LI>Call Chain = OSSemPend &rArr; OS_Sched
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b8a988]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_EventTOAbort
+<LI><a href="#[b8a9c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_EventTaskWait
+<LI><a href="#[b8ab2c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_Sched
+<LI><a href="#[b8c56c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[b8c5a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b88318]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_Lock
+<LI><a href="#[b88354]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_Task
+</UL>
+
+<P><STRONG><a name="[b891a0]"></a>OSSemPendAbort</STRONG> (ARM, 192 bytes, Stack size 24 bytes, os_sem.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b8aa00]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_EventTaskRdy
+<LI><a href="#[b8ab2c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_Sched
+<LI><a href="#[b8c56c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[b8c5a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+</UL>
+
+<P><STRONG><a name="[b89164]"></a>OSSemPost</STRONG> (ARM, 140 bytes, Stack size 16 bytes, os_sem.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36 + Unknown Stack Size
+<LI>Call Chain = OSSemPost &rArr; OS_EventTaskRdy
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b8aa00]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_EventTaskRdy
+<LI><a href="#[b8ab2c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_Sched
+<LI><a href="#[b8c56c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[b8c5a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b88048]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrSignal
+<LI><a href="#[b88084]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrStop
+<LI><a href="#[b880c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrStart
+<LI><a href="#[b880fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrStateGet
+<LI><a href="#[b88138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrRemainGet
+<LI><a href="#[b88174]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrNameGet
+<LI><a href="#[b881b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrDel
+<LI><a href="#[b881ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrCreate
+<LI><a href="#[b88354]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_Task
+</UL>
+
+<P><STRONG><a name="[b89128]"></a>OSSemQuery</STRONG> (ARM, 100 bytes, Stack size 16 bytes, os_sem.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b8c56c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[b8c5a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+</UL>
+
+<P><STRONG><a name="[b890ec]"></a>OSSemSet</STRONG> (ARM, 100 bytes, Stack size 16 bytes, os_sem.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b8c56c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[b8c5a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+</UL>
+
+<P><STRONG><a name="[b88d2c]"></a>OSTaskChangePrio</STRONG> (ARM, 360 bytes, Stack size 32 bytes, os_task.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b8ab2c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_Sched
+<LI><a href="#[b8c56c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[b8c5a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+</UL>
+
+<P><STRONG><a name="[b88cf0]"></a>OSTaskCreate</STRONG> (ARM, 200 bytes, Stack size 40 bytes, os_task.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b88ad4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskStkInit
+<LI><a href="#[b8a8d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_TCBInit
+<LI><a href="#[b8ab2c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_Sched
+<LI><a href="#[b8c56c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[b8c5a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+</UL>
+
+<P><STRONG><a name="[b88cb4]"></a>OS_TaskStkClr</STRONG> (ARM, 36 bytes, Stack size 0 bytes, os_task.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b8eba0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskCreateExt
+</UL>
+
+<P><STRONG><a name="[b8eba0]"></a>OSTaskCreateExt</STRONG> (ARM, 228 bytes, Stack size 48 bytes, os_task.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 104 + Unknown Stack Size
+<LI>Call Chain = OSTaskCreateExt &rArr; OS_TCBInit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b88ad4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskStkInit
+<LI><a href="#[b88cb4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_TaskStkClr
+<LI><a href="#[b8a8d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_TCBInit
+<LI><a href="#[b8ab2c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_Sched
+<LI><a href="#[b8c56c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[b8c5a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b8a5c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_Init
+<LI><a href="#[b8ec18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSInit
+<LI><a href="#[b8ef24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[b88c78]"></a>OSTaskDel</STRONG> (ARM, 416 bytes, Stack size 32 bytes, os_task.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b88b10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskDelHook
+<LI><a href="#[b8aa3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_Dummy
+<LI><a href="#[b8ab2c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_Sched
+<LI><a href="#[b8c56c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[b8c5a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+</UL>
+
+<P><STRONG><a name="[b88c3c]"></a>OSTaskDelReq</STRONG> (ARM, 132 bytes, Stack size 8 bytes, os_task.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b8c56c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[b8c5a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+</UL>
+
+<P><STRONG><a name="[b88c00]"></a>OSTaskNameGet</STRONG> (ARM, 152 bytes, Stack size 24 bytes, os_task.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b8adc0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_StrCopy
+<LI><a href="#[b8c56c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[b8c5a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+</UL>
+
+<P><STRONG><a name="[b8eb64]"></a>OSTaskNameSet</STRONG> (ARM, 168 bytes, Stack size 24 bytes, os_task.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24 + Unknown Stack Size
+<LI>Call Chain = OSTaskNameSet
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b8ad48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_StrLen
+<LI><a href="#[b8adc0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_StrCopy
+<LI><a href="#[b8c56c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[b8c5a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b8a5c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_Init
+<LI><a href="#[b8ec18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSInit
+<LI><a href="#[b8ef24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[b88bc4]"></a>OSTaskResume</STRONG> (ARM, 192 bytes, Stack size 8 bytes, os_task.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b8ab2c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_Sched
+<LI><a href="#[b8c56c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[b8c5a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+</UL>
+
+<P><STRONG><a name="[b8a640]"></a>OSTaskStkChk</STRONG> (ARM, 164 bytes, Stack size 24 bytes, os_task.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b8c56c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[b8c5a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b8acd0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_TaskStatStkChk
+</UL>
+
+<P><STRONG><a name="[b88b88]"></a>OSTaskSuspend</STRONG> (ARM, 188 bytes, Stack size 16 bytes, os_task.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b8ab2c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_Sched
+<LI><a href="#[b8c56c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[b8c5a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+</UL>
+
+<P><STRONG><a name="[b88b4c]"></a>OSTaskQuery</STRONG> (ARM, 124 bytes, Stack size 16 bytes, os_task.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b8a910]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_MemCopy
+<LI><a href="#[b8c56c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[b8c5a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+</UL>
+
+<P><STRONG><a name="[b8eb28]"></a>OSTimeDly</STRONG> (ARM, 120 bytes, Stack size 8 bytes, os_time.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24 + Unknown Stack Size
+<LI>Call Chain = OSTimeDly &rArr; OS_Sched
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b8ab2c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_Sched
+<LI><a href="#[b8c56c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[b8c5a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b88750]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeDlyHMSM
+<LI><a href="#[b8aab4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSStatInit
+<LI><a href="#[b8ac94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_TaskStat
+<LI><a href="#[b906d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppTaskStart
+</UL>
+
+<P><STRONG><a name="[b88750]"></a>OSTimeDlyHMSM</STRONG> (ARM, 156 bytes, Stack size 16 bytes, os_time.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b85294]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
+<LI><a href="#[b8eb28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeDly
+</UL>
+
+<P><STRONG><a name="[b88714]"></a>OSTimeDlyResume</STRONG> (ARM, 200 bytes, Stack size 8 bytes, os_time.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b8ab2c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_Sched
+<LI><a href="#[b8c56c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[b8c5a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+</UL>
+
+<P><STRONG><a name="[b886d8]"></a>OSTimeGet</STRONG> (ARM, 32 bytes, Stack size 8 bytes, os_time.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b8c56c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[b8c5a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+</UL>
+
+<P><STRONG><a name="[b8869c]"></a>OSTimeSet</STRONG> (ARM, 28 bytes, Stack size 8 bytes, os_time.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b8c56c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[b8c5a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+</UL>
+
+<P><STRONG><a name="[b881ec]"></a>OSTmrCreate</STRONG> (ARM, 280 bytes, Stack size 40 bytes, os_tmr.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b88318]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_Lock
+<LI><a href="#[b89164]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPost
+<LI><a href="#[b8ad48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_StrLen
+<LI><a href="#[b8adc0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_StrCopy
+</UL>
+
+<P><STRONG><a name="[b881b0]"></a>OSTmrDel</STRONG> (ARM, 172 bytes, Stack size 24 bytes, os_tmr.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b88318]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_Lock
+<LI><a href="#[b883cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_Unlink
+<LI><a href="#[b88408]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_Free
+<LI><a href="#[b89164]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPost
+</UL>
+
+<P><STRONG><a name="[b88174]"></a>OSTmrNameGet</STRONG> (ARM, 172 bytes, Stack size 24 bytes, os_tmr.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b88318]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_Lock
+<LI><a href="#[b89164]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPost
+<LI><a href="#[b8adc0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_StrCopy
+</UL>
+
+<P><STRONG><a name="[b88138]"></a>OSTmrRemainGet</STRONG> (ARM, 240 bytes, Stack size 24 bytes, os_tmr.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b88318]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_Lock
+<LI><a href="#[b89164]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPost
+</UL>
+
+<P><STRONG><a name="[b880fc]"></a>OSTmrStateGet</STRONG> (ARM, 120 bytes, Stack size 16 bytes, os_tmr.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b88318]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_Lock
+<LI><a href="#[b89164]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPost
+</UL>
+
+<P><STRONG><a name="[b880c0]"></a>OSTmrStart</STRONG> (ARM, 176 bytes, Stack size 24 bytes, os_tmr.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b88318]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_Lock
+<LI><a href="#[b88390]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_Link
+<LI><a href="#[b883cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_Unlink
+<LI><a href="#[b89164]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPost
+</UL>
+
+<P><STRONG><a name="[b88084]"></a>OSTmrStop</STRONG> (ARM, 276 bytes, Stack size 24 bytes, os_tmr.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b88318]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_Lock
+<LI><a href="#[b883cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_Unlink
+<LI><a href="#[b89164]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPost
+</UL>
+
+<P><STRONG><a name="[b88048]"></a>OSTmrSignal</STRONG> (ARM, 12 bytes, Stack size 0 bytes, os_tmr.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b89164]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPost
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b8a604]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeTickHook
+</UL>
+
+<P><STRONG><a name="[b8a5c8]"></a>OSTmr_Init</STRONG> (ARM, 300 bytes, Stack size 40 bytes, os_tmr.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 144 + Unknown Stack Size
+<LI>Call Chain = OSTmr_Init &rArr; OSTaskCreateExt &rArr; OS_TCBInit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b89254]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemCreate
+<LI><a href="#[b8ac1c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_MemClr
+<LI><a href="#[b8ad0c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSEventNameSet
+<LI><a href="#[b8eb64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskNameSet
+<LI><a href="#[b8eba0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskCreateExt
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b8ec18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSInit
+</UL>
+
+<P><STRONG><a name="[b8a820]"></a>OSInitHookBegin</STRONG> (ARM, 16 bytes, Stack size 0 bytes, os_cpu_c.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b8ec18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSInit
+</UL>
+
+<P><STRONG><a name="[b8a7e4]"></a>OSInitHookEnd</STRONG> (ARM, 4 bytes, Stack size 0 bytes, os_cpu_c.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b8ec18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSInit
+</UL>
+
+<P><STRONG><a name="[b8a6f4]"></a>OSTaskCreateHook</STRONG> (ARM, 4 bytes, Stack size 0 bytes, os_cpu_c.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[b8eee8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;App_TaskCreateHook
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b8a8d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_TCBInit
+</UL>
+
+<P><STRONG><a name="[b88b10]"></a>OSTaskDelHook</STRONG> (ARM, 4 bytes, Stack size 0 bytes, os_cpu_c.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b8eeac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;App_TaskDelHook
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b88c78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskDel
+</UL>
+
+<P><STRONG><a name="[b8a6b8]"></a>OSTaskIdleHook</STRONG> (ARM, 4 bytes, Stack size 0 bytes, os_cpu_c.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b8ee70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;App_TaskIdleHook
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b8ac58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_TaskIdle
+</UL>
+
+<P><STRONG><a name="[b8a67c]"></a>OSTaskStatHook</STRONG> (ARM, 4 bytes, Stack size 0 bytes, os_cpu_c.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b8ee34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;App_TaskStatHook
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b8ac94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_TaskStat
+</UL>
+
+<P><STRONG><a name="[b88ad4]"></a>OSTaskStkInit</STRONG> (ARM, 144 bytes, Stack size 0 bytes, os_cpu_c.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b88cf0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskCreate
+<LI><a href="#[b8eba0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskCreateExt
+</UL>
+
+<P><STRONG><a name="[b87ea4]"></a>OSTaskSwHook</STRONG> (ARM, 4 bytes, Stack size 0 bytes, os_cpu_c.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[b8edf8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;App_TaskSwHook
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> os_cpu_a.o(CODE)
+</UL>
+<P><STRONG><a name="[b8a730]"></a>OSTCBInitHook</STRONG> (ARM, 4 bytes, Stack size 0 bytes, os_cpu_c.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[b8edbc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;App_TCBInitHook
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b8a8d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_TCBInit
+</UL>
+
+<P><STRONG><a name="[b8a604]"></a>OSTimeTickHook</STRONG> (ARM, 60 bytes, Stack size 8 bytes, os_cpu_c.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b88048]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrSignal
+<LI><a href="#[b8ed80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;App_TimeTickHook
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b8c620]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeTick
+</UL>
+
+<P><STRONG><a name="[b8c5e4]"></a>OS_CPU_InitExceptVect</STRONG> (ARM, 96 bytes, Stack size 0 bytes, os_cpu_c.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b8ed44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_Init
+</UL>
+
+<P><STRONG><a name="[b8a85c]"></a>OSDebugInit</STRONG> (ARM, 4 bytes, Stack size 0 bytes, os_dbg.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b8ec18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSInit
+</UL>
+
+<P><STRONG><a name="[b85348]"></a>__aeabi_idiv</STRONG> (ARM, 0 bytes, Stack size 8 bytes, aeabi_sdivfast.o(.text), UNUSED)
+
+<P><STRONG><a name="[b8530c]"></a>__aeabi_idivmod</STRONG> (ARM, 556 bytes, Stack size 8 bytes, aeabi_sdivfast.o(.text), UNUSED)
+
+<P><STRONG><a name="[b839bc]"></a>exit</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, exit.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[b82a08]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit (via Veneer)
+<LI><a href="#[b83944]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_call_atexit_fns (Weak Reference)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b840c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
+</UL>
+
+<P><STRONG><a name="[146826c]"></a>_sys_exit</STRONG> (ARM, 20 bytes, Stack size 0 bytes, sys_exit.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[1467f24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit_exit
+</UL>
+
+<P><STRONG><a name="[146817c]"></a>__I$use$semihosting</STRONG> (ARM, 0 bytes, Stack size 0 bytes, use_no_semi.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> sys_exit.o(.text)
+</UL>
+<P><STRONG><a name="[1468140]"></a>__use_no_semihosting_swi</STRONG> (ARM, 4 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
+
+<P><STRONG><a name="[b852d0]"></a>__aeabi_uidiv</STRONG> (ARM, 0 bytes, Stack size 0 bytes, aeabi_sdivfast.o(.text_udiv), UNUSED)
+
+<P><STRONG><a name="[b85294]"></a>__aeabi_uidivmod</STRONG> (ARM, 40 bytes, Stack size 0 bytes, aeabi_sdivfast.o(.text_udiv))
+<BR><BR>[Calls]<UL><LI><a href="#[b85384]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__arm_div4
+<LI><a href="#[b853c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__arm_div8
+<LI><a href="#[b853fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__arm_div12
+<LI><a href="#[b85438]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__arm_div16
+<LI><a href="#[b85474]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__arm_div_large_positive
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b88750]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeDlyHMSM
+<LI><a href="#[b8ac94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_TaskStat
+<LI><a href="#[b8c8b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart1_init
+<LI><a href="#[b8c8f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart0_init
+<LI><a href="#[b8ed44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_Init
+</UL>
+
+<P><STRONG><a name="[b8c56c]"></a>OS_CPU_SR_Save</STRONG> (ARM, 0 bytes, Stack size unknown bytes, os_cpu_a.o(CODE))
+<BR><BR>[Called By]<UL><LI><a href="#[b8869c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeSet
+<LI><a href="#[b886d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeGet
+<LI><a href="#[b88714]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeDlyResume
+<LI><a href="#[b88b4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskQuery
+<LI><a href="#[b88b88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskSuspend
+<LI><a href="#[b88bc4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskResume
+<LI><a href="#[b88c00]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskNameGet
+<LI><a href="#[b88c3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskDelReq
+<LI><a href="#[b88c78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskDel
+<LI><a href="#[b88cf0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskCreate
+<LI><a href="#[b88d2c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskChangePrio
+<LI><a href="#[b890ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemSet
+<LI><a href="#[b89128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemQuery
+<LI><a href="#[b89164]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPost
+<LI><a href="#[b891a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPendAbort
+<LI><a href="#[b891dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPend
+<LI><a href="#[b89218]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemDel
+<LI><a href="#[b89254]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemCreate
+<LI><a href="#[b89290]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemAccept
+<LI><a href="#[b899d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMemQuery
+<LI><a href="#[b89a10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMemPut
+<LI><a href="#[b89a4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMemNameSet
+<LI><a href="#[b89a88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMemNameGet
+<LI><a href="#[b89ac4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMemGet
+<LI><a href="#[b89b00]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMemCreate
+<LI><a href="#[b8a640]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskStkChk
+<LI><a href="#[b8a8d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_TCBInit
+<LI><a href="#[b8aab4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSStatInit
+<LI><a href="#[b8aaf0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSchedUnlock
+<LI><a href="#[b8ab2c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_Sched
+<LI><a href="#[b8ab68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSchedLock
+<LI><a href="#[b8aba4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSIntExit
+<LI><a href="#[b8ac58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_TaskIdle
+<LI><a href="#[b8ac94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_TaskStat
+<LI><a href="#[b8ad0c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSEventNameSet
+<LI><a href="#[b8ad84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSEventNameGet
+<LI><a href="#[b8c620]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeTick
+<LI><a href="#[b8cbfc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_PLL_Init
+<LI><a href="#[b8eb28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeDly
+<LI><a href="#[b8eb64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskNameSet
+<LI><a href="#[b8eba0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskCreateExt
+</UL>
+
+<P><STRONG><a name="[b8c5a8]"></a>OS_CPU_SR_Restore</STRONG> (ARM, 0 bytes, Stack size unknown bytes, os_cpu_a.o(CODE))
+<BR><BR>[Called By]<UL><LI><a href="#[b8869c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeSet
+<LI><a href="#[b886d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeGet
+<LI><a href="#[b88714]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeDlyResume
+<LI><a href="#[b88b4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskQuery
+<LI><a href="#[b88b88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskSuspend
+<LI><a href="#[b88bc4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskResume
+<LI><a href="#[b88c00]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskNameGet
+<LI><a href="#[b88c3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskDelReq
+<LI><a href="#[b88c78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskDel
+<LI><a href="#[b88cf0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskCreate
+<LI><a href="#[b88d2c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskChangePrio
+<LI><a href="#[b890ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemSet
+<LI><a href="#[b89128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemQuery
+<LI><a href="#[b89164]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPost
+<LI><a href="#[b891a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPendAbort
+<LI><a href="#[b891dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPend
+<LI><a href="#[b89218]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemDel
+<LI><a href="#[b89254]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemCreate
+<LI><a href="#[b89290]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemAccept
+<LI><a href="#[b899d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMemQuery
+<LI><a href="#[b89a10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMemPut
+<LI><a href="#[b89a4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMemNameSet
+<LI><a href="#[b89a88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMemNameGet
+<LI><a href="#[b89ac4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMemGet
+<LI><a href="#[b89b00]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSMemCreate
+<LI><a href="#[b8a640]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskStkChk
+<LI><a href="#[b8a8d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_TCBInit
+<LI><a href="#[b8aab4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSStatInit
+<LI><a href="#[b8aaf0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSchedUnlock
+<LI><a href="#[b8ab2c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_Sched
+<LI><a href="#[b8ab68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSchedLock
+<LI><a href="#[b8aba4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSIntExit
+<LI><a href="#[b8ac58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_TaskIdle
+<LI><a href="#[b8ac94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_TaskStat
+<LI><a href="#[b8ad0c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSEventNameSet
+<LI><a href="#[b8ad84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSEventNameGet
+<LI><a href="#[b8c620]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeTick
+<LI><a href="#[b8cbfc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_PLL_Init
+<LI><a href="#[b8eb28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeDly
+<LI><a href="#[b8eb64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskNameSet
+<LI><a href="#[b8eba0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskCreateExt
+</UL>
+
+<P><STRONG><a name="[b8a76c]"></a>OSStartHighRdy</STRONG> (ARM, 0 bytes, Stack size unknown bytes, os_cpu_a.o(CODE))
+<BR><BR>[Called By]<UL><LI><a href="#[b8ebdc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSStart
+</UL>
+
+<P><STRONG><a name="[b8a898]"></a>OSCtxSw</STRONG> (ARM, 0 bytes, Stack size unknown bytes, os_cpu_a.o(CODE))
+<BR><BR>[Called By]<UL><LI><a href="#[b8ab2c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_Sched
+</UL>
+
+<P><STRONG><a name="[b8a7a8]"></a>OSIntCtxSw</STRONG> (ARM, 0 bytes, Stack size unknown bytes, os_cpu_a.o(CODE))
+<BR><BR>[Called By]<UL><LI><a href="#[b8aba4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSIntExit
+</UL>
+
+<P><STRONG><a name="[b87f1c]"></a>OS_CPU_ARM_ExceptResetHndlr</STRONG> (ARM, 0 bytes, Stack size unknown bytes, os_cpu_a.o(CODE), UNUSED)
+
+<P><STRONG><a name="[b8c260]"></a>OS_CPU_ARM_ExceptUndefInstrHndlr</STRONG> (ARM, 0 bytes, Stack size unknown bytes, os_cpu_a.o(CODE))
+<BR>[Address Reference Count : 2]<UL><LI> vectors.o(VECT)
+<LI> os_cpu_c.o(.text)
+</UL>
+<P><STRONG><a name="[b8c29c]"></a>OS_CPU_ARM_ExceptSwiHndlr</STRONG> (ARM, 0 bytes, Stack size unknown bytes, os_cpu_a.o(CODE))
+<BR>[Address Reference Count : 2]<UL><LI> vectors.o(VECT)
+<LI> os_cpu_c.o(.text)
+</UL>
+<P><STRONG><a name="[b8c2d8]"></a>OS_CPU_ARM_ExceptPrefetchAbortHndlr</STRONG> (ARM, 0 bytes, Stack size unknown bytes, os_cpu_a.o(CODE))
+<BR>[Address Reference Count : 2]<UL><LI> vectors.o(VECT)
+<LI> os_cpu_c.o(.text)
+</UL>
+<P><STRONG><a name="[b8c38c]"></a>OS_CPU_ARM_ExceptDataAbortHndlr</STRONG> (ARM, 0 bytes, Stack size unknown bytes, os_cpu_a.o(CODE))
+<BR>[Address Reference Count : 2]<UL><LI> vectors.o(VECT)
+<LI> os_cpu_c.o(.text)
+</UL>
+<P><STRONG><a name="[b87ee0]"></a>OS_CPU_ARM_ExceptAddrAbortHndlr</STRONG> (ARM, 0 bytes, Stack size unknown bytes, os_cpu_a.o(CODE))
+<BR>[Address Reference Count : 1]<UL><LI> os_cpu_c.o(.text)
+</UL>
+<P><STRONG><a name="[b8c314]"></a>OS_CPU_ARM_ExceptIrqHndlr</STRONG> (ARM, 0 bytes, Stack size unknown bytes, os_cpu_a.o(CODE))
+<BR>[Address Reference Count : 2]<UL><LI> vectors.o(VECT)
+<LI> os_cpu_c.o(.text)
+</UL>
+<P><STRONG><a name="[b8c350]"></a>OS_CPU_ARM_ExceptFiqHndlr</STRONG> (ARM, 0 bytes, Stack size unknown bytes, os_cpu_a.o(CODE))
+<BR>[Address Reference Count : 2]<UL><LI> vectors.o(VECT)
+<LI> os_cpu_c.o(.text)
+</UL>
+<P><STRONG><a name="[b8c224]"></a>ResetHndlr</STRONG> (ARM, 0 bytes, Stack size unknown bytes, init.o(INIT))
+
+<P><STRONG><a name="[1468398]"></a>__fplib_config_pureend_doubles</STRONG> (ARM, 0 bytes, Stack size 0 bytes, fpinit.o(x$fpl$fpinit), UNUSED)
+
+<P><STRONG><a name="[146835c]"></a>_fp_init</STRONG> (ARM, 4 bytes, Stack size 0 bytes, fpinit.o(x$fpl$fpinit))
+<BR><BR>[Called By]<UL><LI><a href="#[b8332c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_init (via Veneer)
+</UL>
+<P>
+<H3>
+Local Symbols
+</H3>
+<P><STRONG><a name="[b906d0]"></a>AppTaskStart</STRONG> (ARM, 132 bytes, Stack size 16 bytes, app.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 108 + Unknown Stack Size
+<LI>Call Chain = AppTaskStart &rArr; init_xy_axis &rArr; lcd_draw_line &rArr; put_pixel &rArr; lcd_goto_xy &rArr; LCD_SET_PAGE
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b8e9c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;put_pixel
+<LI><a href="#[b8e9fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_xy_axis
+<LI><a href="#[b8ea38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_glcd_ports
+<LI><a href="#[b8ea74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_adc0
+<LI><a href="#[b8eab0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clear_frame_buf
+<LI><a href="#[b8eaec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_read
+<LI><a href="#[b8eb28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeDly
+<LI><a href="#[b8ec54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_Off
+<LI><a href="#[b8ec90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_INIT
+<LI><a href="#[b8eccc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CLEAR
+<LI><a href="#[b8ed44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_Init
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> app.o(.text)
+</UL>
+<P><STRONG><a name="[b8cf08]"></a>VIC_DummyEINT2</STRONG> (ARM, 16 bytes, Stack size 0 bytes, bsp.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> bsp.o(.text)
+</UL>
+<P><STRONG><a name="[b8cecc]"></a>VIC_DummyEINT1</STRONG> (ARM, 16 bytes, Stack size 0 bytes, bsp.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> bsp.o(.text)
+</UL>
+<P><STRONG><a name="[b8ce90]"></a>VIC_DummyEINT0</STRONG> (ARM, 16 bytes, Stack size 0 bytes, bsp.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> bsp.o(.text)
+</UL>
+<P><STRONG><a name="[b8ce54]"></a>VIC_DummyRTC</STRONG> (ARM, 16 bytes, Stack size 0 bytes, bsp.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> bsp.o(.text)
+</UL>
+<P><STRONG><a name="[b8ce18]"></a>VIC_DummySPI</STRONG> (ARM, 16 bytes, Stack size 0 bytes, bsp.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> bsp.o(.text)
+</UL>
+<P><STRONG><a name="[b8cddc]"></a>VIC_DummyI2C</STRONG> (ARM, 16 bytes, Stack size 0 bytes, bsp.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> bsp.o(.text)
+</UL>
+<P><STRONG><a name="[b8cda0]"></a>VIC_DummyPWM0</STRONG> (ARM, 16 bytes, Stack size 0 bytes, bsp.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> bsp.o(.text)
+</UL>
+<P><STRONG><a name="[b8cd64]"></a>VIC_DummyUART1</STRONG> (ARM, 16 bytes, Stack size 0 bytes, bsp.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> bsp.o(.text)
+</UL>
+<P><STRONG><a name="[b8cd28]"></a>VIC_DummyUART0</STRONG> (ARM, 16 bytes, Stack size 0 bytes, bsp.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> bsp.o(.text)
+</UL>
+<P><STRONG><a name="[b8ccec]"></a>VIC_DummyTIMER1</STRONG> (ARM, 16 bytes, Stack size 0 bytes, bsp.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> bsp.o(.text)
+</UL>
+<P><STRONG><a name="[b8ccb0]"></a>VIC_DummyTIMER0</STRONG> (ARM, 16 bytes, Stack size 0 bytes, bsp.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> bsp.o(.text)
+</UL>
+<P><STRONG><a name="[b8cc74]"></a>VIC_DummyWDT</STRONG> (ARM, 16 bytes, Stack size 0 bytes, bsp.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> bsp.o(.text)
+</UL>
+<P><STRONG><a name="[b8cc38]"></a>VIC_Init</STRONG> (ARM, 116 bytes, Stack size 0 bytes, bsp.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b8ed44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_Init
+</UL>
+
+<P><STRONG><a name="[b8cbfc]"></a>BSP_PLL_Init</STRONG> (ARM, 136 bytes, Stack size 16 bytes, bsp.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16 + Unknown Stack Size
+<LI>Call Chain = BSP_PLL_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b8c56c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[b8c5a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b8ed44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_Init
+</UL>
+
+<P><STRONG><a name="[b8b900]"></a>OS_SchedNew</STRONG> (ARM, 40 bytes, Stack size 0 bytes, os_core.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b8ab2c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_Sched
+<LI><a href="#[b8aba4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSIntExit
+<LI><a href="#[b8ebdc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSStart
+</UL>
+
+<P><STRONG><a name="[b88408]"></a>OSTmr_Free</STRONG> (ARM, 96 bytes, Stack size 0 bytes, os_tmr.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[b881b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrDel
+</UL>
+
+<P><STRONG><a name="[b883cc]"></a>OSTmr_Unlink</STRONG> (ARM, 100 bytes, Stack size 0 bytes, os_tmr.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b88084]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrStop
+<LI><a href="#[b880c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrStart
+<LI><a href="#[b881b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrDel
+<LI><a href="#[b88354]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_Task
+</UL>
+
+<P><STRONG><a name="[b88390]"></a>OSTmr_Link</STRONG> (ARM, 104 bytes, Stack size 0 bytes, os_tmr.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b880c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrStart
+<LI><a href="#[b88354]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_Task
+</UL>
+
+<P><STRONG><a name="[b88354]"></a>OSTmr_Task</STRONG> (ARM, 172 bytes, Stack size 32 bytes, os_tmr.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88 + Unknown Stack Size
+<LI>Call Chain = OSTmr_Task &rArr; OSTmr_Lock &rArr; OSSemPend &rArr; OS_Sched
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b88318]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_Lock
+<LI><a href="#[b88390]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_Link
+<LI><a href="#[b883cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_Unlink
+<LI><a href="#[b89164]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPost
+<LI><a href="#[b891dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPend
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> os_tmr.o(.text)
+</UL>
+<P><STRONG><a name="[b88318]"></a>OSTmr_Lock</STRONG> (ARM, 32 bytes, Stack size 8 bytes, os_tmr.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56 + Unknown Stack Size
+<LI>Call Chain = OSTmr_Lock &rArr; OSSemPend &rArr; OS_Sched
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b891dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSSemPend
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b88084]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrStop
+<LI><a href="#[b880c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrStart
+<LI><a href="#[b880fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrStateGet
+<LI><a href="#[b88138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrRemainGet
+<LI><a href="#[b88174]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrNameGet
+<LI><a href="#[b881b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrDel
+<LI><a href="#[b881ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmrCreate
+<LI><a href="#[b88354]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTmr_Task
+</UL>
+
+<P><STRONG><a name="[b85474]"></a>__arm_div_large_positive</STRONG> (ARM, 0 bytes, Stack size unknown bytes, aeabi_sdivfast.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b85294]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
+</UL>
+
+<P><STRONG><a name="[b85438]"></a>__arm_div16</STRONG> (ARM, 0 bytes, Stack size unknown bytes, aeabi_sdivfast.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b85294]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
+</UL>
+
+<P><STRONG><a name="[b853fc]"></a>__arm_div12</STRONG> (ARM, 0 bytes, Stack size unknown bytes, aeabi_sdivfast.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b85294]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
+</UL>
+
+<P><STRONG><a name="[b853c0]"></a>__arm_div8</STRONG> (ARM, 0 bytes, Stack size unknown bytes, aeabi_sdivfast.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b85294]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
+</UL>
+
+<P><STRONG><a name="[b85384]"></a>__arm_div4</STRONG> (ARM, 0 bytes, Stack size unknown bytes, aeabi_sdivfast.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b85294]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
+</UL>
+<P>
+<H3>
+Undefined Global Symbols
+</H3>
+<P><STRONG><a name="[b83944]"></a>_call_atexit_fns</STRONG> (ARM, 0 bytes, Stack size 0 bytes, UNDEFINED)
+<BR><BR>[Called By]<UL><LI><a href="#[b839bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
+</UL>
+<HR></body></html>

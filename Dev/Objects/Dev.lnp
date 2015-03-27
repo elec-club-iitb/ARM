@@ -1,0 +1,17 @@
+--cpu ARM7TDMI
+".\objects\startup.o"
+".\objects\main.o"
+".\objects\sampleprogram.o"
+".\objects\uart.o"
+".\objects\adc.o"
+".\objects\spi.o"
+".\objects\pll.o"
+".\objects\interrupt.o"
+".\objects\delay.o"
+".\objects\pin.o"
+".\objects\ili9229.o"
+".\objects\spi1.o"
+--strict --scatter ".\Objects\Dev.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\Dev.map" -o .\Objects\Dev.axf

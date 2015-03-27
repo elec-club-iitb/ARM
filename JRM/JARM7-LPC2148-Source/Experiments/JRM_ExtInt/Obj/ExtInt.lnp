@@ -1,0 +1,4 @@
+--device DARMP ".\obj\startup.o" ".\obj\retarget.o" ".\obj\main.o" ".\obj\buzzer.o" ".\obj\ext_int.o" --library_type=microlib --strict --scatter ".\Obj\ExtInt.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\Lst\ExtInt.map" -o ".\Obj\ExtInt.axf"

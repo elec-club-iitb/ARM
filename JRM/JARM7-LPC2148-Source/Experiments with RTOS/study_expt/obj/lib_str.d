@@ -1,0 +1,11 @@
+.\obj\lib_str.o: ..\uC-LIB\lib_str.c
+.\obj\lib_str.o: ..\uC-LIB\lib_str.h
+.\obj\lib_str.o: ..\uC-CPU\cpu.h
+.\obj\lib_str.o: ..\uC-CPU\cpu_def.h
+.\obj\lib_str.o: ..\uC-LIB\lib_def.h
+.\obj\lib_str.o: .\app_cfg.h
+.\obj\lib_str.o: C:\Keil\ARM\RV31\INC\stdlib.h
+.\obj\lib_str.o: C:\Keil\ARM\RV31\INC\ctype.h
+.\obj\lib_str.o: C:\Keil\ARM\RV31\INC\errno.h
+.\obj\lib_str.o: C:\Keil\ARM\RV31\INC\limits.h
+.\obj\lib_str.o: C:\Keil\ARM\RV31\INC\stdio.h

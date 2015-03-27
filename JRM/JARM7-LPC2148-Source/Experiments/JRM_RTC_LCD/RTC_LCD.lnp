@@ -1,0 +1,4 @@
+--device DARMP "startup.o" "rtc_lcd.o" "lcd.o" --strict --scatter "RTC_LCD.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\RTC_LCD.map" -o "RTC_LCD.axf"

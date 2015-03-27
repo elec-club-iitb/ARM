@@ -1,0 +1,110 @@
+IRQ_Handler:
+            sub         lr, lr, #4
+            stmfd       sp!, {lr}
+            mrs         lr, SPSR
+            stmfd       sp!, {r0, lr}
+            ldr         lr, =LPC_BASE_VIC
+            ldr         r0 , [lr, #VIC_VectAddr]
+            msr         CPSR_c, #M_SVC
+            stmfd       sp!, { r1-r3, r4, r12, lr }
+            mov         lr, pc
+            bx          r0
+            ldmia       sp!, { r1-r3, r4, r12, lr }
+            msr         CPSR_c, #B_Irq | M_IRQ
+            ldr         r14, =LPC_BASE_VIC
+            str         r14, [r14, #VIC_VectAddr]
+            ldmia       sp!, {r0, lr}
+            msr         SPSR_cxsf, lr
+            ldmia       sp!, {pc}^
+
+IRQ_Handler:
+       PUSH    {R0-R3,R12,LR}          @ save register context
+       MRS     LR, SPSR                @ Copy SPSR_irq to LR
+       PUSH    {LR}                    @ Save SPSR_irq
+       MSR     CPSR_c, #0x1F           @ Enable IRQ (Sys Mode)
+       PUSH    {r0, LR}                @ Save LR
+       ldr     lr, =LPC_BASE_VIC
+       ldr     r0, [lr, #VIC_VectAddr]
+       mov     lr, pc
+       bx      r0
+       POP     {r0, LR}                @ Restore LR
+       MSR     CPSR_c, #0x92           @ Disable IRQ (IRQ Mode)
+       POP     {LR}                    @ Restore SPSR_irq to LR
+       MSR     SPSR_cxsf, LR           @ Copy LR to SPSR_irq
+       str     r0, [r1, #VIC_VectAddr]
+       POP     {R0-R3,R12,LR}          @ restore register context
+       SUBS    R15,R14,#0x0004         @ return from interrupt
+
+
+IRQ_Handler:
+	SUB	LR, LR, #4		@ Adjust LR_irq and push it
+	STMFD	SP!, {LR}
+
+	MRS	LR, SPSR		@ Save SPSR need to be saved for nested interrupt
+	STMFD	SP!, {R0-R3,IP,LR}	@ Push scratch/used registers and SPSR
+	LDR	R0, =LPC_BASE_VIC	@ Get the ISR address pointed by VIC_VectAddr
+	LDR	R0, [R0, #VIC_VectAddr]
+	MSR	CPSR_c, #M_SVC		@ Enter SVC mode and enable Irq and Fiq
+
+	STMFD	SP!, {LR}		@ Call the ISR
+	MOV	LR, PC
+	BX	R0
+	LDMIA	SP!, {LR}
+
+	MSR	CPSR_c, #M_IRQ | B_Irq	@ Enter IRQ mode and disable Irq
+	LDMIA	SP!, {R0-R3,IP,LR}	@ Restore scratch/used registers and SPSR
+	MSR	SPSR_cxsf, LR		@ Restore SPSR_irq
+
+	LDR	LR, =LPC_BASE_VIC	@ Issue EOI command to the VIC
+	STR	LR, [LR, #VIC_VectAddr]
+
+	LDMIA	SP!, {PC}^		@ Reruen from the IRQ handler
+
+
+
+	IRQ_Handler:
+       PUSH    {R0-R3,R12,LR}          @ save register context
+       MRS     LR, SPSR                @ Copy SPSR_irq to LR
+       PUSH    {LR}                    @ Save SPSR_irq
+       MSR     CPSR_c, #0x1F           @ Enable IRQ (Sys Mode)
+
+       PUSH    {R0, LR}                @ Save LR
+       LDR     R0, =LPC_BASE_VIC       @ Get the ISR address pointed by VIC_VectAddr
+       LDR     R0, [R0, #VIC_VectAddr]
+       MOV     LR, PC
+       BX      R0
+       POP     {R0, LR}                @ Restore LR
+
+       MSR     CPSR_c, #0x92           @ Disable IRQ (IRQ Mode)
+       POP     {LR}                    @ Restore SPSR_irq to LR
+       MSR     SPSR_cxsf, LR           @ Copy LR to SPSR_irq
+
+@      VICVectAddr = 0;                @ Acknowledge Interrupt
+       MOV     R0,#0
+       STR     R0,[R0,#-0xFD0]
+
+       POP     {R0-R3,R12,LR}          @ restore register context
+       SUBS    R15,R14,#0x0004         @ return from interrupt
+
+       
+#if !(DIR_RETURN_RAW_FILENAME)
+		// strncpy((char*)(dlist->currentEntry).FileName, (const char*)fno.fname, LIST_MAXLENFILENAME);
+		while (*pin && c < LIST_MAXLENFILENAME) {
+			dlist->currentEntry.FileName[c++] = *pin++;
+		}
+		c++;
+		if ( c < LIST_MAXLENFILENAME ) dlist->currentEntry.FileName[c]='\0';
+#else
+		for (i = 0;i < LIST_MAXLENFILENAME-1;i++) dlist->currentEntry.FileName[i]=' ';
+		pin = fno.fname;
+		while (*pin) {
+			if (*pin == '.') {
+				c = 8;
+			} else {
+				if (c < LIST_MAXLENFILENAME) {
+					dlist->currentEntry.FileName[c++] = *pin;
+				}
+			}
+			pin++;
+		}
+#endif

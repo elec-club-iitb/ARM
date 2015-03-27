@@ -1,0 +1,7 @@
+Dependencies for Project 'PWM', Target 'LPC2100': (DO NOT MODIFY !)
+F (.\Startup.s)(0x4CA10766)(--device DARMP --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1" -I "C:\Keil\ARM\INC\Philips" --list ".\Lst\Startup.lst" --xref -o ".\Obj\Startup.o")
+F (.\Retarget.c)(0x4CA10766)(-c --device DARMP -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I "C:\Keil\ARM\INC\Philips" -o ".\Obj\retarget.o" --depend ".\Obj\retarget.d")
+F (.\main.c)(0x4CA10764)(-c --device DARMP -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I "C:\Keil\ARM\INC\Philips" -o ".\Obj\main.o" --depend ".\Obj\main.d")
+F (.\pwm.c)(0x4CA10766)(-c --device DARMP -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I "C:\Keil\ARM\INC\Philips" -o ".\Obj\pwm.o" --depend ".\Obj\pwm.d")
+F (.\irq.c)(0x4CA10764)(-c --device DARMP -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I "C:\Keil\ARM\INC\Philips" -o ".\Obj\irq.o" --depend ".\Obj\irq.d")
+F (.\Abstract.txt)(0x4CA10764)()

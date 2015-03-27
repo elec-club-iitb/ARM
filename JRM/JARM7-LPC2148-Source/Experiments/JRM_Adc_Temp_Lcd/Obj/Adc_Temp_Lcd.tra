@@ -1,0 +1,23 @@
+*** Creating Trace Output File '.\Obj\Adc_Temp_Lcd.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\obj\startup.o"'
+### List of Objects: adding '".\obj\retarget.o"'
+### List of Objects: adding '".\obj\main.o"'
+### List of Objects: adding '".\obj\adc.o"'
+### List of Objects: adding '".\obj\lcd.o"'
+### ADS-LD Command completed:
+--device DARMP ".\obj\startup.o" ".\obj\retarget.o" ".\obj\main.o" ".\obj\adc.o" ".\obj\lcd.o" --library_type=microlib --strict --scatter ".\Obj\Adc_Temp_Lcd.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\Lst\Adc_Temp_Lcd.map" -o ".\Obj\Adc_Temp_Lcd.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\Obj\Adc_Temp_Lcd.axf'
+### ADS-LD Command File: '.\Obj\Adc_Temp_Lcd.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\Obj\Adc_Temp_Lcd.lnp', Handle=0x00000160
+### Writing '.lnp' file
+### ADS-LD Command file '.\Obj\Adc_Temp_Lcd.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

@@ -1,0 +1,4 @@
+--device DARMP ".\obj\startup.o" ".\obj\retarget.o" ".\obj\demo.o" "..\..\OBJ\LIBs.lib" --strict --scatter ".\OBJ\DEMO.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\LST\DEMO.map" -o ".\OBJ\DEMO.axf"

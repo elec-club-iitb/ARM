@@ -1,0 +1,8 @@
+Dependencies for Project 'DEMO', Target 'DEMO': (DO NOT MODIFY !)
+F (.\Startup.s)(0x488E58AA)(--device DARMP --pd "__EVAL SETA 1" -g --16 --apcs=interwork -I..\..\OBJ -I..\..\INC -I "C:\Keil\ARM\INC\Philips" --list ".\LST\Startup.lst" --xref -o ".\OBJ\Startup.o")
+F (.\Retarget.c)(0x488E58AA)(-c --device DARMP -D__EVAL -g -O3 --apcs=interwork -I..\..\OBJ -I..\..\INC -I "C:\Keil\ARM\INC\Philips" -o ".\OBJ\retarget.o" --omf_browse ".\OBJ\retarget.crf" --depend ".\OBJ\retarget.d")
+I (C:\Keil\ARM\RV31\INC\rt_misc.h)(0x4A03575A)
+F (.\DEMO.c)(0x4D1FEA03)(-c --device DARMP -D__EVAL -g -O3 --apcs=interwork -I..\..\OBJ -I..\..\INC -I "C:\Keil\ARM\INC\Philips" -o ".\OBJ\demo.o" --omf_browse ".\OBJ\demo.crf" --depend ".\OBJ\demo.d")
+I (C:\Keil\ARM\INC\Philips\LPC214X.H)(0x4A0355FE)
+I (..\..\INC\Utility.h)(0x488DA1DE)
+F (..\..\OBJ\LIBs.lib)(0x488DA1DE)()

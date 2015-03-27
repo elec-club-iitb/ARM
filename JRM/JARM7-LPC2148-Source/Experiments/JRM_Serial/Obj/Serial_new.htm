@@ -1,0 +1,190 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+<title>Static Call Graph - [.\Obj\Serial_new.axf]</title></head>
+<body><HR>
+<H1>Static Call Graph for image .\Obj\Serial_new.axf</H1><HR>
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, RVCT4.0 [Build 524]: Last Updated: Sun Jan 02 08:39:03 2011
+<BR><P>
+<H3>Maximum Stack Usage =         12 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
+Call chain for Maximum Stack Depth:</H3>
+main &rArr; uart1_puts
+<P>
+<H3>
+Functions with no stack information
+</H3><UL>
+ <LI><a href="#[c37658]">Reset_Handler</a>
+ <LI><a href="#[c378b0]">Undef_Handler</a>
+ <LI><a href="#[c37874]">SWI_Handler</a>
+ <LI><a href="#[c37838]">PAbt_Handler</a>
+ <LI><a href="#[c377fc]">DAbt_Handler</a>
+ <LI><a href="#[c377c0]">IRQ_Handler</a>
+ <LI><a href="#[c37784]">FIQ_Handler</a>
+</UL>
+</UL>
+<P>
+<H3>
+Mutually Recursive functions
+</H3> <LI><a href="#[c378b0]">Undef_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[c378b0]">Undef_Handler</a><BR>
+ <LI><a href="#[c37874]">SWI_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[c37874]">SWI_Handler</a><BR>
+ <LI><a href="#[c37838]">PAbt_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[c37838]">PAbt_Handler</a><BR>
+ <LI><a href="#[c377fc]">DAbt_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[c377fc]">DAbt_Handler</a><BR>
+ <LI><a href="#[c377c0]">IRQ_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[c377c0]">IRQ_Handler</a><BR>
+ <LI><a href="#[c37784]">FIQ_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[c37784]">FIQ_Handler</a><BR>
+</UL>
+<P>
+<H3>
+Function Pointers
+</H3><UL>
+ <LI><a href="#[c37658]">Reset_Handler</a>
+ <LI><a href="#[c378b0]">Undef_Handler</a>
+ <LI><a href="#[c37874]">SWI_Handler</a>
+ <LI><a href="#[c37838]">PAbt_Handler</a>
+ <LI><a href="#[c377fc]">DAbt_Handler</a>
+ <LI><a href="#[c377c0]">IRQ_Handler</a>
+ <LI><a href="#[c37784]">FIQ_Handler</a>
+ <LI><a href="#[c360c8]">__main</a>
+ <LI><a href="#[c367d0]">main</a>
+</UL>
+<P>
+<H3>
+Global Symbols
+</H3>
+<P><STRONG><a name="[c37658]"></a>Reset_Handler</STRONG> (ARM, 0 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[c360c8]"></a>__main</STRONG> (ARM, 0 bytes, Stack size unknown bytes, entry.o(.ARM.Collect$$$$00000000))
+
+<P><STRONG><a name="[c35ba0]"></a>_main_stk</STRONG> (ARM, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
+
+<P><STRONG><a name="[c35ab0]"></a>_main_scatterload</STRONG> (ARM, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
+<BR><BR>[Calls]<UL><LI><a href="#[c357e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload (via Veneer)
+</UL>
+
+<P><STRONG><a name="[c35a74]"></a>__main_after_scatterload</STRONG> (ARM, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
+<BR><BR>[Called By]<UL><LI><a href="#[c357e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload (via Veneer)
+</UL>
+
+<P><STRONG><a name="[c35984]"></a>_main_init</STRONG> (ARM, 0 bytes, Stack size unknown bytes, entry7.o(.ARM.Collect$$$$00000007))
+
+<P><STRONG><a name="[c3680c]"></a>delay</STRONG> (ARM, 52 bytes, Stack size 0 bytes, main.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[c367d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[c367d0]"></a>main</STRONG> (ARM, 44 bytes, Stack size 8 bytes, main.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = main &rArr; uart1_puts
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c366e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart1_puts
+<LI><a href="#[c3671c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart1_init
+<LI><a href="#[c36758]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart0_puts
+<LI><a href="#[c36794]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart0_init
+<LI><a href="#[c3680c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> entry7.o(.ARM.Collect$$$$00000007)
+</UL>
+<P><STRONG><a name="[c36de8]"></a>sendchar</STRONG> (ARM, 80 bytes, Stack size 0 bytes, serial.o(.text), UNUSED)
+
+<P><STRONG><a name="[c3626c]"></a>getkey</STRONG> (ARM, 32 bytes, Stack size 0 bytes, serial.o(.text), UNUSED)
+
+<P><STRONG><a name="[c3671c]"></a>uart1_init</STRONG> (ARM, 76 bytes, Stack size 0 bytes, serial.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[c367d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[c36230]"></a>uart1_putc</STRONG> (ARM, 32 bytes, Stack size 0 bytes, serial.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[c366e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart1_puts
+</UL>
+
+<P><STRONG><a name="[c366e0]"></a>uart1_puts</STRONG> (ARM, 40 bytes, Stack size 4 bytes, serial.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = uart1_puts
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c36230]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart1_putc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c367d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[c36794]"></a>uart0_init</STRONG> (ARM, 76 bytes, Stack size 0 bytes, serial.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[c367d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[c361f4]"></a>uart0_putc</STRONG> (ARM, 32 bytes, Stack size 0 bytes, serial.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[c36758]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart0_puts
+</UL>
+
+<P><STRONG><a name="[c36758]"></a>uart0_puts</STRONG> (ARM, 40 bytes, Stack size 4 bytes, serial.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = uart0_puts
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c361f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart0_putc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c367d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[c357e0]"></a>__scatterload</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, init.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[c35768]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_call_via_r3
+<LI><a href="#[c35a74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main_after_scatterload (via Veneer)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c35ab0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_main_scatterload (via Veneer)
+</UL>
+
+<P><STRONG><a name="[c357a4]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
+
+<P><STRONG><a name="[c35768]"></a>__ARM_common_call_via_r3</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, init.o(i.__ARM_common_call_via_r3))
+<BR><BR>[Called By]<UL><LI><a href="#[c357e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+</UL>
+
+<P><STRONG><a name="[c35420]"></a>__scatterload_copy</STRONG> (ARM, 24 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[c35420]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_copy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c35420]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_copy
+</UL>
+
+<P><STRONG><a name="[c353e4]"></a>__scatterload_null</STRONG> (ARM, 4 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
+
+<P><STRONG><a name="[c353a8]"></a>__scatterload_zeroinit</STRONG> (ARM, 24 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
+<P>
+<H3>
+Local Symbols
+</H3>
+<P><STRONG><a name="[c378b0]"></a>Undef_Handler</STRONG> (ARM, 4 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[c378b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Undef_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c378b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Undef_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[c37874]"></a>SWI_Handler</STRONG> (ARM, 4 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[c37874]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SWI_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c37874]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SWI_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[c37838]"></a>PAbt_Handler</STRONG> (ARM, 4 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[c37838]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PAbt_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c37838]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PAbt_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[c377fc]"></a>DAbt_Handler</STRONG> (ARM, 4 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[c377fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DAbt_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c377fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DAbt_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[c377c0]"></a>IRQ_Handler</STRONG> (ARM, 4 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[c377c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IRQ_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c377c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IRQ_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[c37784]"></a>FIQ_Handler</STRONG> (ARM, 4 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[c37784]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FIQ_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c37784]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FIQ_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL><P>
+<H3>
+Undefined Global Symbols
+</H3><HR></body></html>

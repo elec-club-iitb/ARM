@@ -1,0 +1,4 @@
+--device DARMP "startup.o" "sevensegment.o" --strict --scatter "led_blink.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\led_blink.map" -o "led_blink.axf"

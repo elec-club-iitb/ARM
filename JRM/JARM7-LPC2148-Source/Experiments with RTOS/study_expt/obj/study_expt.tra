@@ -1,0 +1,42 @@
+*** Creating Trace Output File '.\obj\study_expt.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\obj\app.o"'
+### List of Objects: adding '".\obj\lcd_app.o"'
+### List of Objects: adding '".\obj\8x8.o"'
+### List of Objects: adding '".\obj\64x128glcd.o"'
+### List of Objects: adding '".\obj\adc.o"'
+### List of Objects: adding '".\obj\bsp.o"'
+### List of Objects: adding '".\obj\vectors.o"'
+### List of Objects: adding '".\obj\init.o"'
+### List of Objects: adding '".\obj\cpu_a.o"'
+### List of Objects: adding '".\obj\os_core.o"'
+### List of Objects: adding '".\obj\os_flag.o"'
+### List of Objects: adding '".\obj\os_mbox.o"'
+### List of Objects: adding '".\obj\os_mem.o"'
+### List of Objects: adding '".\obj\os_mutex.o"'
+### List of Objects: adding '".\obj\os_q.o"'
+### List of Objects: adding '".\obj\os_sem.o"'
+### List of Objects: adding '".\obj\os_task.o"'
+### List of Objects: adding '".\obj\os_time.o"'
+### List of Objects: adding '".\obj\os_tmr.o"'
+### List of Objects: adding '".\obj\os_cpu_a.o"'
+### List of Objects: adding '".\obj\os_cpu_c.o"'
+### List of Objects: adding '".\obj\os_dbg.o"'
+### List of Objects: adding '".\obj\lib_mem.o"'
+### List of Objects: adding '".\obj\lib_str.o"'
+### ADS-LD Command completed:
+--device DARMP ".\obj\app.o" ".\obj\lcd_app.o" ".\obj\8x8.o" ".\obj\64x128glcd.o" ".\obj\adc.o" ".\obj\bsp.o" ".\obj\vectors.o" ".\obj\init.o" ".\obj\cpu_a.o" ".\obj\os_core.o" ".\obj\os_flag.o" ".\obj\os_mbox.o" ".\obj\os_mem.o" ".\obj\os_mutex.o" ".\obj\os_q.o" ".\obj\os_sem.o" ".\obj\os_task.o" ".\obj\os_time.o" ".\obj\os_tmr.o" ".\obj\os_cpu_a.o" ".\obj\os_cpu_c.o" ".\obj\os_dbg.o" ".\obj\lib_mem.o" ".\obj\lib_str.o" --strict --scatter "..\BSP\LPC2148_Flash.scat" 
+--entry ResetHndlr --autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\list\study_expt.map" -o ".\obj\study_expt.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\obj\study_expt.axf'
+### ADS-LD Command File: '.\obj\study_expt.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\obj\study_expt.lnp', Handle=0x0000027C
+### Writing '.lnp' file
+### ADS-LD Command file '.\obj\study_expt.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

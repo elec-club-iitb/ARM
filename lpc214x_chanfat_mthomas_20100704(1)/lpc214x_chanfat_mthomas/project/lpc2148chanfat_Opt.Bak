@@ -1,0 +1,60 @@
+### uVision2 Project, (C) Keil Software
+### Do not modify !
+
+ cExt (*.c)
+ aExt (*.s*; *.src; *.a*)
+ oExt (*.obj)
+ lExt (*.lib)
+ tExt (*.txt; *.h; *.inc)
+ pExt (*.plm)
+ CppX (*.cpp)
+ DaveTm { 0,0,0,0,0,0,0,0 }
+
+Target (Target 1), 0x0003 // Tools: 'ARM-GNU'
+GRPOPT 1,(Source Group 1),1,0,0
+GRPOPT 2,(other),1,0,0
+
+OPTFFF 1,1,1,0,0,0,0,0,<.\rtc.c><rtc.c> 
+OPTFFF 1,2,1,0,0,1,9,0,<.\comm.c><comm.c> 
+OPTFFF 1,3,1,134217728,0,286,300,0,<.\main.c><main.c> 
+OPTFFF 1,4,1,0,0,0,0,0,<.\monitor.c><monitor.c> 
+OPTFFF 1,5,2,0,0,0,0,0,<.\asmfunc.S><asmfunc.S> 
+OPTFFF 1,6,1,0,0,0,0,0,<.\fat_sd/sd_spi_lpc2000.c><sd_spi_lpc2000.c> 
+OPTFFF 1,7,1,0,0,0,0,0,<.\fat_sd/fattime.c><fattime.c> 
+OPTFFF 1,8,1,234881024,0,70,80,0,<.\fat_sd/ff.c><ff.c> 
+OPTFFF 1,9,1,33554432,0,0,0,0,<.\fat_sd/option/ccsbcs.c><ccsbcs.c> 
+OPTFFF 1,10,1,167772160,0,0,0,0,<.\efsl_glue_test.c><efsl_glue_test.c> 
+OPTFFF 1,11,1,0,0,0,0,0,<.\efsl_glue/efsl_glue.c><efsl_glue.c> 
+OPTFFF 1,12,1,0,0,0,0,0,<.\interrupt.c><interrupt.c> 
+OPTFFF 2,13,5,855638016,0,4,12,0,<.\scratchpad.txt><scratchpad.txt> 
+OPTFFF 2,14,5,0,0,0,0,0,<.\FLASH_RUN\lpc2148chanfat.lss><lpc2148chanfat.lss> 
+OPTFFF 2,15,5,872415232,0,1,15,0,<.\readme.txt><readme.txt> 
+OPTFFF 2,16,5,0,0,0,0,0,<.\LPC2148_flash.ld><LPC2148_flash.ld> 
+OPTFFF 2,17,5,0,0,0,0,0,<.\proj_objdump.cmd><proj_objdump.cmd> 
+
+ExtF <C:\Users\Ajinkya\Downloads\lpc214x_chanfat_mthomas_20100704(1)\lpc214x_chanfat_mthomas\project\fat_sd\ff.h> 562,566,0,{ 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 }
+ExtF <C:\Users\Ajinkya\Downloads\lpc214x_chanfat_mthomas_20100704(1)\lpc214x_chanfat_mthomas\project\fat_sd\diskio.h> 1,6,0,{ 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 }
+
+TARGOPT 1, (Target 1)
+ ARMCLK=12000000
+  OPTTT 1,1,1,0
+  OPTHX 1,65535,0,0,0
+  OPTLX 120,65,8,<.\FLASH_RUN\>
+  OPTOX 16
+  OPTLT 1,1,1,0,1,1,0,1,0,0,0,0
+  OPTXL 1,1,1,1,1,1,1,0,0
+  OPTFL 1,0,1
+  OPTAX 8
+  OPTBL 0,(Data Sheet)<DATASHTS\PHILIPS\LPC2141_42_44_46_48.PDF>
+  OPTBL 1,(User Manual)<DATASHTS\PHILIPS\user_manual_LPC214x.pdf>
+  OPTDL (SARM.DLL)(-cLPC2100)(DARMP.DLL)(-pLPC2148)(SARM.DLL)()(TARMP.DLL)(-pLPC2148)
+  OPTDBG 48126,0,()()()()()()()()()() (BIN\UL2ARM.DLL)()()()
+  OPTKEY 0,(DLGTARM)((134=233,153,428,339,0)(135=241,161,463,268,0)(153=425,405,746,726,0)(154=-1,-1,-1,-1,0)(108=-1,-1,-1,-1,0)(106=-1,-1,-1,-1,0)(105=-1,-1,-1,-1,0)(145=-1,-1,-1,-1,0)(147=-1,-1,-1,-1,0)(80=278,202,779,605,0)(104=293,218,599,630,0)(100=-1,-1,-1,-1,0)(101=-1,-1,-1,-1,0)(160=-1,-1,-1,-1,0)(161=-1,-1,-1,-1,0)(113=323,251,698,802,0)(112=-1,-1,-1,-1,0)(137=-1,-1,-1,-1,0)(138=-1,-1,-1,-1,0)(117=-1,-1,-1,-1,0)(146=65,257,371,681,1)(110=-1,-1,-1,-1,0)(111=-1,-1,-1,-1,0)(114=-1,-1,-1,-1,0)(141=-1,-1,-1,-1,0)(142=-1,-1,-1,-1,0)(143=-1,-1,-1,-1,0)(144=-1,-1,-1,-1,0)(115=-1,-1,-1,-1,0)(116=-1,-1,-1,-1,0))
+  OPTKEY 0,(UL2ARM)(-UU0589C6E -O14 -S0 -C0 -N00("ARM7TDMI-S Core") -D00(4F1F0F0F) -L00(4) -FO15 -FD40000000 -FC800 -FN1 -FF0LPC_IAP2_512 -FS00 -FL07D000)
+  OPTKEY 0,(DLGDARM)((134=-1,-1,-1,-1,0)(135=-1,-1,-1,-1,0)(153=248,170,569,491,0)(154=248,170,569,491,0)(108=256,178,403,291,0)(106=-1,-1,-1,-1,0)(105=-1,-1,-1,-1,0)(145=-1,-1,-1,-1,0)(147=-1,-1,-1,-1,0)(80=278,202,779,605,0)(104=293,218,599,630,0)(100=-1,-1,-1,-1,0)(101=-1,-1,-1,-1,0)(160=-1,-1,-1,-1,0)(161=-1,-1,-1,-1,0)(113=46,557,421,1109,1)(112=-1,-1,-1,-1,0)(137=-1,-1,-1,-1,0)(138=-1,-1,-1,-1,0)(117=-1,-1,-1,-1,0)(146=361,291,667,715,0)(110=368,300,884,797,0)(111=-1,-1,-1,-1,0)(114=-1,-1,-1,-1,0)(141=-1,-1,-1,-1,0)(142=-1,-1,-1,-1,0)(143=-1,-1,-1,-1,0)(144=-1,-1,-1,-1,0)(115=158,600,665,980,0)(116=-1,-1,-1,-1,0))
+  OPTKEY 0,(ARMDBGFLAGS)(-T5F)
+  OPTDF 0x92
+  OPTLE <>
+  OPTLC <>
+EndOpt
+

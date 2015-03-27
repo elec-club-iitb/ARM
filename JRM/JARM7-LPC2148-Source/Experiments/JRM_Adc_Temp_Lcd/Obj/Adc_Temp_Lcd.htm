@@ -1,0 +1,316 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+<title>Static Call Graph - [.\Obj\Adc_Temp_Lcd.axf]</title></head>
+<body><HR>
+<H1>Static Call Graph for image .\Obj\Adc_Temp_Lcd.axf</H1><HR>
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, RVCT4.0 [Build 524]: Last Updated: Wed Oct 20 10:26:29 2010
+<BR><P>
+<H3>Maximum Stack Usage =         84 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
+Call chain for Maximum Stack Depth:</H3>
+main &rArr; process_adc &rArr; lcd_putstring &rArr; lcd_gotoxy &rArr; lcd_command_write &rArr; wait_lcd
+<P>
+<H3>
+Functions with no stack information
+</H3><UL>
+ <LI><a href="#[c47658]">Reset_Handler</a>
+ <LI><a href="#[c478b0]">Undef_Handler</a>
+ <LI><a href="#[c47874]">SWI_Handler</a>
+ <LI><a href="#[c47838]">PAbt_Handler</a>
+ <LI><a href="#[c477fc]">DAbt_Handler</a>
+ <LI><a href="#[c477c0]">IRQ_Handler</a>
+ <LI><a href="#[c47784]">FIQ_Handler</a>
+</UL>
+</UL>
+<P>
+<H3>
+Mutually Recursive functions
+</H3> <LI><a href="#[c478b0]">Undef_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[c478b0]">Undef_Handler</a><BR>
+ <LI><a href="#[c47874]">SWI_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[c47874]">SWI_Handler</a><BR>
+ <LI><a href="#[c47838]">PAbt_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[c47838]">PAbt_Handler</a><BR>
+ <LI><a href="#[c477fc]">DAbt_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[c477fc]">DAbt_Handler</a><BR>
+ <LI><a href="#[c477c0]">IRQ_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[c477c0]">IRQ_Handler</a><BR>
+ <LI><a href="#[c47784]">FIQ_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[c47784]">FIQ_Handler</a><BR>
+</UL>
+<P>
+<H3>
+Function Pointers
+</H3><UL>
+ <LI><a href="#[c47658]">Reset_Handler</a>
+ <LI><a href="#[c478b0]">Undef_Handler</a>
+ <LI><a href="#[c47874]">SWI_Handler</a>
+ <LI><a href="#[c47838]">PAbt_Handler</a>
+ <LI><a href="#[c477fc]">DAbt_Handler</a>
+ <LI><a href="#[c477c0]">IRQ_Handler</a>
+ <LI><a href="#[c47784]">FIQ_Handler</a>
+ <LI><a href="#[c45c18]">__main</a>
+ <LI><a href="#[c46884]">main</a>
+ <LI><a href="#[c3ffc0]">_sputc</a>
+</UL>
+<P>
+<H3>
+Global Symbols
+</H3>
+<P><STRONG><a name="[c47658]"></a>Reset_Handler</STRONG> (ARM, 0 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[c45c18]"></a>__main</STRONG> (ARM, 0 bytes, Stack size unknown bytes, entry.o(.ARM.Collect$$$$00000000))
+
+<P><STRONG><a name="[c3bf88]"></a>_main_stk</STRONG> (ARM, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
+
+<P><STRONG><a name="[c3be98]"></a>_main_scatterload</STRONG> (ARM, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
+<BR><BR>[Calls]<UL><LI><a href="#[c3b2a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+</UL>
+
+<P><STRONG><a name="[c3be5c]"></a>__main_after_scatterload</STRONG> (ARM, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
+<BR><BR>[Called By]<UL><LI><a href="#[c3b2a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+</UL>
+
+<P><STRONG><a name="[c3bd6c]"></a>_main_init</STRONG> (ARM, 0 bytes, Stack size unknown bytes, entry7.o(.ARM.Collect$$$$00000007))
+
+<P><STRONG><a name="[c46938]"></a>wait</STRONG> (ARM, 52 bytes, Stack size 0 bytes, main.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[c46884]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[c468fc]"></a>process_temp_sensor_adc</STRONG> (ARM, 80 bytes, Stack size 24 bytes, main.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 76<LI>Call Chain = process_temp_sensor_adc &rArr; lcd_putstring &rArr; lcd_gotoxy &rArr; lcd_command_write &rArr; wait_lcd
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c3fcf0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
+<LI><a href="#[c465f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_putstring
+<LI><a href="#[c466e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_read
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c46884]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[c468c0]"></a>process_adc</STRONG> (ARM, 80 bytes, Stack size 24 bytes, main.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 76<LI>Call Chain = process_adc &rArr; lcd_putstring &rArr; lcd_gotoxy &rArr; lcd_command_write &rArr; wait_lcd
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c3fcf0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
+<LI><a href="#[c465f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_putstring
+<LI><a href="#[c466e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_read
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c46884]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[c46884]"></a>main</STRONG> (ARM, 48 bytes, Stack size 8 bytes, main.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 84<LI>Call Chain = main &rArr; process_adc &rArr; lcd_putstring &rArr; lcd_gotoxy &rArr; lcd_command_write &rArr; wait_lcd
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c4662c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_clear
+<LI><a href="#[c46668]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_lcd
+<LI><a href="#[c466a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_adc0
+<LI><a href="#[c468c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;process_adc
+<LI><a href="#[c468fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;process_temp_sensor_adc
+<LI><a href="#[c46938]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wait
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> entry7.o(.ARM.Collect$$$$00000007)
+</UL>
+<P><STRONG><a name="[c466a4]"></a>init_adc0</STRONG> (ARM, 48 bytes, Stack size 0 bytes, adc.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[c46884]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[c4626c]"></a>init_adc1</STRONG> (ARM, 4 bytes, Stack size 0 bytes, adc.o(.text), UNUSED)
+
+<P><STRONG><a name="[c466e0]"></a>adc_read</STRONG> (ARM, 180 bytes, Stack size 0 bytes, adc.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[c468c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;process_adc
+<LI><a href="#[c468fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;process_temp_sensor_adc
+</UL>
+
+<P><STRONG><a name="[c45ee8]"></a>delay</STRONG> (ARM, 52 bytes, Stack size 0 bytes, lcd.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[c45e70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_command_write
+<LI><a href="#[c45eac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wait_lcd
+<LI><a href="#[c46668]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_lcd
+</UL>
+
+<P><STRONG><a name="[c45eac]"></a>wait_lcd</STRONG> (ARM, 120 bytes, Stack size 4 bytes, lcd.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = wait_lcd
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c45ee8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c45df8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_data_write
+<LI><a href="#[c45e70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_command_write
+</UL>
+
+<P><STRONG><a name="[c45e70]"></a>lcd_command_write</STRONG> (ARM, 232 bytes, Stack size 16 bytes, lcd.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = lcd_command_write &rArr; wait_lcd
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c45eac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wait_lcd
+<LI><a href="#[c45ee8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c45d80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_gotoxy
+<LI><a href="#[c4662c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_clear
+<LI><a href="#[c46668]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_lcd
+</UL>
+
+<P><STRONG><a name="[c45e34]"></a>set_lcd_port_output</STRONG> (ARM, 88 bytes, Stack size 0 bytes, lcd.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[c46668]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_lcd
+</UL>
+
+<P><STRONG><a name="[c4662c]"></a>lcd_clear</STRONG> (ARM, 16 bytes, Stack size 4 bytes, lcd.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = lcd_clear &rArr; lcd_command_write &rArr; wait_lcd
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c45e70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_command_write
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c46668]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_lcd
+<LI><a href="#[c46884]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[c45df8]"></a>lcd_data_write</STRONG> (ARM, 232 bytes, Stack size 16 bytes, lcd.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = lcd_data_write &rArr; wait_lcd
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c45eac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wait_lcd
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c45dbc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_putchar
+</UL>
+
+<P><STRONG><a name="[c45dbc]"></a>lcd_putchar</STRONG> (ARM, 20 bytes, Stack size 8 bytes, lcd.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = lcd_putchar &rArr; lcd_data_write &rArr; wait_lcd
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c45df8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_data_write
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c465f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_putstring
+</UL>
+
+<P><STRONG><a name="[c45d80]"></a>lcd_gotoxy</STRONG> (ARM, 92 bytes, Stack size 16 bytes, lcd.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = lcd_gotoxy &rArr; lcd_command_write &rArr; wait_lcd
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c45e70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_command_write
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c465f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_putstring
+<LI><a href="#[c46668]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_lcd
+</UL>
+
+<P><STRONG><a name="[c465f0]"></a>lcd_putstring</STRONG> (ARM, 76 bytes, Stack size 16 bytes, lcd.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = lcd_putstring &rArr; lcd_gotoxy &rArr; lcd_command_write &rArr; wait_lcd
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c45d80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_gotoxy
+<LI><a href="#[c45dbc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_putchar
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c45d44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_line_clear
+<LI><a href="#[c46668]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_lcd
+<LI><a href="#[c468c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;process_adc
+<LI><a href="#[c468fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;process_temp_sensor_adc
+</UL>
+
+<P><STRONG><a name="[c45d44]"></a>lcd_line_clear</STRONG> (ARM, 68 bytes, Stack size 28 bytes, lcd.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[c465f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_putstring
+</UL>
+
+<P><STRONG><a name="[c46668]"></a>init_lcd</STRONG> (ARM, 104 bytes, Stack size 4 bytes, lcd.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = init_lcd &rArr; lcd_putstring &rArr; lcd_gotoxy &rArr; lcd_command_write &rArr; wait_lcd
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c45d80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_gotoxy
+<LI><a href="#[c45e34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_lcd_port_output
+<LI><a href="#[c45e70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_command_write
+<LI><a href="#[c45ee8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay
+<LI><a href="#[c465f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_putstring
+<LI><a href="#[c4662c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_clear
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c46884]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[c3ba60]"></a>__aeabi_uidiv</STRONG> (ARM, 0 bytes, Stack size 4 bytes, uidiv.o(.text), UNUSED)
+
+<P><STRONG><a name="[c3ba24]"></a>__aeabi_uidivmod</STRONG> (ARM, 60 bytes, Stack size 4 bytes, uidiv.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[c400b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+</UL>
+
+<P><STRONG><a name="[c3b2a4]"></a>__scatterload</STRONG> (ARM, 40 bytes, Stack size 0 bytes, init.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[c3be5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main_after_scatterload
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c3be98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_main_scatterload
+</UL>
+
+<P><STRONG><a name="[c3b268]"></a>__scatterload_rt2</STRONG> (ARM, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
+
+<P><STRONG><a name="[c3fd68]"></a>__0sprintf$6</STRONG> (ARM, 56 bytes, Stack size 24 bytes, printf6.o(i.__0sprintf$6), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[c3ffc0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sputc
+<LI><a href="#[c400b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+</UL>
+
+<P><STRONG><a name="[c3fd2c]"></a>__1sprintf$6</STRONG> (ARM, 0 bytes, Stack size 24 bytes, printf6.o(i.__0sprintf$6), UNUSED)
+
+<P><STRONG><a name="[c3fcf0]"></a>__2sprintf</STRONG> (ARM, 0 bytes, Stack size 24 bytes, printf6.o(i.__0sprintf$6))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = __2sprintf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c468c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;process_adc
+<LI><a href="#[c468fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;process_temp_sensor_adc
+</UL>
+
+<P><STRONG><a name="[c3ab24]"></a>__scatterload_copy</STRONG> (ARM, 24 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[c3ab24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_copy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c3ab24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_copy
+</UL>
+
+<P><STRONG><a name="[c3aae8]"></a>__scatterload_null</STRONG> (ARM, 4 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
+
+<P><STRONG><a name="[c3aaac]"></a>__scatterload_zeroinit</STRONG> (ARM, 24 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
+<P>
+<H3>
+Local Symbols
+</H3>
+<P><STRONG><a name="[c478b0]"></a>Undef_Handler</STRONG> (ARM, 4 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[c478b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Undef_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c478b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Undef_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[c47874]"></a>SWI_Handler</STRONG> (ARM, 4 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[c47874]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SWI_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c47874]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SWI_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[c47838]"></a>PAbt_Handler</STRONG> (ARM, 4 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[c47838]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PAbt_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c47838]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PAbt_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[c477fc]"></a>DAbt_Handler</STRONG> (ARM, 4 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[c477fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DAbt_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c477fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DAbt_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[c477c0]"></a>IRQ_Handler</STRONG> (ARM, 4 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[c477c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IRQ_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c477c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IRQ_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[c47784]"></a>FIQ_Handler</STRONG> (ARM, 4 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[c47784]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FIQ_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c47784]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FIQ_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[c400b0]"></a>_printf_core</STRONG> (ARM, 1128 bytes, Stack size 96 bytes, printf6.o(i._printf_core), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[c3ba24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
+<LI><a href="#[c40038]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_pre_padding
+<LI><a href="#[c40074]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_post_padding
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c3fd68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__0sprintf$6
+</UL>
+
+<P><STRONG><a name="[c40074]"></a>_printf_post_padding</STRONG> (ARM, 68 bytes, Stack size 24 bytes, printf6.o(i._printf_post_padding), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[c400b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+</UL>
+
+<P><STRONG><a name="[c40038]"></a>_printf_pre_padding</STRONG> (ARM, 80 bytes, Stack size 24 bytes, printf6.o(i._printf_pre_padding), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[c400b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+</UL>
+
+<P><STRONG><a name="[c3ffc0]"></a>_sputc</STRONG> (ARM, 20 bytes, Stack size 0 bytes, printf6.o(i._sputc))
+<BR><BR>[Called By]<UL><LI><a href="#[c3fd68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__0sprintf$6
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> printf6.o(i.__0sprintf$6)
+</UL><P>
+<H3>
+Undefined Global Symbols
+</H3><HR></body></html>

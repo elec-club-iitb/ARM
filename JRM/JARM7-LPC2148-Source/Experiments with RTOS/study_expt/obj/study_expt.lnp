@@ -1,0 +1,4 @@
+--device DARMP ".\obj\app.o" ".\obj\lcd_app.o" ".\obj\8x8.o" ".\obj\64x128glcd.o" ".\obj\adc.o" ".\obj\bsp.o" ".\obj\vectors.o" ".\obj\init.o" ".\obj\cpu_a.o" ".\obj\os_core.o" ".\obj\os_flag.o" ".\obj\os_mbox.o" ".\obj\os_mem.o" ".\obj\os_mutex.o" ".\obj\os_q.o" ".\obj\os_sem.o" ".\obj\os_task.o" ".\obj\os_time.o" ".\obj\os_tmr.o" ".\obj\os_cpu_a.o" ".\obj\os_cpu_c.o" ".\obj\os_dbg.o" ".\obj\lib_mem.o" ".\obj\lib_str.o" --strict --scatter "..\BSP\LPC2148_Flash.scat" 
+--entry ResetHndlr --autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\list\study_expt.map" -o ".\obj\study_expt.axf"

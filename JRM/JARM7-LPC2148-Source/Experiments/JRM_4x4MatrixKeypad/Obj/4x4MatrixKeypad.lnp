@@ -1,0 +1,4 @@
+--device DARMP ".\obj\startup.o" ".\obj\retarget.o" ".\obj\main.o" ".\obj\buzzer.o" ".\obj\keypad.o" ".\obj\lcd.o" ".\obj\keypad_isr.o" --library_type=microlib --strict --scatter ".\Obj\4x4MatrixKeypad.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\Lst\4x4MatrixKeypad.map" -o ".\Obj\4x4MatrixKeypad.axf"

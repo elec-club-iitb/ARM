@@ -1,0 +1,3 @@
+Experiment 5
+
+Reading ADC and plot the graph using graphics LCD.

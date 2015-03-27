@@ -1,0 +1,2 @@
+
+Transmission from kit and reception from PC using serial port.

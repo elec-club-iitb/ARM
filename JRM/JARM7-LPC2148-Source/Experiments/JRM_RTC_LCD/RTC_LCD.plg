@@ -1,0 +1,30 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+G:\001 - jarm7board\JARM7-KIT-CD\Source\Experiments\JRM_RTC_LCD\RTC_LCD.uvproj
+Project File Date:  05/15/2010
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling Startup.s...
+compiling rtc_lcd.c...
+rtc_lcd.c(46): warning:  #223-D: function "sprintf" declared implicitly
+compiling lcd.c...
+lcd.c(52): warning:  #61-D: integer operation result is out of range
+lcd.c(52): warning:  #68-D: integer conversion resulted in a change of sign
+lcd.c(55): warning:  #61-D: integer operation result is out of range
+lcd.c(67): warning:  #61-D: integer operation result is out of range
+lcd.c(71): warning:  #61-D: integer operation result is out of range
+lcd.c(78): warning:  #61-D: integer operation result is out of range
+lcd.c(83): warning:  #61-D: integer operation result is out of range
+lcd.c(94): warning:  #61-D: integer operation result is out of range
+lcd.c(128): warning:  #61-D: integer operation result is out of range
+lcd.c(131): warning:  #61-D: integer operation result is out of range
+lcd.c(137): warning:  #61-D: integer operation result is out of range
+lcd.c(140): warning:  #61-D: integer operation result is out of range
+linking...
+Program Size: Code=2812 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"RTC_LCD.axf" - 0 Error(s), 13 Warning(s).

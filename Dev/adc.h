@@ -1,0 +1,6 @@
+//adc library header file
+#ifndef ADC_H
+	#define ADC_H
+	
+	
+#endif
