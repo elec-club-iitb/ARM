@@ -168,12 +168,12 @@
             <UseExternalTool>1</UseExternalTool>
             <RunIndependent>0</RunIndependent>
             <UpdateFlashBeforeDebugging>1</UpdateFlashBeforeDebugging>
-            <Capability>0</Capability>
-            <DriverSelection>-1</DriverSelection>
+            <Capability>1</Capability>
+            <DriverSelection>4096</DriverSelection>
           </Flash1>
           <bUseTDR>1</bUseTDR>
           <Flash2>BIN\UL2ARM.DLL</Flash2>
-          <Flash3>LPC210x_ISP.EXE ("#H" ^X $D COM1: 38400 1)</Flash3>
+          <Flash3>"LPC210x_ISP.EXE" ("#H" ^X $D COM1: 38400 1)</Flash3>
           <Flash4></Flash4>
           <pFcarmOut></pFcarmOut>
           <pFcarmGrp></pFcarmGrp>
@@ -465,6 +465,31 @@
               <FileName>spi1.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>.\spi1.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>i2c.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\i2c.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>INFO_TODO.txt</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\INFO_TODO.txt</FilePath>
+            </File>
+            <File>
+              <FileName>process.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\process.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>adc.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\adc.h</FilePath>
+            </File>
+            <File>
+              <FileName>dac.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\dac.cpp</FilePath>
             </File>
           </Files>
         </Group>

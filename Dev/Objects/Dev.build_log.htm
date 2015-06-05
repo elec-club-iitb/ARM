@@ -5,10 +5,10 @@
 <h2>Tool Versions:</h2>
 IDE-Version: µVision V5.14.0.0
 Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: Ajinkya Gorad, Hewlett-Packard, LIC=----
+License Information: Ajinkya Gorad Hewlett-Packard Flex license: MDK-ARM Professional (Eval) (mdk_pro_eval) Operation stops: 12 Jun 2015
  
 Tool Versions:
-Toolchain:       MDK-Lite  Version: 5.14.0.0
+Toolchain:       MDK-ARM Professional (Eval)  Version: 5.14.0.0
 Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
 C Compiler:      Armcc.exe V5.05 update 1 (build 106)
 Assembler:       Armasm.exe V5.05 update 1 (build 106)
@@ -22,7 +22,7 @@ Dialog DLL:      TARMP.DLL V1.51
  
 <h2>Project:</h2>
 C:\Users\Ajinkya\Documents\ARM\Dev\Dev.uvproj
-Project File Date:  03/13/2015
+Project File Date:  06/04/2015
 
 <h2>Output:</h2>
 Rebuild target 'LPC2148'
@@ -36,27 +36,33 @@ delay.h(19): warning:  #1-D: last line of file ends without a newline
   #endif
 spi1.h(32): warning:  #1-D: last line of file ends without a newline
   #endif
-ILI9225.h(306): warning:  #1-D: last line of file ends without a newline
+ILI9225.h(310): warning:  #1-D: last line of file ends without a newline
   #endif
-main.cpp(26): warning:  #177-D: variable "i" was declared but never referenced
-        unsigned int i=50;
-main.cpp(27): warning:  #177-D: variable "str" was declared but never referenced
-        char str[]="Hello Universe";
-main.cpp(28): warning:  #177-D: variable "p" was declared but never referenced
-        int p=1;
+process.h(18): warning:  #1-D: last line of file ends without a newline
+  #endif
+dac.h(11): warning:  #1-D: last line of file ends without a newline
+  #endif
+main.cpp(188): warning:  #177-D: variable "data" was declared but never referenced
+        char data;
 main.cpp: 8 warnings, 0 errors
 compiling sampleProgram.cpp...
 sampleProgram.cpp(19): warning:  #1-D: last line of file ends without a newline
   #endif
 sampleProgram.cpp: 1 warning, 0 errors
 compiling uart.cpp...
-uart.cpp(73): warning:  #1-D: last line of file ends without a newline
+uart.cpp(90): warning:  #1166-D: returning pointer to local variable
+                                return buffer;
+uart.cpp(94): warning:  #1-D: last line of file ends without a newline
   }
-uart.cpp: 1 warning, 0 errors
+uart.cpp(78): warning:  #177-D: variable "i" was declared but never referenced
+        int i=0;
+uart.cpp: 3 warnings, 0 errors
 compiling adc.cpp...
-adc.cpp(1): warning:  #1-D: last line of file ends without a newline
-  //adc library
-adc.cpp: 1 warning, 0 errors
+adc.cpp(12): warning:  #61-D: integer operation result is out of range
+        while((AD0GDR&(1<<31)) == 0);
+adc.cpp(12): warning:  #68-D: integer conversion resulted in a change of sign
+        while((AD0GDR&(1<<31)) == 0);
+adc.cpp: 2 warnings, 0 errors
 compiling spi.cpp...
 pin.h(22): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -74,15 +80,13 @@ pin.h(22): warning:  #1-D: last line of file ends without a newline
   #endif
 pin.cpp: 1 warning, 0 errors
 compiling ILI9229.cpp...
-pin.h(22): warning:  #1-D: last line of file ends without a newline
-  #endif
-spi.h(39): warning:  #1-D: last line of file ends without a newline
-  #endif
 spi1.h(32): warning:  #1-D: last line of file ends without a newline
+  #endif
+pin.h(22): warning:  #1-D: last line of file ends without a newline
   #endif
 delay.h(19): warning:  #1-D: last line of file ends without a newline
   #endif
-ILI9225.h(306): warning:  #1-D: last line of file ends without a newline
+ILI9225.h(310): warning:  #1-D: last line of file ends without a newline
   #endif
 ILI9229.cpp(273): warning:  #68-D: integer conversion resulted in a change of sign
         int ddF_y = -2 * r;
@@ -92,7 +96,7 @@ ILI9229.cpp(375): warning:  #186-D: pointless comparison of unsigned integer wit
         if((x1 < 0) || (x1 >= _maxX) || (y1 < 0) || (y1 >= _maxY)) return;
 ILI9229.cpp(616): warning:  #177-D: variable "k" was declared but never referenced
         char h, i, j, k;
-ILI9229.cpp: 9 warnings, 0 errors
+ILI9229.cpp: 8 warnings, 0 errors
 compiling spi1.cpp...
 spi1.h(32): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -101,10 +105,26 @@ spi1.cpp(37): warning:  #940-D: missing return statement at end of non-void func
 spi1.cpp(49): warning:  #1-D: last line of file ends without a newline
   }
 spi1.cpp: 3 warnings, 0 errors
+compiling i2c.cpp...
+i2c.cpp(1): warning:  #1-D: last line of file ends without a newline
+  #include "i2c.h"
+i2c.h(11): warning:  #1-D: last line of file ends without a newline
+  #endif
+i2c.cpp: 2 warnings, 0 errors
+compiling process.cpp...
+process.h(18): warning:  #1-D: last line of file ends without a newline
+  #endif
+process.cpp: 1 warning, 0 errors
+compiling dac.cpp...
+dac.h(11): warning:  #1-D: last line of file ends without a newline
+  #endif
+dac.cpp(14): warning:  #1-D: last line of file ends without a newline
+  }
+dac.cpp: 2 warnings, 0 errors
 linking...
-Program Size: Code=7092 RO-data=696 RW-data=0 ZI-data=1280  
+Program Size: Code=18560 RO-data=1100 RW-data=12 ZI-data=2868  
 FromELF: creating hex file...
-".\Objects\Dev.axf" - 0 Error(s), 27 Warning(s).
+".\Objects\Dev.axf" - 0 Error(s), 34 Warning(s).
 </pre>
 </body>
 </html>

@@ -11,7 +11,10 @@
 ".\objects\pin.o"
 ".\objects\ili9229.o"
 ".\objects\spi1.o"
---strict --scatter ".\Objects\Dev.sct"
+".\objects\i2c.o"
+".\objects\process.o"
+".\objects\dac.o"
+--scatter ".\Objects\Dev.sct"
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list ".\Listings\Dev.map" -o .\Objects\Dev.axf

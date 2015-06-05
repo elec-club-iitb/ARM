@@ -25,5 +25,6 @@ class uart0
 		void write(char data); //write data to fifo
 		char read(void); //read data from fifo //or wait until data is recieved 
 		void printString(char*);
+		char * getCommand(char endChar=0x0d,char startChar =0x00);
 		
 };

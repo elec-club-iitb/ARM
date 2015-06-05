@@ -7,7 +7,7 @@ pin::pin(int _pinNum)	//ADAPT for FAST ports
 {	//speed=1 : fast
 	//speed=0 : slow
 
-	
+	//using  fast version of io ports
 	pinNum=_pinNum;
 	SCS=0x03;
 	

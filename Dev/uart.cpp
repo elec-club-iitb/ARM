@@ -58,7 +58,7 @@ unsigned long uart0::getBaud()
 }
 char uart0::read(void)
 {	
-	 while(!(U0LSR&0x01));
+	while(!(U0LSR&0x01));
 	return U0RBR;
 }
 
@@ -70,4 +70,25 @@ void uart0::printString(char * ch)
 		ch++;
 		if(*ch=='\0')break;
 	}
+}
+char * uart0::getCommand(char endChar  ,char startChar )
+{
+	char buffer[20+1];
+	const char *nocommand="nocommand";
+	int i=0;
+	if(startChar!=0)while(read()!=startChar);		//wait for the arrival of start character
+	for(int i=0;i<20;i++)
+	{
+			char data=read();
+			if(data!=endChar)
+			{
+					buffer[i]=data;
+			}
+			else 
+			{
+				buffer[i]=0x00;
+				return buffer;
+			}
+	}
+	return (char*) nocommand;
 }

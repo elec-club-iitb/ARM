@@ -1,0 +1,8 @@
+Things to add : 
+1 . ADC
+2 . I2C
+3 . DAC
+4 . USB
+5 . RTOS_support1
+6 . SPI0
+7 . FAT library 

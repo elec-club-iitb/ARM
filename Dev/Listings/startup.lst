@@ -122,9 +122,9 @@ ARM Macro Assembler    Page 2
    64 00000000 00000080 
                        IRQ_Stack_Size
                                EQU              0x00000080
-   65 00000000 00000400 
+   65 00000000 00000800 
                        USR_Stack_Size
-                               EQU              0x00000400
+                               EQU              0x00000800
    66 00000000         
    68 00000000 00000088 
                        ISR_Stack_Size
@@ -143,21 +143,21 @@ e + ABT_Stack_Size +                           FIQ_Stack_Size + IRQ_Stack_Size
    71 00000000         
    72 00000000         Stack_Mem
                                SPACE            USR_Stack_Size
-   73 00000400         __initial_sp
+   73 00000800         __initial_sp
                                SPACE            ISR_Stack_Size
-   74 00000488         
-   75 00000488         Stack_Top
-   76 00000488         
-   77 00000488         
-   78 00000488         ;// <h> Heap Configuration
-   79 00000488         ;//   <o>  Heap Size (in Bytes) <0x0-0xFFFFFFFF>
-   80 00000488         ;// </h>
-   81 00000488         
-   82 00000488 00000000 
+   74 00000888         
+   75 00000888         Stack_Top
+   76 00000888         
+   77 00000888         
+   78 00000888         ;// <h> Heap Configuration
+   79 00000888         ;//   <o>  Heap Size (in Bytes) <0x0-0xFFFFFFFF>
+   80 00000888         ;// </h>
+   81 00000888         
+   82 00000888 00000000 
                        Heap_Size
                                EQU              0x00000000
-   83 00000488         
-   84 00000488                 AREA             HEAP, NOINIT, READWRITE, ALIGN=
+   83 00000888         
+   84 00000888                 AREA             HEAP, NOINIT, READWRITE, ALIGN=
 3
    85 00000000         __heap_base
    86 00000000         Heap_Mem
@@ -590,7 +590,7 @@ ARM Macro Assembler    Page 10
 
 
   408 000000B0 E1A0D000        MOV              SP, R0
-  409 000000B4 E24DAB01        SUB              SL, SP, #USR_Stack_Size
+  409 000000B4 E24DAB02        SUB              SL, SP, #USR_Stack_Size
   410 000000B8         
   411 000000B8                 ENDIF
   412 000000B8         
@@ -624,12 +624,12 @@ e)
   441 00000014         
   442 00000014                 END
               00000000 
-              00000400 
+              00000800 
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --apcs=interwork --depend=.\o
 bjects\startup.d -o.\objects\startup.o -IC:\Keil_v5\ARM\RV31\INC -IC:\Keil_v5\A
-RM\CMSIS\Include -IC:\Keil_v5\ARM\Inc\Philips --predefine="__EVAL SETA 1" --pre
-define="__UVISION_VERSION SETA 514" --list=.\listings\startup.lst Startup.s
+RM\CMSIS\Include -IC:\Keil_v5\ARM\Inc\Philips --predefine="__UVISION_VERSION SE
+TA 514" --list=.\listings\startup.lst Startup.s
 
 
 
@@ -653,7 +653,7 @@ Symbol: Stack_Mem
       At line 435 in file Startup.s
       At line 437 in file Startup.s
 
-Stack_Top 00000488
+Stack_Top 00000888
 
 Symbol: Stack_Top
    Definitions
@@ -661,7 +661,7 @@ Symbol: Stack_Top
    Uses
       At line 373 in file Startup.s
 Comment: Stack_Top used once
-__initial_sp 00000400
+__initial_sp 00000800
 
 Symbol: __initial_sp
    Definitions
@@ -1357,7 +1357,7 @@ Symbol: UND_Stack_Size
       At line 68 in file Startup.s
       At line 378 in file Startup.s
 
-USR_Stack_Size 00000400
+USR_Stack_Size 00000800
 
 Symbol: USR_Stack_Size
    Definitions
@@ -1415,4 +1415,4 @@ Symbol: __use_two_region_memory
       None
 Comment: __use_two_region_memory unused
 2 symbols
-429 symbols in table
+428 symbols in table

@@ -1,15 +1,19 @@
 //ILI9225 controller 2.2" TFT Library Header File
 #ifndef ILI9225_H
 	#define ILI9225_H
-	#include "spi.h"
+	//#include "spi.h"
+	//uses   SSP because of its faster speed
 	#include "spi1.h"
+	// for manipulating pins
 	#include "pin.h"
+	// for delay functions
 	#include "delay.h"
+	// fonts for text display on LCD
 	#include "DefaultFonts.h"
 
 /* ILI9225 screen size */
 #define ILI9225_LCD_WIDTH  176
-#define ILI9225_LCD_HEIGHT 220
+#define ILI9225_LCD_HEIGHT 220//100//220
 
 /* ILI9225 LCD Registers */
 #define ILI9225_DRIVER_OUTPUT_CTRL      (0x01u)  // Driver Output Control
