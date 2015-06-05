@@ -22,7 +22,7 @@ Dialog DLL:      TARMP.DLL V1.51
  
 <h2>Project:</h2>
 C:\Users\Ajinkya\Documents\ARM\Dev\Dev.uvproj
-Project File Date:  06/04/2015
+Project File Date:  06/05/2015
 
 <h2>Output:</h2>
 Rebuild target 'LPC2148'
@@ -42,9 +42,13 @@ process.h(18): warning:  #1-D: last line of file ends without a newline
   #endif
 dac.h(11): warning:  #1-D: last line of file ends without a newline
   #endif
-main.cpp(188): warning:  #177-D: variable "data" was declared but never referenced
+complex.h(45): warning:  #1-D: last line of file ends without a newline
+  #endif
+FFT.h(91): warning:  #1-D: last line of file ends without a newline
+  #endif
+main.cpp(203): warning:  #177-D: variable "data" was declared but never referenced
         char data;
-main.cpp: 8 warnings, 0 errors
+main.cpp: 10 warnings, 0 errors
 compiling sampleProgram.cpp...
 sampleProgram.cpp(19): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -121,10 +125,22 @@ dac.h(11): warning:  #1-D: last line of file ends without a newline
 dac.cpp(14): warning:  #1-D: last line of file ends without a newline
   }
 dac.cpp: 2 warnings, 0 errors
+compiling FFT.cpp...
+complex.h(45): warning:  #1-D: last line of file ends without a newline
+  #endif
+FFT.h(91): warning:  #1-D: last line of file ends without a newline
+  #endif
+FFT.cpp(228): warning:  #1-D: last line of file ends without a newline
+  */
+FFT.cpp: 3 warnings, 0 errors
+compiling complex.cpp...
+complex.h(45): warning:  #1-D: last line of file ends without a newline
+  #endif
+complex.cpp: 1 warning, 0 errors
 linking...
-Program Size: Code=18560 RO-data=1100 RW-data=12 ZI-data=2868  
+Program Size: Code=18248 RO-data=1004 RW-data=12 ZI-data=25140  
 FromELF: creating hex file...
-".\Objects\Dev.axf" - 0 Error(s), 34 Warning(s).
+".\Objects\Dev.axf" - 0 Error(s), 40 Warning(s).
 </pre>
 </body>
 </html>

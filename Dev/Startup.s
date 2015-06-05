@@ -62,7 +62,7 @@ SVC_Stack_Size  EQU     0x00000008
 ABT_Stack_Size  EQU     0x00000000
 FIQ_Stack_Size  EQU     0x00000000
 IRQ_Stack_Size  EQU     0x00000080
-USR_Stack_Size  EQU     0x00000800
+USR_Stack_Size  EQU     0x00001F00
 
 ISR_Stack_Size  EQU     (UND_Stack_Size + SVC_Stack_Size + ABT_Stack_Size + \
                          FIQ_Stack_Size + IRQ_Stack_Size)
@@ -79,7 +79,7 @@ Stack_Top
 ;//   <o>  Heap Size (in Bytes) <0x0-0xFFFFFFFF>
 ;// </h>
 
-Heap_Size       EQU     0x00000000
+Heap_Size       EQU     0x00004000
 
                 AREA    HEAP, NOINIT, READWRITE, ALIGN=3
 __heap_base

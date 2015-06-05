@@ -5,7 +5,8 @@
 //sample library development
 //created by ajinkya gorad
 #include "pll.h"
-pll clock(12000000,5,1);
+pll _clock(12000000,5,1);
+
 #include "uart.h"
 #include "spi.h"
 #include "delay.h"
@@ -16,19 +17,23 @@ pll clock(12000000,5,1);
 #include "process.h"
 #include "adc.h"
 #include "dac.h"
+#include "FFT.h"
 
 
-uart0 serial(clock.getPeripheralClock(),38400);
+
+
+
+
+uart0 serial(_clock.getPeripheralClock(),38400);
 pin rst(124),rs(8),cs(7),led(9);
-spi1 s(clock.getPeripheralClock(),16);
+spi1 s(_clock.getPeripheralClock(),16);
 ILI9225 lcd(&s,rst,rs,cs,led);			
-delay wait(clock.getCpuClock());
+delay wait(_clock.getCpuClock());
 adc0Class adc0;
 dacClass dac;
 // input normalised sample
 float getFreqComp(float* sample, int size,float freq);
 void getDFT(float* sample,float* bin,int size);
-
 void getDFT(float* sample  ,float* bin,int size)
 {
 		for( int k=0;k<size;k++)
@@ -58,8 +63,9 @@ float getFreqComp(float* sample, int size,float freq)
 }
 void graph2(void)
 {
-	float buffer[ILI9225_LCD_HEIGHT];	//create a buffer 
+	float buffer[256];	//create a buffer 
 	//float sample[ILI9225_LCD_HEIGHT];
+	//char dacValues[ILI9225_LCD_HEIGHT];
 	
 	/*initialise buffer*/
 	//pin adread(29);	//corresponds to pin A02
@@ -72,24 +78,25 @@ void graph2(void)
 	//lcd.drawText("Starting",COLOR_BLUE);
 	while(1){
 	//lcd.drawText("!",COLOR_YELLOWGREEN);
-	buffer[0]=(ILI9225_LCD_WIDTH*adc0.read(2,clock.getPeripheralClock()/10000000))/1024;
+	buffer[0]=(ILI9225_LCD_WIDTH*adc0.read(2,_clock.getPeripheralClock()/10000000))/1024;
+	
 	int f1 = rand()%10;
 	int f2 = rand()%20;
 	for(int i=1;i<ILI9225_LCD_HEIGHT;i++)
 	{
 		//sample[i]=(adc0.read(2,clock.getPeripheralClock()/4500000))/1024.0;
 		//buffer[i]=(ILI9225_LCD_WIDTH)*sample[i];	//scale it according to LCD width for displaying
-		buffer[i]=(ILI9225_LCD_WIDTH*adc0.read(2,clock.getPeripheralClock()/4500000))/1024.0;
-		//dac.write(int(400.0+200*sin(i*0.1)+200*sin(i*0.03)));
+		buffer[i]=(ILI9225_LCD_WIDTH*adc0.read(2,_clock.getPeripheralClock()/4500000))/1024.0;
+		dac.write(int(400.0+200*sin(i*0.1)+200*sin(i*0.03)));
 		if((buffer[i]>triggerRising)/*if greater thatn trigger*/&&(buffer[i]>buffer[i-1])/*if rising*/)
 		{
 			//record continuous samples 
 			
 			for(int i=0;i<ILI9225_LCD_HEIGHT;i++){
-					//dac.write(int(400.0+200*sin(i*f1*0.1)+200*sin(i*f2*0.1)));
+					dac.write(int(400.0+200*sin(i*f1*0.1)+200*sin(i*f2*0.1)));
 				//	sample[i]=(adc0.read(2,clock.getPeripheralClock()/4500000))/1024.0;
 				//	buffer[i]=(ILI9225_LCD_WIDTH)*sample[i];	//scale it according to LCD width for displaying
-						buffer[i]=(ILI9225_LCD_WIDTH*adc0.read(2,clock.getPeripheralClock()/4500000))/1024.0;
+						buffer[i]=(ILI9225_LCD_WIDTH*adc0.read(2,_clock.getPeripheralClock()/4500000))/1024.0;
 					}
 			break;		//break out of loop
 		}
@@ -99,23 +106,30 @@ void graph2(void)
 		}
 	}
 	//lcd.drawText("DFT",COLOR_BLUEVIOLET);
-	float dft[ILI9225_LCD_HEIGHT];
-	getDFT(buffer,dft,ILI9225_LCD_HEIGHT);
+	//float dft[ILI9225_LCD_HEIGHT];
+	complex fftBins[256];
+	for(int i=0;i<256;i++)fftBins[i]=buffer[i];
+	//getDFT(buffer,dft,ILI9225_LCD_HEIGHT);
+	fft(fftBins,256,1);
+	
 	//now buffer has the data to display for signal
 	//and dft  has the data to display for spectrum
 	// now scale spectrum for display on LCD
 	//lcd.drawText("@",COLOR_BLUE);
-	for(int i=0;i<ILI9225_LCD_HEIGHT;i++)		dft[i]*=ILI9225_LCD_WIDTH*(1.0-log(dft[i]));
+	//for(int i=0;i<ILI9225_LCD_HEIGHT;i++)		dft[i]*=ILI9225_LCD_WIDTH*(1.0-log(dft[i]));
 	
 	//char str[50];
-	
-	long mean=0;
-	for(int i=0;i<ILI9225_LCD_HEIGHT;i++)		mean+=buffer[i];
-	mean/=ILI9225_LCD_HEIGHT;
-	
-	//sprintf(str,"Mean : %i \n",int(mean));
-	//serial.printString(str);
 	//setup grid+clear last data on lcd
+	float max=0;
+	for(int i=0;i<256;i++)
+	{
+		fftBins[i]=fftBins[i].magnitude();
+		if(fftBins[i].Re>max)max=fftBins[i].Re;
+	}
+	for(int i=0;i<256;i++)
+	{
+		fftBins[i]*=ILI9225_LCD_WIDTH/max;
+	}
 	lcd._setWindow(0,0,ILI9225_LCD_WIDTH,ILI9225_LCD_HEIGHT);
 	for(int y=0;y<ILI9225_LCD_HEIGHT;y++)
 	for(int x=0;x<ILI9225_LCD_WIDTH;x++)
@@ -123,11 +137,12 @@ void graph2(void)
 	else lcd._writeData(COLOR_BLACK);
 	
 	//lcd.drawText(0,0,str,COLOR_WHITE);	
-	
-	for(int i=1; i< ILI9225_LCD_HEIGHT;i++){
-		
-					lcd.drawLine(buffer[i-1],(i-1),buffer[i],i,COLOR_YELLOW);
-						lcd.drawLine(dft[i-1],i-1,dft[i],i,COLOR_RED);
+	float eq = 256.0/ILI9225_LCD_HEIGHT;
+	for(float i=1; i<256;i++){
+					lcd.drawLine(buffer[int(i)-1],(i-1),
+											buffer[int(i)],i,COLOR_YELLOWGREEN);
+					lcd.drawLine(fftBins[int(i*eq)-1].Re,(i-1),
+											fftBins[int(i*eq)].Re,i,COLOR_RED);
 				}
 		}//end of while loop 
 }
@@ -167,7 +182,7 @@ int main()
 	#define D(x) serial.printString((char*)(x)); serial.write(0x0d);
 
 	
-	lcd.begin(clock.getCpuClock());			
+	lcd.begin(_clock.getCpuClock());			
 	lcd.clear();												
 	D("Initialised");
 	
