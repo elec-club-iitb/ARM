@@ -50,7 +50,7 @@ __irq void Timer0_Interrupt(void)
 }
 __irq void Timer1_Interrupt(void)
 {
-		//lcd.drawText(20,20,"interrupt",COLOR_GREEN);
+		
 		DACR = DAC_raw[indexDAC];
 		indexDAC++;
 		if(indexDAC>=DAC_Period)indexDAC =0;
@@ -103,7 +103,7 @@ void initDACout(void)
 	 
 	 for(int i=0;i<DAC_Period;i++)
 	 {
-			DAC_raw[i] = 500*sin(i*0.1)+500;
+			DAC_raw[i] = 200*sin(i*0.02)+500;
 			DAC_raw[i] = DAC_raw[i]<<6;		// make it ready to write directly ot DACR register;
 	 }
 	 
@@ -113,8 +113,8 @@ void initDACout(void)
 	T1CTCR = 0x00;
 	T1TC = 0; T1PC = 0;
 	T1PR = 59;
-	T0MR0 = 1; 	//interrupt every 1 us
-	T0MCR = (1<<0)/*interrupt on match*/|(1<<1)/*reset on MR0)*/;
+	T1MR0 = 5; 	//interrupt every 1 us
+	T1MCR = (1<<0)/*interrupt on match*/|(1<<1)/*reset on MR0)*/;
 	VICVectCntl0 = (1<<5)|5;
 	VICVectAddr0 = unsigned(Timer1_Interrupt);
 	T1TCR = (1<<0)/*Enable for counting*/;

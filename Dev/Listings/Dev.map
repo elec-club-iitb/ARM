@@ -1560,145 +1560,145 @@ Image Symbol Table
     .text                                    0x00000b7c   Section        0  sys_wrch.o(.text)
     .text_udiv                               0x00000b8c   Section       36  aeabi_sdiv.o(.text_udiv)
     i._Z10initDACoutv                        0x00000bb0   Section        0  oscilloscope.o(i._Z10initDACoutv)
-    i._Z10initTimer0v                        0x00000c98   Section        0  oscilloscope.o(i._Z10initTimer0v)
-    i._Z12displayGraphPiiib                  0x00000cec   Section        0  oscilloscope.o(i._Z12displayGraphPiiib)
-    i._Z12oscilloscopev                      0x00000dfc   Section        0  oscilloscope.o(i._Z12oscilloscopev)
-    i._Z14displayXY_PlotPiS_iib              0x00000f68   Section        0  oscilloscope.o(i._Z14displayXY_PlotPiS_iib)
-    i._Z15displayFFT_PlotPiiib               0x000010a0   Section        0  oscilloscope.o(i._Z15displayFFT_PlotPiiib)
-    i._Z16Timer0_Interruptv                  0x0000126c   Section        0  oscilloscope.o(i._Z16Timer0_Interruptv)
-    i._Z16Timer1_Interruptv                  0x00001308   Section        0  oscilloscope.o(i._Z16Timer1_Interruptv)
-    i._Z3fftP7complexii                      0x00001360   Section        0  fft.o(i._Z3fftP7complexii)
-    i._Z5draw1v                              0x000013b8   Section        0  main.o(i._Z5draw1v)
-    i._Z5draw2v                              0x00001420   Section        0  main.o(i._Z5draw2v)
-    i._Z5graphv                              0x00001484   Section        0  main.o(i._Z5graphv)
-    i._Z6graph2v                             0x00001554   Section        0  main.o(i._Z6graph2v)
-    i._Z7initADCv                            0x00001954   Section        0  oscilloscope.o(i._Z7initADCv)
-    i._Z8stockhamP7complexiiiS0_             0x00001978   Section        0  fft.o(i._Z8stockhamP7complexiiiS0_)
-    stockham(complex*, int, int, int, complex*) 0x00001978   ARM Code     656  fft.o(i._Z8stockhamP7complexiiiS0_)
-    i._ZN3pin3lowEv                          0x00001c10   Section        0  pin.o(i._ZN3pin3lowEv)
-    i._ZN3pin4highEv                         0x00001c28   Section        0  pin.o(i._ZN3pin4highEv)
-    i._ZN3pin6outputEv                       0x00001c40   Section        0  pin.o(i._ZN3pin6outputEv)
-    i._ZN3pinC1Ei                            0x00001c5c   Section        0  pin.o(i._ZN3pinC1Ei)
-    i._ZN3pinC1Ev                            0x00001d50   Section        0  pin.o(i._ZN3pinC1Ev)
-    i._ZN3pll11getCpuClockEv                 0x00001d54   Section        0  pll.o(i._ZN3pll11getCpuClockEv)
-    i._ZN3pll12feedSequenceEv                0x00001d5c   Section        0  pll.o(i._ZN3pll12feedSequenceEv)
-    i._ZN3pll18getPeripheralClockEv          0x00001d78   Section        0  pll.o(i._ZN3pll18getPeripheralClockEv)
-    i._ZN3pll4getPEv                         0x00001d80   Section        0  pll.o(i._ZN3pll4getPEv)
-    i._ZN3pll6setPllEv                       0x00001dd8   Section        0  pll.o(i._ZN3pll6setPllEv)
-    i._ZN3pll8isLockedEv                     0x00001e3c   Section        0  pll.o(i._ZN3pll8isLockedEv)
-    i._ZN3pllC1Emii                          0x00001e54   Section        0  pll.o(i._ZN3pllC1Emii)
-    i._ZN4spi111setClockDivEi                0x00001ea0   Section        0  spi1.o(i._ZN4spi111setClockDivEi)
-    i._ZN4spi18initPinsEv                    0x00001eb4   Section        0  spi1.o(i._ZN4spi18initPinsEv)
-    i._ZN4spi1C1Emii                         0x00001ecc   Section        0  spi1.o(i._ZN4spi1C1Emii)
-    i._ZN5delay2msEm                         0x00001f34   Section        0  delay.o(i._ZN5delay2msEm)
-    i._ZN5delayC1Em                          0x00001f5c   Section        0  delay.o(i._ZN5delayC1Em)
-    i._ZN5uart010getCommandEcc               0x00001f94   Section        0  uart.o(i._ZN5uart010getCommandEcc)
-    i._ZN5uart011callSetBaudEv               0x00002010   Section        0  uart.o(i._ZN5uart011callSetBaudEv)
-    i._ZN5uart011printStringEPc              0x00002040   Section        0  uart.o(i._ZN5uart011printStringEPc)
-    i._ZN5uart04readEv                       0x0000206c   Section        0  uart.o(i._ZN5uart04readEv)
-    i._ZN5uart05writeEc                      0x00002088   Section        0  uart.o(i._ZN5uart05writeEc)
-    i._ZN5uart0C1Emmjji                      0x000020a4   Section        0  uart.o(i._ZN5uart0C1Emmjji)
-    i._ZN7ILI922510_setWindowEjjjj           0x00002140   Section        0  ili9229.o(i._ZN7ILI922510_setWindowEjjjj)
-    i._ZN7ILI922510_writeDataEi              0x00002200   Section        0  ili9229.o(i._ZN7ILI922510_writeDataEi)
-    i._ZN7ILI922511_updateCurXEi             0x00002224   Section        0  ili9229.o(i._ZN7ILI922511_updateCurXEi)
-    i._ZN7ILI922511_updateCurYEi             0x00002264   Section        0  ili9229.o(i._ZN7ILI922511_updateCurYEi)
-    i._ZN7ILI922512setBacklightEb            0x000022ac   Section        0  ili9229.o(i._ZN7ILI922512setBacklightEb)
-    i._ZN7ILI922513_writeCommandEi           0x000022c0   Section        0  ili9229.o(i._ZN7ILI922513_writeCommandEi)
-    i._ZN7ILI922513fillRectangleEjjjjj       0x000022e4   Section        0  ili9229.o(i._ZN7ILI922513fillRectangleEjjjjj)
-    i._ZN7ILI922514_writeRegisterEjj         0x0000233c   Section        0  ili9229.o(i._ZN7ILI922514_writeRegisterEjj)
-    i._ZN7ILI922514setOrientationEc          0x0000235c   Section        0  ili9229.o(i._ZN7ILI922514setOrientationEc)
-    i._ZN7ILI922515setCursorLimitsEjjjjj     0x000023a0   Section        0  ili9229.o(i._ZN7ILI922515setCursorLimitsEjjjjj)
-    i._ZN7ILI922518_orientCoordinatesERjS0_  0x00002428   Section        0  ili9229.o(i._ZN7ILI922518_orientCoordinatesERjS0_)
-    i._ZN7ILI92255beginEm                    0x000024bc   Section        0  ili9229.o(i._ZN7ILI92255beginEm)
-    i._ZN7ILI92255clearEi                    0x000028bc   Section        0  ili9229.o(i._ZN7ILI92255clearEi)
-    i._ZN7ILI92257setFontEPKc                0x00002924   Section        0  ili9229.o(i._ZN7ILI92257setFontEPKc)
-    i._ZN7ILI92258drawCharEjjjj              0x00002960   Section        0  ili9229.o(i._ZN7ILI92258drawCharEjjjj)
-    i._ZN7ILI92258drawLineEjjjjj             0x00002a5c   Section        0  ili9229.o(i._ZN7ILI92258drawLineEjjjjj)
-    i._ZN7ILI92258drawTextEPcj               0x00002b2c   Section        0  ili9229.o(i._ZN7ILI92258drawTextEPcj)
-    i._ZN7ILI92258drawTextEjjPcj             0x00002bd0   Section        0  ili9229.o(i._ZN7ILI92258drawTextEjjPcj)
-    i._ZN7ILI92259drawPixelEjjj              0x00002c4c   Section        0  ili9229.o(i._ZN7ILI92259drawPixelEjjj)
-    i._ZN7ILI9225C1EP4spi13pinS2_S2_S2_      0x00002cb4   Section        0  ili9229.o(i._ZN7ILI9225C1EP4spi13pinS2_S2_S2_)
-    i._ZN7complex9magnitudeEv                0x00002d88   Section        0  complex.o(i._ZN7complex9magnitudeEv)
-    i._ZN7complexC1Ev                        0x00002dbc   Section        0  complex.o(i._ZN7complexC1Ev)
-    i._ZN7complexaSEf                        0x00002dc0   Section        0  complex.o(i._ZN7complexaSEf)
-    i._ZN7complexmLEf                        0x00002dd0   Section        0  complex.o(i._ZN7complexmLEf)
-    i._ZN8dacClass4initEv                    0x00002e48   Section        0  dac.o(i._ZN8dacClass4initEv)
-    i._ZN8dacClass5writeEi                   0x00002e60   Section        0  dac.o(i._ZN8dacClass5writeEi)
-    i._ZN8dacClassC1Ev                       0x00002e74   Section        0  dac.o(i._ZN8dacClassC1Ev)
-    i._ZN9adc0Class4readEiii                 0x00002e78   Section        0  adc.o(i._ZN9adc0Class4readEiii)
-    i._ZN9adc0ClassC1Ev                      0x00002ec0   Section        0  adc.o(i._ZN9adc0ClassC1Ev)
-    i._ZN9processor3addEPFvvEPc              0x00002ec4   Section        0  process.o(i._ZN9processor3addEPFvvEPc)
-    i._ZN9processor7processEPc               0x00002ee8   Section        0  process.o(i._ZN9processor7processEPc)
-    i._ZN9processorC1Ev                      0x00002f50   Section        0  process.o(i._ZN9processorC1Ev)
-    i.__ARM_common_call_via_r0               0x00002f54   Section        0  init_aeabi.o(i.__ARM_common_call_via_r0)
-    i.__ARM_common_call_via_r1               0x00002f56   Section        0  __printf.o(i.__ARM_common_call_via_r1)
-    i.__ARM_common_call_via_r2               0x00002f58   Section        0  __printf.o(i.__ARM_common_call_via_r2)
-    i.__ARM_common_call_via_r6               0x00002f5a   Section        0  aeabi_vec_ctor_nocookie_nodtor.o(i.__ARM_common_call_via_r6)
-    i.__ARM_fpclassify                       0x00002f5c   Section        0  fpclassify.o(i.__ARM_fpclassify)
-    i.__aeabi_vec_ctor_nocookie_nodtor       0x00002f94   Section        0  aeabi_vec_ctor_nocookie_nodtor.o(i.__aeabi_vec_ctor_nocookie_nodtor)
-    i.__ieee754_rem_pio2                     0x00002fbc   Section        0  rred.o(i.__ieee754_rem_pio2)
-    i.__kernel_cos                           0x000034d0   Section        0  cos_i.o(i.__kernel_cos)
-    i.__kernel_poly                          0x0000366c   Section        0  poly.o(i.__kernel_poly)
-    i.__kernel_sin                           0x0000376c   Section        0  sin_i.o(i.__kernel_sin)
-    i.__mathlib_dbl_infnan                   0x000038e8   Section        0  dunder.o(i.__mathlib_dbl_infnan)
-    i.__mathlib_dbl_invalid                  0x000038f0   Section        0  dunder.o(i.__mathlib_dbl_invalid)
-    i.__mathlib_dbl_underflow                0x00003904   Section        0  dunder.o(i.__mathlib_dbl_underflow)
-    i.__sti___8_main_cpp__clock              0x00003918   Section        0  main.o(i.__sti___8_main_cpp__clock)
-    __sti___8_main_cpp__clock                0x00003918   ARM Code     272  main.o(i.__sti___8_main_cpp__clock)
-    i.cos                                    0x00003a54   Section        0  cos.o(i.cos)
-    i.main                                   0x00003b44   Section        0  main.o(i.main)
-    i.sin                                    0x00003cf0   Section        0  sin.o(i.sin)
-    i.sqrtf                                  0x00003de8   Section        0  sqrtf.o(i.sqrtf)
-    x$fpl$d2f                                0x00003e30   Section      108  d2f.o(x$fpl$d2f)
-    x$fpl$dadd                               0x00003e9c   Section      340  daddsub_noclz.o(x$fpl$dadd)
-    _dadd1                                   0x00003eac   ARM Code       0  daddsub_noclz.o(x$fpl$dadd)
-    x$fpl$dcheck1                            0x00003ff0   Section       16  dcheck1.o(x$fpl$dcheck1)
-    x$fpl$dcmpinf                            0x00004000   Section       28  dcmpi.o(x$fpl$dcmpinf)
-    x$fpl$ddiv                               0x0000401c   Section      736  ddiv.o(x$fpl$ddiv)
-    ddiv_entry                               0x00004024   ARM Code       0  ddiv.o(x$fpl$ddiv)
-    x$fpl$dfix                               0x000042fc   Section      112  dfix.o(x$fpl$dfix)
-    x$fpl$dfixu                              0x0000436c   Section      112  dfixu.o(x$fpl$dfixu)
-    x$fpl$dflt                               0x000043dc   Section       88  dflt_noclz.o(x$fpl$dflt)
-    x$fpl$dfltu                              0x00004434   Section       12  dflt_noclz.o(x$fpl$dfltu)
-    x$fpl$dleqf                              0x00004440   Section      148  dleqf.o(x$fpl$dleqf)
-    x$fpl$dmul                               0x000044d4   Section      384  dmul.o(x$fpl$dmul)
-    x$fpl$dnaninf                            0x00004654   Section      192  dnaninf.o(x$fpl$dnaninf)
-    x$fpl$dretinf                            0x00004714   Section       16  dretinf.o(x$fpl$dretinf)
-    x$fpl$drsb                               0x00004724   Section       24  daddsub_noclz.o(x$fpl$drsb)
-    x$fpl$dsub                               0x0000473c   Section      580  daddsub_noclz.o(x$fpl$dsub)
-    _dsub1                                   0x0000474c   ARM Code       0  daddsub_noclz.o(x$fpl$dsub)
-    x$fpl$f2d                                0x00004980   Section      100  f2d.o(x$fpl$f2d)
-    x$fpl$fadd                               0x000049e4   Section      196  faddsub_noclz.o(x$fpl$fadd)
-    _fadd1                                   0x000049f0   ARM Code       0  faddsub_noclz.o(x$fpl$fadd)
-    x$fpl$fcmpinf                            0x00004aa8   Section       28  fcmpi.o(x$fpl$fcmpinf)
-    x$fpl$fdiv                               0x00004ac4   Section      400  fdiv.o(x$fpl$fdiv)
-    _fdiv1                                   0x00004ac4   ARM Code       0  fdiv.o(x$fpl$fdiv)
-    x$fpl$ffix                               0x00004c54   Section       68  ffix.o(x$fpl$ffix)
-    x$fpl$ffixu                              0x00004c98   Section       84  ffixu.o(x$fpl$ffixu)
-    x$fpl$fflt                               0x00004cec   Section       92  fflt_noclz.o(x$fpl$fflt)
-    x$fpl$fleqf                              0x00004d48   Section      132  fleqf.o(x$fpl$fleqf)
-    x$fpl$fmul                               0x00004dcc   Section      256  fmul.o(x$fpl$fmul)
-    x$fpl$fnaninf                            0x00004ecc   Section      168  fnaninf.o(x$fpl$fnaninf)
-    x$fpl$fretinf                            0x00004f74   Section       16  fretinf.o(x$fpl$fretinf)
-    x$fpl$frleqf                             0x00004f84   Section      124  frleqf.o(x$fpl$frleqf)
-    x$fpl$fsqrt                              0x00005000   Section      316  fsqrt.o(x$fpl$fsqrt)
-    x$fpl$fsub                               0x0000513c   Section      304  faddsub_noclz.o(x$fpl$fsub)
-    _fsub1                                   0x00005148   ARM Code       0  faddsub_noclz.o(x$fpl$fsub)
-    x$fpl$retnan                             0x0000526c   Section      116  retnan.o(x$fpl$retnan)
-    x$fpl$scalbn                             0x000052e0   Section      104  scalbn.o(x$fpl$scalbn)
-    x$fpl$trapveneer                         0x00005348   Section       60  trapv.o(x$fpl$trapveneer)
-    .constdata                               0x00005384   Section      676  main.o(.constdata)
-    x$fpl$usenofp                            0x00005384   Section        0  usenofp.o(x$fpl$usenofp)
-    Terminal6x8                              0x00005384   Data         676  main.o(.constdata)
-    .constdata                               0x00005628   Section       48  cos_i.o(.constdata)
-    C                                        0x00005628   Data          48  cos_i.o(.constdata)
-    .constdata                               0x00005658   Section      200  rred.o(.constdata)
-    pio2s                                    0x00005658   Data          48  rred.o(.constdata)
-    twooverpi                                0x00005688   Data         152  rred.o(.constdata)
-    .constdata                               0x00005720   Section       40  sin_i.o(.constdata)
-    S                                        0x00005720   Data          40  sin_i.o(.constdata)
-    .init_array                              0x00005768   Section        4  main.o(.init_array)
-    .init_array                              0x0000576c   Section        0  init_aeabi.o(.init_array)
+    i._Z10initTimer0v                        0x00000c9c   Section        0  oscilloscope.o(i._Z10initTimer0v)
+    i._Z12displayGraphPiiib                  0x00000cf0   Section        0  oscilloscope.o(i._Z12displayGraphPiiib)
+    i._Z12oscilloscopev                      0x00000e00   Section        0  oscilloscope.o(i._Z12oscilloscopev)
+    i._Z14displayXY_PlotPiS_iib              0x00000f6c   Section        0  oscilloscope.o(i._Z14displayXY_PlotPiS_iib)
+    i._Z15displayFFT_PlotPiiib               0x000010a4   Section        0  oscilloscope.o(i._Z15displayFFT_PlotPiiib)
+    i._Z16Timer0_Interruptv                  0x00001270   Section        0  oscilloscope.o(i._Z16Timer0_Interruptv)
+    i._Z16Timer1_Interruptv                  0x0000130c   Section        0  oscilloscope.o(i._Z16Timer1_Interruptv)
+    i._Z3fftP7complexii                      0x00001364   Section        0  fft.o(i._Z3fftP7complexii)
+    i._Z5draw1v                              0x000013bc   Section        0  main.o(i._Z5draw1v)
+    i._Z5draw2v                              0x00001424   Section        0  main.o(i._Z5draw2v)
+    i._Z5graphv                              0x00001488   Section        0  main.o(i._Z5graphv)
+    i._Z6graph2v                             0x00001558   Section        0  main.o(i._Z6graph2v)
+    i._Z7initADCv                            0x00001958   Section        0  oscilloscope.o(i._Z7initADCv)
+    i._Z8stockhamP7complexiiiS0_             0x0000197c   Section        0  fft.o(i._Z8stockhamP7complexiiiS0_)
+    stockham(complex*, int, int, int, complex*) 0x0000197c   ARM Code     656  fft.o(i._Z8stockhamP7complexiiiS0_)
+    i._ZN3pin3lowEv                          0x00001c14   Section        0  pin.o(i._ZN3pin3lowEv)
+    i._ZN3pin4highEv                         0x00001c2c   Section        0  pin.o(i._ZN3pin4highEv)
+    i._ZN3pin6outputEv                       0x00001c44   Section        0  pin.o(i._ZN3pin6outputEv)
+    i._ZN3pinC1Ei                            0x00001c60   Section        0  pin.o(i._ZN3pinC1Ei)
+    i._ZN3pinC1Ev                            0x00001d54   Section        0  pin.o(i._ZN3pinC1Ev)
+    i._ZN3pll11getCpuClockEv                 0x00001d58   Section        0  pll.o(i._ZN3pll11getCpuClockEv)
+    i._ZN3pll12feedSequenceEv                0x00001d60   Section        0  pll.o(i._ZN3pll12feedSequenceEv)
+    i._ZN3pll18getPeripheralClockEv          0x00001d7c   Section        0  pll.o(i._ZN3pll18getPeripheralClockEv)
+    i._ZN3pll4getPEv                         0x00001d84   Section        0  pll.o(i._ZN3pll4getPEv)
+    i._ZN3pll6setPllEv                       0x00001ddc   Section        0  pll.o(i._ZN3pll6setPllEv)
+    i._ZN3pll8isLockedEv                     0x00001e40   Section        0  pll.o(i._ZN3pll8isLockedEv)
+    i._ZN3pllC1Emii                          0x00001e58   Section        0  pll.o(i._ZN3pllC1Emii)
+    i._ZN4spi111setClockDivEi                0x00001ea4   Section        0  spi1.o(i._ZN4spi111setClockDivEi)
+    i._ZN4spi18initPinsEv                    0x00001eb8   Section        0  spi1.o(i._ZN4spi18initPinsEv)
+    i._ZN4spi1C1Emii                         0x00001ed0   Section        0  spi1.o(i._ZN4spi1C1Emii)
+    i._ZN5delay2msEm                         0x00001f38   Section        0  delay.o(i._ZN5delay2msEm)
+    i._ZN5delayC1Em                          0x00001f60   Section        0  delay.o(i._ZN5delayC1Em)
+    i._ZN5uart010getCommandEcc               0x00001f98   Section        0  uart.o(i._ZN5uart010getCommandEcc)
+    i._ZN5uart011callSetBaudEv               0x00002014   Section        0  uart.o(i._ZN5uart011callSetBaudEv)
+    i._ZN5uart011printStringEPc              0x00002044   Section        0  uart.o(i._ZN5uart011printStringEPc)
+    i._ZN5uart04readEv                       0x00002070   Section        0  uart.o(i._ZN5uart04readEv)
+    i._ZN5uart05writeEc                      0x0000208c   Section        0  uart.o(i._ZN5uart05writeEc)
+    i._ZN5uart0C1Emmjji                      0x000020a8   Section        0  uart.o(i._ZN5uart0C1Emmjji)
+    i._ZN7ILI922510_setWindowEjjjj           0x00002144   Section        0  ili9229.o(i._ZN7ILI922510_setWindowEjjjj)
+    i._ZN7ILI922510_writeDataEi              0x00002204   Section        0  ili9229.o(i._ZN7ILI922510_writeDataEi)
+    i._ZN7ILI922511_updateCurXEi             0x00002228   Section        0  ili9229.o(i._ZN7ILI922511_updateCurXEi)
+    i._ZN7ILI922511_updateCurYEi             0x00002268   Section        0  ili9229.o(i._ZN7ILI922511_updateCurYEi)
+    i._ZN7ILI922512setBacklightEb            0x000022b0   Section        0  ili9229.o(i._ZN7ILI922512setBacklightEb)
+    i._ZN7ILI922513_writeCommandEi           0x000022c4   Section        0  ili9229.o(i._ZN7ILI922513_writeCommandEi)
+    i._ZN7ILI922513fillRectangleEjjjjj       0x000022e8   Section        0  ili9229.o(i._ZN7ILI922513fillRectangleEjjjjj)
+    i._ZN7ILI922514_writeRegisterEjj         0x00002340   Section        0  ili9229.o(i._ZN7ILI922514_writeRegisterEjj)
+    i._ZN7ILI922514setOrientationEc          0x00002360   Section        0  ili9229.o(i._ZN7ILI922514setOrientationEc)
+    i._ZN7ILI922515setCursorLimitsEjjjjj     0x000023a4   Section        0  ili9229.o(i._ZN7ILI922515setCursorLimitsEjjjjj)
+    i._ZN7ILI922518_orientCoordinatesERjS0_  0x0000242c   Section        0  ili9229.o(i._ZN7ILI922518_orientCoordinatesERjS0_)
+    i._ZN7ILI92255beginEm                    0x000024c0   Section        0  ili9229.o(i._ZN7ILI92255beginEm)
+    i._ZN7ILI92255clearEi                    0x000028c0   Section        0  ili9229.o(i._ZN7ILI92255clearEi)
+    i._ZN7ILI92257setFontEPKc                0x00002928   Section        0  ili9229.o(i._ZN7ILI92257setFontEPKc)
+    i._ZN7ILI92258drawCharEjjjj              0x00002964   Section        0  ili9229.o(i._ZN7ILI92258drawCharEjjjj)
+    i._ZN7ILI92258drawLineEjjjjj             0x00002a60   Section        0  ili9229.o(i._ZN7ILI92258drawLineEjjjjj)
+    i._ZN7ILI92258drawTextEPcj               0x00002b30   Section        0  ili9229.o(i._ZN7ILI92258drawTextEPcj)
+    i._ZN7ILI92258drawTextEjjPcj             0x00002bd4   Section        0  ili9229.o(i._ZN7ILI92258drawTextEjjPcj)
+    i._ZN7ILI92259drawPixelEjjj              0x00002c50   Section        0  ili9229.o(i._ZN7ILI92259drawPixelEjjj)
+    i._ZN7ILI9225C1EP4spi13pinS2_S2_S2_      0x00002cb8   Section        0  ili9229.o(i._ZN7ILI9225C1EP4spi13pinS2_S2_S2_)
+    i._ZN7complex9magnitudeEv                0x00002d8c   Section        0  complex.o(i._ZN7complex9magnitudeEv)
+    i._ZN7complexC1Ev                        0x00002dc0   Section        0  complex.o(i._ZN7complexC1Ev)
+    i._ZN7complexaSEf                        0x00002dc4   Section        0  complex.o(i._ZN7complexaSEf)
+    i._ZN7complexmLEf                        0x00002dd4   Section        0  complex.o(i._ZN7complexmLEf)
+    i._ZN8dacClass4initEv                    0x00002e4c   Section        0  dac.o(i._ZN8dacClass4initEv)
+    i._ZN8dacClass5writeEi                   0x00002e64   Section        0  dac.o(i._ZN8dacClass5writeEi)
+    i._ZN8dacClassC1Ev                       0x00002e78   Section        0  dac.o(i._ZN8dacClassC1Ev)
+    i._ZN9adc0Class4readEiii                 0x00002e7c   Section        0  adc.o(i._ZN9adc0Class4readEiii)
+    i._ZN9adc0ClassC1Ev                      0x00002ec4   Section        0  adc.o(i._ZN9adc0ClassC1Ev)
+    i._ZN9processor3addEPFvvEPc              0x00002ec8   Section        0  process.o(i._ZN9processor3addEPFvvEPc)
+    i._ZN9processor7processEPc               0x00002eec   Section        0  process.o(i._ZN9processor7processEPc)
+    i._ZN9processorC1Ev                      0x00002f54   Section        0  process.o(i._ZN9processorC1Ev)
+    i.__ARM_common_call_via_r0               0x00002f58   Section        0  init_aeabi.o(i.__ARM_common_call_via_r0)
+    i.__ARM_common_call_via_r1               0x00002f5a   Section        0  __printf.o(i.__ARM_common_call_via_r1)
+    i.__ARM_common_call_via_r2               0x00002f5c   Section        0  __printf.o(i.__ARM_common_call_via_r2)
+    i.__ARM_common_call_via_r6               0x00002f5e   Section        0  aeabi_vec_ctor_nocookie_nodtor.o(i.__ARM_common_call_via_r6)
+    i.__ARM_fpclassify                       0x00002f60   Section        0  fpclassify.o(i.__ARM_fpclassify)
+    i.__aeabi_vec_ctor_nocookie_nodtor       0x00002f98   Section        0  aeabi_vec_ctor_nocookie_nodtor.o(i.__aeabi_vec_ctor_nocookie_nodtor)
+    i.__ieee754_rem_pio2                     0x00002fc0   Section        0  rred.o(i.__ieee754_rem_pio2)
+    i.__kernel_cos                           0x000034d4   Section        0  cos_i.o(i.__kernel_cos)
+    i.__kernel_poly                          0x00003670   Section        0  poly.o(i.__kernel_poly)
+    i.__kernel_sin                           0x00003770   Section        0  sin_i.o(i.__kernel_sin)
+    i.__mathlib_dbl_infnan                   0x000038ec   Section        0  dunder.o(i.__mathlib_dbl_infnan)
+    i.__mathlib_dbl_invalid                  0x000038f4   Section        0  dunder.o(i.__mathlib_dbl_invalid)
+    i.__mathlib_dbl_underflow                0x00003908   Section        0  dunder.o(i.__mathlib_dbl_underflow)
+    i.__sti___8_main_cpp__clock              0x0000391c   Section        0  main.o(i.__sti___8_main_cpp__clock)
+    __sti___8_main_cpp__clock                0x0000391c   ARM Code     272  main.o(i.__sti___8_main_cpp__clock)
+    i.cos                                    0x00003a58   Section        0  cos.o(i.cos)
+    i.main                                   0x00003b48   Section        0  main.o(i.main)
+    i.sin                                    0x00003cf4   Section        0  sin.o(i.sin)
+    i.sqrtf                                  0x00003dec   Section        0  sqrtf.o(i.sqrtf)
+    x$fpl$d2f                                0x00003e34   Section      108  d2f.o(x$fpl$d2f)
+    x$fpl$dadd                               0x00003ea0   Section      340  daddsub_noclz.o(x$fpl$dadd)
+    _dadd1                                   0x00003eb0   ARM Code       0  daddsub_noclz.o(x$fpl$dadd)
+    x$fpl$dcheck1                            0x00003ff4   Section       16  dcheck1.o(x$fpl$dcheck1)
+    x$fpl$dcmpinf                            0x00004004   Section       28  dcmpi.o(x$fpl$dcmpinf)
+    x$fpl$ddiv                               0x00004020   Section      736  ddiv.o(x$fpl$ddiv)
+    ddiv_entry                               0x00004028   ARM Code       0  ddiv.o(x$fpl$ddiv)
+    x$fpl$dfix                               0x00004300   Section      112  dfix.o(x$fpl$dfix)
+    x$fpl$dfixu                              0x00004370   Section      112  dfixu.o(x$fpl$dfixu)
+    x$fpl$dflt                               0x000043e0   Section       88  dflt_noclz.o(x$fpl$dflt)
+    x$fpl$dfltu                              0x00004438   Section       12  dflt_noclz.o(x$fpl$dfltu)
+    x$fpl$dleqf                              0x00004444   Section      148  dleqf.o(x$fpl$dleqf)
+    x$fpl$dmul                               0x000044d8   Section      384  dmul.o(x$fpl$dmul)
+    x$fpl$dnaninf                            0x00004658   Section      192  dnaninf.o(x$fpl$dnaninf)
+    x$fpl$dretinf                            0x00004718   Section       16  dretinf.o(x$fpl$dretinf)
+    x$fpl$drsb                               0x00004728   Section       24  daddsub_noclz.o(x$fpl$drsb)
+    x$fpl$dsub                               0x00004740   Section      580  daddsub_noclz.o(x$fpl$dsub)
+    _dsub1                                   0x00004750   ARM Code       0  daddsub_noclz.o(x$fpl$dsub)
+    x$fpl$f2d                                0x00004984   Section      100  f2d.o(x$fpl$f2d)
+    x$fpl$fadd                               0x000049e8   Section      196  faddsub_noclz.o(x$fpl$fadd)
+    _fadd1                                   0x000049f4   ARM Code       0  faddsub_noclz.o(x$fpl$fadd)
+    x$fpl$fcmpinf                            0x00004aac   Section       28  fcmpi.o(x$fpl$fcmpinf)
+    x$fpl$fdiv                               0x00004ac8   Section      400  fdiv.o(x$fpl$fdiv)
+    _fdiv1                                   0x00004ac8   ARM Code       0  fdiv.o(x$fpl$fdiv)
+    x$fpl$ffix                               0x00004c58   Section       68  ffix.o(x$fpl$ffix)
+    x$fpl$ffixu                              0x00004c9c   Section       84  ffixu.o(x$fpl$ffixu)
+    x$fpl$fflt                               0x00004cf0   Section       92  fflt_noclz.o(x$fpl$fflt)
+    x$fpl$fleqf                              0x00004d4c   Section      132  fleqf.o(x$fpl$fleqf)
+    x$fpl$fmul                               0x00004dd0   Section      256  fmul.o(x$fpl$fmul)
+    x$fpl$fnaninf                            0x00004ed0   Section      168  fnaninf.o(x$fpl$fnaninf)
+    x$fpl$fretinf                            0x00004f78   Section       16  fretinf.o(x$fpl$fretinf)
+    x$fpl$frleqf                             0x00004f88   Section      124  frleqf.o(x$fpl$frleqf)
+    x$fpl$fsqrt                              0x00005004   Section      316  fsqrt.o(x$fpl$fsqrt)
+    x$fpl$fsub                               0x00005140   Section      304  faddsub_noclz.o(x$fpl$fsub)
+    _fsub1                                   0x0000514c   ARM Code       0  faddsub_noclz.o(x$fpl$fsub)
+    x$fpl$retnan                             0x00005270   Section      116  retnan.o(x$fpl$retnan)
+    x$fpl$scalbn                             0x000052e4   Section      104  scalbn.o(x$fpl$scalbn)
+    x$fpl$trapveneer                         0x0000534c   Section       60  trapv.o(x$fpl$trapveneer)
+    .constdata                               0x00005388   Section      676  main.o(.constdata)
+    x$fpl$usenofp                            0x00005388   Section        0  usenofp.o(x$fpl$usenofp)
+    Terminal6x8                              0x00005388   Data         676  main.o(.constdata)
+    .constdata                               0x00005630   Section       48  cos_i.o(.constdata)
+    C                                        0x00005630   Data          48  cos_i.o(.constdata)
+    .constdata                               0x00005660   Section      200  rred.o(.constdata)
+    pio2s                                    0x00005660   Data          48  rred.o(.constdata)
+    twooverpi                                0x00005690   Data         152  rred.o(.constdata)
+    .constdata                               0x00005728   Section       40  sin_i.o(.constdata)
+    S                                        0x00005728   Data          40  sin_i.o(.constdata)
+    .init_array                              0x00005770   Section        4  main.o(.init_array)
+    .init_array                              0x00005774   Section        0  init_aeabi.o(.init_array)
     .data                                    0x40000000   Section        8  main.o(.data)
     .data                                    0x40000008   Section        4  process.o(.data)
     processes                                0x40000008   Data           4  process.o(.data)
@@ -1884,166 +1884,166 @@ Image Symbol Table
     _ttywrch                                 0x00000b7d   Thumb Code    16  sys_wrch.o(.text)
     __aeabi_uidiv                            0x00000b8c   ARM Code       0  aeabi_sdiv.o(.text_udiv)
     __aeabi_uidivmod                         0x00000b8c   ARM Code      36  aeabi_sdiv.o(.text_udiv)
-    initDACout()                             0x00000bb0   ARM Code     200  oscilloscope.o(i._Z10initDACoutv)
-    initTimer0()                             0x00000c98   ARM Code      76  oscilloscope.o(i._Z10initTimer0v)
-    displayGraph(int*, int, int, bool)       0x00000cec   ARM Code     264  oscilloscope.o(i._Z12displayGraphPiiib)
-    oscilloscope()                           0x00000dfc   ARM Code     320  oscilloscope.o(i._Z12oscilloscopev)
-    displayXY_Plot(int*, int*, int, int, bool) 0x00000f68   ARM Code     304  oscilloscope.o(i._Z14displayXY_PlotPiS_iib)
-    displayFFT_Plot(int*, int, int, bool)    0x000010a0   ARM Code     448  oscilloscope.o(i._Z15displayFFT_PlotPiiib)
-    Timer0_Interrupt()                       0x0000126c   ARM Code     132  oscilloscope.o(i._Z16Timer0_Interruptv)
-    Timer1_Interrupt()                       0x00001308   ARM Code      72  oscilloscope.o(i._Z16Timer1_Interruptv)
-    fft(complex*, int, int)                  0x00001360   ARM Code      88  fft.o(i._Z3fftP7complexii)
-    draw1()                                  0x000013b8   ARM Code     100  main.o(i._Z5draw1v)
-    draw2()                                  0x00001420   ARM Code      96  main.o(i._Z5draw2v)
-    graph()                                  0x00001484   ARM Code     188  main.o(i._Z5graphv)
-    graph2()                                 0x00001554   ARM Code     976  main.o(i._Z6graph2v)
-    initADC()                                0x00001954   ARM Code      32  oscilloscope.o(i._Z7initADCv)
-    pin::low()                               0x00001c10   ARM Code      24  pin.o(i._ZN3pin3lowEv)
-    pin::high()                              0x00001c28   ARM Code      24  pin.o(i._ZN3pin4highEv)
-    pin::output()                            0x00001c40   ARM Code      28  pin.o(i._ZN3pin6outputEv)
-    pin::pin(int)                            0x00001c5c   ARM Code     220  pin.o(i._ZN3pinC1Ei)
-    pin::pin__sub_object(int)                0x00001c5c   ARM Code       0  pin.o(i._ZN3pinC1Ei)
-    pin::pin()                               0x00001d50   ARM Code       4  pin.o(i._ZN3pinC1Ev)
-    pin::pin__sub_object()                   0x00001d50   ARM Code       0  pin.o(i._ZN3pinC1Ev)
-    pll::getCpuClock()                       0x00001d54   ARM Code       8  pll.o(i._ZN3pll11getCpuClockEv)
-    pll::feedSequence()                      0x00001d5c   ARM Code      24  pll.o(i._ZN3pll12feedSequenceEv)
-    pll::getPeripheralClock()                0x00001d78   ARM Code       8  pll.o(i._ZN3pll18getPeripheralClockEv)
-    pll::getP()                              0x00001d80   ARM Code      80  pll.o(i._ZN3pll4getPEv)
-    pll::setPll()                            0x00001dd8   ARM Code      96  pll.o(i._ZN3pll6setPllEv)
-    pll::isLocked()                          0x00001e3c   ARM Code      20  pll.o(i._ZN3pll8isLockedEv)
-    pll::pll(unsigned long, int, int)        0x00001e54   ARM Code      76  pll.o(i._ZN3pllC1Emii)
-    pll::pll__sub_object(unsigned long, int, int) 0x00001e54   ARM Code       0  pll.o(i._ZN3pllC1Emii)
-    spi1::setClockDiv(int)                   0x00001ea0   ARM Code      16  spi1.o(i._ZN4spi111setClockDivEi)
-    spi1::initPins()                         0x00001eb4   ARM Code      20  spi1.o(i._ZN4spi18initPinsEv)
-    spi1::spi1(unsigned long, int, int)      0x00001ecc   ARM Code     100  spi1.o(i._ZN4spi1C1Emii)
-    spi1::spi1__sub_object(unsigned long, int, int) 0x00001ecc   ARM Code       0  spi1.o(i._ZN4spi1C1Emii)
-    delay::ms(unsigned long)                 0x00001f34   ARM Code      40  delay.o(i._ZN5delay2msEm)
-    delay::delay(unsigned long)              0x00001f5c   ARM Code      48  delay.o(i._ZN5delayC1Em)
-    delay::delay__sub_object(unsigned long)  0x00001f5c   ARM Code       0  delay.o(i._ZN5delayC1Em)
-    uart0::getCommand(char, char)            0x00001f94   ARM Code     112  uart.o(i._ZN5uart010getCommandEcc)
-    uart0::callSetBaud()                     0x00002010   ARM Code      44  uart.o(i._ZN5uart011callSetBaudEv)
-    uart0::printString(char*)                0x00002040   ARM Code      44  uart.o(i._ZN5uart011printStringEPc)
-    uart0::read()                            0x0000206c   ARM Code      24  uart.o(i._ZN5uart04readEv)
-    uart0::write(char)                       0x00002088   ARM Code      24  uart.o(i._ZN5uart05writeEc)
-    uart0::uart0(unsigned long, unsigned long, unsigned, unsigned, int) 0x000020a4   ARM Code     148  uart.o(i._ZN5uart0C1Emmjji)
-    uart0::uart0__sub_object(unsigned long, unsigned long, unsigned, unsigned, int) 0x000020a4   ARM Code       0  uart.o(i._ZN5uart0C1Emmjji)
-    ILI9225::_setWindow(unsigned, unsigned, unsigned, unsigned) 0x00002140   ARM Code     192  ili9229.o(i._ZN7ILI922510_setWindowEjjjj)
-    ILI9225::_writeData(int)                 0x00002200   ARM Code      32  ili9229.o(i._ZN7ILI922510_writeDataEi)
-    ILI9225::_updateCurX(int)                0x00002224   ARM Code      64  ili9229.o(i._ZN7ILI922511_updateCurXEi)
-    ILI9225::_updateCurY(int)                0x00002264   ARM Code      72  ili9229.o(i._ZN7ILI922511_updateCurYEi)
-    ILI9225::setBacklight(bool)              0x000022ac   ARM Code      20  ili9229.o(i._ZN7ILI922512setBacklightEb)
-    ILI9225::_writeCommand(int)              0x000022c0   ARM Code      32  ili9229.o(i._ZN7ILI922513_writeCommandEi)
-    ILI9225::fillRectangle(unsigned, unsigned, unsigned, unsigned, unsigned) 0x000022e4   ARM Code      88  ili9229.o(i._ZN7ILI922513fillRectangleEjjjjj)
-    ILI9225::_writeRegister(unsigned, unsigned) 0x0000233c   ARM Code      32  ili9229.o(i._ZN7ILI922514_writeRegisterEjj)
-    ILI9225::setOrientation(char)            0x0000235c   ARM Code      68  ili9229.o(i._ZN7ILI922514setOrientationEc)
-    ILI9225::setCursorLimits(unsigned, unsigned, unsigned, unsigned, unsigned) 0x000023a0   ARM Code     136  ili9229.o(i._ZN7ILI922515setCursorLimitsEjjjjj)
-    ILI9225::_orientCoordinates(unsigned&, unsigned&) 0x00002428   ARM Code     148  ili9229.o(i._ZN7ILI922518_orientCoordinatesERjS0_)
-    ILI9225::begin(unsigned long)            0x000024bc   ARM Code     996  ili9229.o(i._ZN7ILI92255beginEm)
-    ILI9225::clear(int)                      0x000028bc   ARM Code     104  ili9229.o(i._ZN7ILI92255clearEi)
-    ILI9225::setFont(const char*)            0x00002924   ARM Code      60  ili9229.o(i._ZN7ILI92257setFontEPKc)
-    ILI9225::drawChar(unsigned, unsigned, unsigned, unsigned) 0x00002960   ARM Code     252  ili9229.o(i._ZN7ILI92258drawCharEjjjj)
-    ILI9225::drawLine(unsigned, unsigned, unsigned, unsigned, unsigned) 0x00002a5c   ARM Code     208  ili9229.o(i._ZN7ILI92258drawLineEjjjjj)
-    ILI9225::drawText(char*, unsigned)       0x00002b2c   ARM Code     164  ili9229.o(i._ZN7ILI92258drawTextEPcj)
-    ILI9225::drawText(unsigned, unsigned, char*, unsigned) 0x00002bd0   ARM Code     124  ili9229.o(i._ZN7ILI92258drawTextEjjPcj)
-    ILI9225::drawPixel(unsigned, unsigned, unsigned) 0x00002c4c   ARM Code     104  ili9229.o(i._ZN7ILI92259drawPixelEjjj)
-    ILI9225::ILI9225(spi1*, pin, pin, pin, pin) 0x00002cb4   ARM Code     212  ili9229.o(i._ZN7ILI9225C1EP4spi13pinS2_S2_S2_)
-    ILI9225::ILI9225__sub_object(spi1*, pin, pin, pin, pin) 0x00002cb4   ARM Code       0  ili9229.o(i._ZN7ILI9225C1EP4spi13pinS2_S2_S2_)
-    complex::magnitude()                     0x00002d88   ARM Code      52  complex.o(i._ZN7complex9magnitudeEv)
-    complex::complex()                       0x00002dbc   ARM Code       4  complex.o(i._ZN7complexC1Ev)
-    complex::complex__sub_object()           0x00002dbc   ARM Code       0  complex.o(i._ZN7complexC1Ev)
-    complex::operator =(float)               0x00002dc0   ARM Code      16  complex.o(i._ZN7complexaSEf)
-    complex::operator *=(float)              0x00002dd0   ARM Code     120  complex.o(i._ZN7complexmLEf)
-    dacClass::init()                         0x00002e48   ARM Code      20  dac.o(i._ZN8dacClass4initEv)
-    dacClass::write(int)                     0x00002e60   ARM Code      16  dac.o(i._ZN8dacClass5writeEi)
-    dacClass::dacClass()                     0x00002e74   ARM Code       4  dac.o(i._ZN8dacClassC1Ev)
-    dacClass::dacClass__sub_object()         0x00002e74   ARM Code       0  dac.o(i._ZN8dacClassC1Ev)
-    adc0Class::read(int, int, int)           0x00002e78   ARM Code      68  adc.o(i._ZN9adc0Class4readEiii)
-    adc0Class::adc0Class()                   0x00002ec0   ARM Code       4  adc.o(i._ZN9adc0ClassC1Ev)
-    adc0Class::adc0Class__sub_object()       0x00002ec0   ARM Code       0  adc.o(i._ZN9adc0ClassC1Ev)
-    processor::add(void(*)(), char*)         0x00002ec4   ARM Code      32  process.o(i._ZN9processor3addEPFvvEPc)
-    processor::process(char*)                0x00002ee8   ARM Code     100  process.o(i._ZN9processor7processEPc)
-    processor::processor()                   0x00002f50   ARM Code       4  process.o(i._ZN9processorC1Ev)
-    processor::processor__sub_object()       0x00002f50   ARM Code       0  process.o(i._ZN9processorC1Ev)
-    __ARM_common_call_via_r0                 0x00002f55   Thumb Code     2  init_aeabi.o(i.__ARM_common_call_via_r0)
-    __ARM_common_call_via_r1                 0x00002f57   Thumb Code     2  __printf.o(i.__ARM_common_call_via_r1)
-    __ARM_common_call_via_r2                 0x00002f59   Thumb Code     2  __printf.o(i.__ARM_common_call_via_r2)
-    __ARM_common_call_via_r6                 0x00002f5b   Thumb Code     2  aeabi_vec_ctor_nocookie_nodtor.o(i.__ARM_common_call_via_r6)
-    __ARM_fpclassify                         0x00002f5c   ARM Code      48  fpclassify.o(i.__ARM_fpclassify)
-    Inline ARM to Thumb Veneer to __aeabi_vec_ctor_nocookie_nodtor 0x00002f8c   ARM Code       8  aeabi_vec_ctor_nocookie_nodtor.o(i.__aeabi_vec_ctor_nocookie_nodtor)
-    __aeabi_vec_ctor_nocookie_nodtor         0x00002f95   Thumb Code    40  aeabi_vec_ctor_nocookie_nodtor.o(i.__aeabi_vec_ctor_nocookie_nodtor)
-    __ieee754_rem_pio2                       0x00002fbc   ARM Code    1236  rred.o(i.__ieee754_rem_pio2)
-    __kernel_cos                             0x000034d0   ARM Code     404  cos_i.o(i.__kernel_cos)
-    __kernel_poly                            0x0000366c   ARM Code     256  poly.o(i.__kernel_poly)
-    __kernel_sin                             0x0000376c   ARM Code     368  sin_i.o(i.__kernel_sin)
-    __mathlib_dbl_infnan                     0x000038e8   ARM Code       8  dunder.o(i.__mathlib_dbl_infnan)
-    __mathlib_dbl_invalid                    0x000038f0   ARM Code      20  dunder.o(i.__mathlib_dbl_invalid)
-    __mathlib_dbl_underflow                  0x00003904   ARM Code      20  dunder.o(i.__mathlib_dbl_underflow)
-    cos                                      0x00003a54   ARM Code     236  cos.o(i.cos)
-    main                                     0x00003b44   ARM Code     316  main.o(i.main)
-    sin                                      0x00003cf0   ARM Code     244  sin.o(i.sin)
-    sqrtf                                    0x00003de8   ARM Code      72  sqrtf.o(i.sqrtf)
-    __aeabi_d2f                              0x00003e30   ARM Code       0  d2f.o(x$fpl$d2f)
-    _d2f                                     0x00003e30   ARM Code     108  d2f.o(x$fpl$d2f)
-    __aeabi_dadd                             0x00003e9c   ARM Code       0  daddsub_noclz.o(x$fpl$dadd)
-    _dadd                                    0x00003e9c   ARM Code     336  daddsub_noclz.o(x$fpl$dadd)
-    __fpl_dcheck_NaN1                        0x00003ff0   ARM Code      12  dcheck1.o(x$fpl$dcheck1)
-    __fpl_dcmp_Inf                           0x00004000   ARM Code      28  dcmpi.o(x$fpl$dcmpinf)
-    __aeabi_ddiv                             0x0000401c   ARM Code       0  ddiv.o(x$fpl$ddiv)
-    _ddiv                                    0x0000401c   ARM Code     600  ddiv.o(x$fpl$ddiv)
-    __aeabi_d2iz                             0x000042fc   ARM Code       0  dfix.o(x$fpl$dfix)
-    _dfix                                    0x000042fc   ARM Code     112  dfix.o(x$fpl$dfix)
-    __aeabi_d2uiz                            0x0000436c   ARM Code       0  dfixu.o(x$fpl$dfixu)
-    _dfixu                                   0x0000436c   ARM Code     112  dfixu.o(x$fpl$dfixu)
-    __aeabi_i2d                              0x000043dc   ARM Code       0  dflt_noclz.o(x$fpl$dflt)
-    _dflt                                    0x000043dc   ARM Code      88  dflt_noclz.o(x$fpl$dflt)
-    __dflt_normalise                         0x000043ec   ARM Code       0  dflt_noclz.o(x$fpl$dflt)
-    __aeabi_ui2d                             0x00004434   ARM Code       0  dflt_noclz.o(x$fpl$dfltu)
-    _dfltu                                   0x00004434   ARM Code      12  dflt_noclz.o(x$fpl$dfltu)
-    __aeabi_cdcmple                          0x00004440   ARM Code       0  dleqf.o(x$fpl$dleqf)
-    _dcmple                                  0x00004440   ARM Code     148  dleqf.o(x$fpl$dleqf)
-    __fpl_dcmple_InfNaN                      0x000044bc   ARM Code       0  dleqf.o(x$fpl$dleqf)
-    __aeabi_dmul                             0x000044d4   ARM Code       0  dmul.o(x$fpl$dmul)
-    _dmul                                    0x000044d4   ARM Code     372  dmul.o(x$fpl$dmul)
-    __fpl_dnaninf                            0x00004654   ARM Code     192  dnaninf.o(x$fpl$dnaninf)
-    __fpl_dretinf                            0x00004714   ARM Code      16  dretinf.o(x$fpl$dretinf)
-    __aeabi_drsub                            0x00004724   ARM Code       0  daddsub_noclz.o(x$fpl$drsb)
-    _drsb                                    0x00004724   ARM Code      24  daddsub_noclz.o(x$fpl$drsb)
-    __aeabi_dsub                             0x0000473c   ARM Code       0  daddsub_noclz.o(x$fpl$dsub)
-    _dsub                                    0x0000473c   ARM Code     576  daddsub_noclz.o(x$fpl$dsub)
-    __aeabi_f2d                              0x00004980   ARM Code       0  f2d.o(x$fpl$f2d)
-    _f2d                                     0x00004980   ARM Code     100  f2d.o(x$fpl$f2d)
-    __aeabi_fadd                             0x000049e4   ARM Code       0  faddsub_noclz.o(x$fpl$fadd)
-    _fadd                                    0x000049e4   ARM Code     196  faddsub_noclz.o(x$fpl$fadd)
-    __fpl_fcmp_Inf                           0x00004aa8   ARM Code      28  fcmpi.o(x$fpl$fcmpinf)
-    __aeabi_fdiv                             0x00004ac4   ARM Code       0  fdiv.o(x$fpl$fdiv)
-    _fdiv                                    0x00004ac4   ARM Code     396  fdiv.o(x$fpl$fdiv)
-    __aeabi_f2iz                             0x00004c54   ARM Code       0  ffix.o(x$fpl$ffix)
-    _ffix                                    0x00004c54   ARM Code      68  ffix.o(x$fpl$ffix)
-    __aeabi_f2uiz                            0x00004c98   ARM Code       0  ffixu.o(x$fpl$ffixu)
-    _ffixu                                   0x00004c98   ARM Code      84  ffixu.o(x$fpl$ffixu)
-    __aeabi_i2f                              0x00004cec   ARM Code       0  fflt_noclz.o(x$fpl$fflt)
-    _fflt                                    0x00004cec   ARM Code      92  fflt_noclz.o(x$fpl$fflt)
-    __fflt_normalise                         0x00004cf8   ARM Code       0  fflt_noclz.o(x$fpl$fflt)
-    __aeabi_cfcmple                          0x00004d48   ARM Code       0  fleqf.o(x$fpl$fleqf)
-    _fcmple                                  0x00004d48   ARM Code     132  fleqf.o(x$fpl$fleqf)
-    __fpl_fcmple_InfNaN                      0x00004db4   ARM Code       0  fleqf.o(x$fpl$fleqf)
-    __aeabi_fmul                             0x00004dcc   ARM Code       0  fmul.o(x$fpl$fmul)
-    _fmul                                    0x00004dcc   ARM Code     256  fmul.o(x$fpl$fmul)
-    __fpl_fnaninf                            0x00004ecc   ARM Code     168  fnaninf.o(x$fpl$fnaninf)
-    __fpl_fretinf                            0x00004f74   ARM Code      16  fretinf.o(x$fpl$fretinf)
-    __aeabi_cfrcmple                         0x00004f84   ARM Code       0  frleqf.o(x$fpl$frleqf)
-    _frcmple                                 0x00004f84   ARM Code     124  frleqf.o(x$fpl$frleqf)
-    _fsqrt                                   0x00005000   ARM Code     316  fsqrt.o(x$fpl$fsqrt)
-    __aeabi_fsub                             0x0000513c   ARM Code       0  faddsub_noclz.o(x$fpl$fsub)
-    _fsub                                    0x0000513c   ARM Code     304  faddsub_noclz.o(x$fpl$fsub)
-    __fpl_return_NaN                         0x0000526c   ARM Code     116  retnan.o(x$fpl$retnan)
-    __ARM_scalbn                             0x000052e0   ARM Code     104  scalbn.o(x$fpl$scalbn)
-    __fpl_cmpreturn                          0x00005348   ARM Code      60  trapv.o(x$fpl$trapveneer)
-    __I$use$fp                               0x00005384   Number         0  usenofp.o(x$fpl$usenofp)
-    Region$$Table$$Base                      0x00005748   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x00005768   Number         0  anon$$obj.o(Region$$Table)
-    SHT$$INIT_ARRAY$$Base                    0x00005768   Number         0  main.o(.init_array)
-    SHT$$INIT_ARRAY$$Limit                   0x0000576c   Number         0  init_aeabi.o(.init_array)
+    initDACout()                             0x00000bb0   ARM Code     204  oscilloscope.o(i._Z10initDACoutv)
+    initTimer0()                             0x00000c9c   ARM Code      76  oscilloscope.o(i._Z10initTimer0v)
+    displayGraph(int*, int, int, bool)       0x00000cf0   ARM Code     264  oscilloscope.o(i._Z12displayGraphPiiib)
+    oscilloscope()                           0x00000e00   ARM Code     320  oscilloscope.o(i._Z12oscilloscopev)
+    displayXY_Plot(int*, int*, int, int, bool) 0x00000f6c   ARM Code     304  oscilloscope.o(i._Z14displayXY_PlotPiS_iib)
+    displayFFT_Plot(int*, int, int, bool)    0x000010a4   ARM Code     448  oscilloscope.o(i._Z15displayFFT_PlotPiiib)
+    Timer0_Interrupt()                       0x00001270   ARM Code     132  oscilloscope.o(i._Z16Timer0_Interruptv)
+    Timer1_Interrupt()                       0x0000130c   ARM Code      72  oscilloscope.o(i._Z16Timer1_Interruptv)
+    fft(complex*, int, int)                  0x00001364   ARM Code      88  fft.o(i._Z3fftP7complexii)
+    draw1()                                  0x000013bc   ARM Code     100  main.o(i._Z5draw1v)
+    draw2()                                  0x00001424   ARM Code      96  main.o(i._Z5draw2v)
+    graph()                                  0x00001488   ARM Code     188  main.o(i._Z5graphv)
+    graph2()                                 0x00001558   ARM Code     976  main.o(i._Z6graph2v)
+    initADC()                                0x00001958   ARM Code      32  oscilloscope.o(i._Z7initADCv)
+    pin::low()                               0x00001c14   ARM Code      24  pin.o(i._ZN3pin3lowEv)
+    pin::high()                              0x00001c2c   ARM Code      24  pin.o(i._ZN3pin4highEv)
+    pin::output()                            0x00001c44   ARM Code      28  pin.o(i._ZN3pin6outputEv)
+    pin::pin(int)                            0x00001c60   ARM Code     220  pin.o(i._ZN3pinC1Ei)
+    pin::pin__sub_object(int)                0x00001c60   ARM Code       0  pin.o(i._ZN3pinC1Ei)
+    pin::pin()                               0x00001d54   ARM Code       4  pin.o(i._ZN3pinC1Ev)
+    pin::pin__sub_object()                   0x00001d54   ARM Code       0  pin.o(i._ZN3pinC1Ev)
+    pll::getCpuClock()                       0x00001d58   ARM Code       8  pll.o(i._ZN3pll11getCpuClockEv)
+    pll::feedSequence()                      0x00001d60   ARM Code      24  pll.o(i._ZN3pll12feedSequenceEv)
+    pll::getPeripheralClock()                0x00001d7c   ARM Code       8  pll.o(i._ZN3pll18getPeripheralClockEv)
+    pll::getP()                              0x00001d84   ARM Code      80  pll.o(i._ZN3pll4getPEv)
+    pll::setPll()                            0x00001ddc   ARM Code      96  pll.o(i._ZN3pll6setPllEv)
+    pll::isLocked()                          0x00001e40   ARM Code      20  pll.o(i._ZN3pll8isLockedEv)
+    pll::pll(unsigned long, int, int)        0x00001e58   ARM Code      76  pll.o(i._ZN3pllC1Emii)
+    pll::pll__sub_object(unsigned long, int, int) 0x00001e58   ARM Code       0  pll.o(i._ZN3pllC1Emii)
+    spi1::setClockDiv(int)                   0x00001ea4   ARM Code      16  spi1.o(i._ZN4spi111setClockDivEi)
+    spi1::initPins()                         0x00001eb8   ARM Code      20  spi1.o(i._ZN4spi18initPinsEv)
+    spi1::spi1(unsigned long, int, int)      0x00001ed0   ARM Code     100  spi1.o(i._ZN4spi1C1Emii)
+    spi1::spi1__sub_object(unsigned long, int, int) 0x00001ed0   ARM Code       0  spi1.o(i._ZN4spi1C1Emii)
+    delay::ms(unsigned long)                 0x00001f38   ARM Code      40  delay.o(i._ZN5delay2msEm)
+    delay::delay(unsigned long)              0x00001f60   ARM Code      48  delay.o(i._ZN5delayC1Em)
+    delay::delay__sub_object(unsigned long)  0x00001f60   ARM Code       0  delay.o(i._ZN5delayC1Em)
+    uart0::getCommand(char, char)            0x00001f98   ARM Code     112  uart.o(i._ZN5uart010getCommandEcc)
+    uart0::callSetBaud()                     0x00002014   ARM Code      44  uart.o(i._ZN5uart011callSetBaudEv)
+    uart0::printString(char*)                0x00002044   ARM Code      44  uart.o(i._ZN5uart011printStringEPc)
+    uart0::read()                            0x00002070   ARM Code      24  uart.o(i._ZN5uart04readEv)
+    uart0::write(char)                       0x0000208c   ARM Code      24  uart.o(i._ZN5uart05writeEc)
+    uart0::uart0(unsigned long, unsigned long, unsigned, unsigned, int) 0x000020a8   ARM Code     148  uart.o(i._ZN5uart0C1Emmjji)
+    uart0::uart0__sub_object(unsigned long, unsigned long, unsigned, unsigned, int) 0x000020a8   ARM Code       0  uart.o(i._ZN5uart0C1Emmjji)
+    ILI9225::_setWindow(unsigned, unsigned, unsigned, unsigned) 0x00002144   ARM Code     192  ili9229.o(i._ZN7ILI922510_setWindowEjjjj)
+    ILI9225::_writeData(int)                 0x00002204   ARM Code      32  ili9229.o(i._ZN7ILI922510_writeDataEi)
+    ILI9225::_updateCurX(int)                0x00002228   ARM Code      64  ili9229.o(i._ZN7ILI922511_updateCurXEi)
+    ILI9225::_updateCurY(int)                0x00002268   ARM Code      72  ili9229.o(i._ZN7ILI922511_updateCurYEi)
+    ILI9225::setBacklight(bool)              0x000022b0   ARM Code      20  ili9229.o(i._ZN7ILI922512setBacklightEb)
+    ILI9225::_writeCommand(int)              0x000022c4   ARM Code      32  ili9229.o(i._ZN7ILI922513_writeCommandEi)
+    ILI9225::fillRectangle(unsigned, unsigned, unsigned, unsigned, unsigned) 0x000022e8   ARM Code      88  ili9229.o(i._ZN7ILI922513fillRectangleEjjjjj)
+    ILI9225::_writeRegister(unsigned, unsigned) 0x00002340   ARM Code      32  ili9229.o(i._ZN7ILI922514_writeRegisterEjj)
+    ILI9225::setOrientation(char)            0x00002360   ARM Code      68  ili9229.o(i._ZN7ILI922514setOrientationEc)
+    ILI9225::setCursorLimits(unsigned, unsigned, unsigned, unsigned, unsigned) 0x000023a4   ARM Code     136  ili9229.o(i._ZN7ILI922515setCursorLimitsEjjjjj)
+    ILI9225::_orientCoordinates(unsigned&, unsigned&) 0x0000242c   ARM Code     148  ili9229.o(i._ZN7ILI922518_orientCoordinatesERjS0_)
+    ILI9225::begin(unsigned long)            0x000024c0   ARM Code     996  ili9229.o(i._ZN7ILI92255beginEm)
+    ILI9225::clear(int)                      0x000028c0   ARM Code     104  ili9229.o(i._ZN7ILI92255clearEi)
+    ILI9225::setFont(const char*)            0x00002928   ARM Code      60  ili9229.o(i._ZN7ILI92257setFontEPKc)
+    ILI9225::drawChar(unsigned, unsigned, unsigned, unsigned) 0x00002964   ARM Code     252  ili9229.o(i._ZN7ILI92258drawCharEjjjj)
+    ILI9225::drawLine(unsigned, unsigned, unsigned, unsigned, unsigned) 0x00002a60   ARM Code     208  ili9229.o(i._ZN7ILI92258drawLineEjjjjj)
+    ILI9225::drawText(char*, unsigned)       0x00002b30   ARM Code     164  ili9229.o(i._ZN7ILI92258drawTextEPcj)
+    ILI9225::drawText(unsigned, unsigned, char*, unsigned) 0x00002bd4   ARM Code     124  ili9229.o(i._ZN7ILI92258drawTextEjjPcj)
+    ILI9225::drawPixel(unsigned, unsigned, unsigned) 0x00002c50   ARM Code     104  ili9229.o(i._ZN7ILI92259drawPixelEjjj)
+    ILI9225::ILI9225(spi1*, pin, pin, pin, pin) 0x00002cb8   ARM Code     212  ili9229.o(i._ZN7ILI9225C1EP4spi13pinS2_S2_S2_)
+    ILI9225::ILI9225__sub_object(spi1*, pin, pin, pin, pin) 0x00002cb8   ARM Code       0  ili9229.o(i._ZN7ILI9225C1EP4spi13pinS2_S2_S2_)
+    complex::magnitude()                     0x00002d8c   ARM Code      52  complex.o(i._ZN7complex9magnitudeEv)
+    complex::complex()                       0x00002dc0   ARM Code       4  complex.o(i._ZN7complexC1Ev)
+    complex::complex__sub_object()           0x00002dc0   ARM Code       0  complex.o(i._ZN7complexC1Ev)
+    complex::operator =(float)               0x00002dc4   ARM Code      16  complex.o(i._ZN7complexaSEf)
+    complex::operator *=(float)              0x00002dd4   ARM Code     120  complex.o(i._ZN7complexmLEf)
+    dacClass::init()                         0x00002e4c   ARM Code      20  dac.o(i._ZN8dacClass4initEv)
+    dacClass::write(int)                     0x00002e64   ARM Code      16  dac.o(i._ZN8dacClass5writeEi)
+    dacClass::dacClass()                     0x00002e78   ARM Code       4  dac.o(i._ZN8dacClassC1Ev)
+    dacClass::dacClass__sub_object()         0x00002e78   ARM Code       0  dac.o(i._ZN8dacClassC1Ev)
+    adc0Class::read(int, int, int)           0x00002e7c   ARM Code      68  adc.o(i._ZN9adc0Class4readEiii)
+    adc0Class::adc0Class()                   0x00002ec4   ARM Code       4  adc.o(i._ZN9adc0ClassC1Ev)
+    adc0Class::adc0Class__sub_object()       0x00002ec4   ARM Code       0  adc.o(i._ZN9adc0ClassC1Ev)
+    processor::add(void(*)(), char*)         0x00002ec8   ARM Code      32  process.o(i._ZN9processor3addEPFvvEPc)
+    processor::process(char*)                0x00002eec   ARM Code     100  process.o(i._ZN9processor7processEPc)
+    processor::processor()                   0x00002f54   ARM Code       4  process.o(i._ZN9processorC1Ev)
+    processor::processor__sub_object()       0x00002f54   ARM Code       0  process.o(i._ZN9processorC1Ev)
+    __ARM_common_call_via_r0                 0x00002f59   Thumb Code     2  init_aeabi.o(i.__ARM_common_call_via_r0)
+    __ARM_common_call_via_r1                 0x00002f5b   Thumb Code     2  __printf.o(i.__ARM_common_call_via_r1)
+    __ARM_common_call_via_r2                 0x00002f5d   Thumb Code     2  __printf.o(i.__ARM_common_call_via_r2)
+    __ARM_common_call_via_r6                 0x00002f5f   Thumb Code     2  aeabi_vec_ctor_nocookie_nodtor.o(i.__ARM_common_call_via_r6)
+    __ARM_fpclassify                         0x00002f60   ARM Code      48  fpclassify.o(i.__ARM_fpclassify)
+    Inline ARM to Thumb Veneer to __aeabi_vec_ctor_nocookie_nodtor 0x00002f90   ARM Code       8  aeabi_vec_ctor_nocookie_nodtor.o(i.__aeabi_vec_ctor_nocookie_nodtor)
+    __aeabi_vec_ctor_nocookie_nodtor         0x00002f99   Thumb Code    40  aeabi_vec_ctor_nocookie_nodtor.o(i.__aeabi_vec_ctor_nocookie_nodtor)
+    __ieee754_rem_pio2                       0x00002fc0   ARM Code    1236  rred.o(i.__ieee754_rem_pio2)
+    __kernel_cos                             0x000034d4   ARM Code     404  cos_i.o(i.__kernel_cos)
+    __kernel_poly                            0x00003670   ARM Code     256  poly.o(i.__kernel_poly)
+    __kernel_sin                             0x00003770   ARM Code     368  sin_i.o(i.__kernel_sin)
+    __mathlib_dbl_infnan                     0x000038ec   ARM Code       8  dunder.o(i.__mathlib_dbl_infnan)
+    __mathlib_dbl_invalid                    0x000038f4   ARM Code      20  dunder.o(i.__mathlib_dbl_invalid)
+    __mathlib_dbl_underflow                  0x00003908   ARM Code      20  dunder.o(i.__mathlib_dbl_underflow)
+    cos                                      0x00003a58   ARM Code     236  cos.o(i.cos)
+    main                                     0x00003b48   ARM Code     316  main.o(i.main)
+    sin                                      0x00003cf4   ARM Code     244  sin.o(i.sin)
+    sqrtf                                    0x00003dec   ARM Code      72  sqrtf.o(i.sqrtf)
+    __aeabi_d2f                              0x00003e34   ARM Code       0  d2f.o(x$fpl$d2f)
+    _d2f                                     0x00003e34   ARM Code     108  d2f.o(x$fpl$d2f)
+    __aeabi_dadd                             0x00003ea0   ARM Code       0  daddsub_noclz.o(x$fpl$dadd)
+    _dadd                                    0x00003ea0   ARM Code     336  daddsub_noclz.o(x$fpl$dadd)
+    __fpl_dcheck_NaN1                        0x00003ff4   ARM Code      12  dcheck1.o(x$fpl$dcheck1)
+    __fpl_dcmp_Inf                           0x00004004   ARM Code      28  dcmpi.o(x$fpl$dcmpinf)
+    __aeabi_ddiv                             0x00004020   ARM Code       0  ddiv.o(x$fpl$ddiv)
+    _ddiv                                    0x00004020   ARM Code     600  ddiv.o(x$fpl$ddiv)
+    __aeabi_d2iz                             0x00004300   ARM Code       0  dfix.o(x$fpl$dfix)
+    _dfix                                    0x00004300   ARM Code     112  dfix.o(x$fpl$dfix)
+    __aeabi_d2uiz                            0x00004370   ARM Code       0  dfixu.o(x$fpl$dfixu)
+    _dfixu                                   0x00004370   ARM Code     112  dfixu.o(x$fpl$dfixu)
+    __aeabi_i2d                              0x000043e0   ARM Code       0  dflt_noclz.o(x$fpl$dflt)
+    _dflt                                    0x000043e0   ARM Code      88  dflt_noclz.o(x$fpl$dflt)
+    __dflt_normalise                         0x000043f0   ARM Code       0  dflt_noclz.o(x$fpl$dflt)
+    __aeabi_ui2d                             0x00004438   ARM Code       0  dflt_noclz.o(x$fpl$dfltu)
+    _dfltu                                   0x00004438   ARM Code      12  dflt_noclz.o(x$fpl$dfltu)
+    __aeabi_cdcmple                          0x00004444   ARM Code       0  dleqf.o(x$fpl$dleqf)
+    _dcmple                                  0x00004444   ARM Code     148  dleqf.o(x$fpl$dleqf)
+    __fpl_dcmple_InfNaN                      0x000044c0   ARM Code       0  dleqf.o(x$fpl$dleqf)
+    __aeabi_dmul                             0x000044d8   ARM Code       0  dmul.o(x$fpl$dmul)
+    _dmul                                    0x000044d8   ARM Code     372  dmul.o(x$fpl$dmul)
+    __fpl_dnaninf                            0x00004658   ARM Code     192  dnaninf.o(x$fpl$dnaninf)
+    __fpl_dretinf                            0x00004718   ARM Code      16  dretinf.o(x$fpl$dretinf)
+    __aeabi_drsub                            0x00004728   ARM Code       0  daddsub_noclz.o(x$fpl$drsb)
+    _drsb                                    0x00004728   ARM Code      24  daddsub_noclz.o(x$fpl$drsb)
+    __aeabi_dsub                             0x00004740   ARM Code       0  daddsub_noclz.o(x$fpl$dsub)
+    _dsub                                    0x00004740   ARM Code     576  daddsub_noclz.o(x$fpl$dsub)
+    __aeabi_f2d                              0x00004984   ARM Code       0  f2d.o(x$fpl$f2d)
+    _f2d                                     0x00004984   ARM Code     100  f2d.o(x$fpl$f2d)
+    __aeabi_fadd                             0x000049e8   ARM Code       0  faddsub_noclz.o(x$fpl$fadd)
+    _fadd                                    0x000049e8   ARM Code     196  faddsub_noclz.o(x$fpl$fadd)
+    __fpl_fcmp_Inf                           0x00004aac   ARM Code      28  fcmpi.o(x$fpl$fcmpinf)
+    __aeabi_fdiv                             0x00004ac8   ARM Code       0  fdiv.o(x$fpl$fdiv)
+    _fdiv                                    0x00004ac8   ARM Code     396  fdiv.o(x$fpl$fdiv)
+    __aeabi_f2iz                             0x00004c58   ARM Code       0  ffix.o(x$fpl$ffix)
+    _ffix                                    0x00004c58   ARM Code      68  ffix.o(x$fpl$ffix)
+    __aeabi_f2uiz                            0x00004c9c   ARM Code       0  ffixu.o(x$fpl$ffixu)
+    _ffixu                                   0x00004c9c   ARM Code      84  ffixu.o(x$fpl$ffixu)
+    __aeabi_i2f                              0x00004cf0   ARM Code       0  fflt_noclz.o(x$fpl$fflt)
+    _fflt                                    0x00004cf0   ARM Code      92  fflt_noclz.o(x$fpl$fflt)
+    __fflt_normalise                         0x00004cfc   ARM Code       0  fflt_noclz.o(x$fpl$fflt)
+    __aeabi_cfcmple                          0x00004d4c   ARM Code       0  fleqf.o(x$fpl$fleqf)
+    _fcmple                                  0x00004d4c   ARM Code     132  fleqf.o(x$fpl$fleqf)
+    __fpl_fcmple_InfNaN                      0x00004db8   ARM Code       0  fleqf.o(x$fpl$fleqf)
+    __aeabi_fmul                             0x00004dd0   ARM Code       0  fmul.o(x$fpl$fmul)
+    _fmul                                    0x00004dd0   ARM Code     256  fmul.o(x$fpl$fmul)
+    __fpl_fnaninf                            0x00004ed0   ARM Code     168  fnaninf.o(x$fpl$fnaninf)
+    __fpl_fretinf                            0x00004f78   ARM Code      16  fretinf.o(x$fpl$fretinf)
+    __aeabi_cfrcmple                         0x00004f88   ARM Code       0  frleqf.o(x$fpl$frleqf)
+    _frcmple                                 0x00004f88   ARM Code     124  frleqf.o(x$fpl$frleqf)
+    _fsqrt                                   0x00005004   ARM Code     316  fsqrt.o(x$fpl$fsqrt)
+    __aeabi_fsub                             0x00005140   ARM Code       0  faddsub_noclz.o(x$fpl$fsub)
+    _fsub                                    0x00005140   ARM Code     304  faddsub_noclz.o(x$fpl$fsub)
+    __fpl_return_NaN                         0x00005270   ARM Code     116  retnan.o(x$fpl$retnan)
+    __ARM_scalbn                             0x000052e4   ARM Code     104  scalbn.o(x$fpl$scalbn)
+    __fpl_cmpreturn                          0x0000534c   ARM Code      60  trapv.o(x$fpl$trapveneer)
+    __I$use$fp                               0x00005388   Number         0  usenofp.o(x$fpl$usenofp)
+    Region$$Table$$Base                      0x00005750   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x00005770   Number         0  anon$$obj.o(Region$$Table)
+    SHT$$INIT_ARRAY$$Base                    0x00005770   Number         0  main.o(.init_array)
+    SHT$$INIT_ARRAY$$Limit                   0x00005774   Number         0  init_aeabi.o(.init_array)
     adc0                                     0x40000000   Data           1  main.o(.data)
     dac                                      0x40000001   Data           1  main.o(.data)
     wait                                     0x40000004   Data           4  main.o(.data)
@@ -2073,9 +2073,9 @@ Memory Map of the image
 
   Image Entry point : 0x000000cc
 
-  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x00005784, Max: 0x00080000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x0000578c, Max: 0x00080000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Base: 0x00000000, Size: 0x0000576c, Max: 0x00080000, ABSOLUTE)
+    Execution Region ER_IROM1 (Base: 0x00000000, Size: 0x00005774, Max: 0x00080000, ABSOLUTE)
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -2192,135 +2192,136 @@ Memory Map of the image
     0x00000b28   0x00000054   Code   RO         1737    .text               c_t.l(defsig_rtmem_inner.o)
     0x00000b7c   0x00000010   Code   RO         1761    .text               c_t.l(sys_wrch.o)
     0x00000b8c   0x00000024   Code   RO         1355    .text_udiv          c_t.l(aeabi_sdiv.o)
-    0x00000bb0   0x000000e8   Code   RO         1131    i._Z10initDACoutv   oscilloscope.o
-    0x00000c98   0x00000054   Code   RO         1132    i._Z10initTimer0v   oscilloscope.o
-    0x00000cec   0x00000110   Code   RO         1133    i._Z12displayGraphPiiib  oscilloscope.o
-    0x00000dfc   0x0000016c   Code   RO         1134    i._Z12oscilloscopev  oscilloscope.o
-    0x00000f68   0x00000138   Code   RO         1137    i._Z14displayXY_PlotPiS_iib  oscilloscope.o
-    0x000010a0   0x000001cc   Code   RO         1138    i._Z15displayFFT_PlotPiiib  oscilloscope.o
-    0x0000126c   0x0000009c   Code   RO         1139    i._Z16Timer0_Interruptv  oscilloscope.o
-    0x00001308   0x00000058   Code   RO         1140    i._Z16Timer1_Interruptv  oscilloscope.o
-    0x00001360   0x00000058   Code   RO          936    i._Z3fftP7complexii  fft.o
-    0x000013b8   0x00000068   Code   RO           11    i._Z5draw1v         main.o
-    0x00001420   0x00000064   Code   RO           12    i._Z5draw2v         main.o
-    0x00001484   0x000000d0   Code   RO           13    i._Z5graphv         main.o
-    0x00001554   0x00000400   Code   RO           14    i._Z6graph2v        main.o
-    0x00001954   0x00000024   Code   RO         1143    i._Z7initADCv       oscilloscope.o
-    0x00001978   0x00000298   Code   RO          939    i._Z8stockhamP7complexiiiS0_  fft.o
-    0x00001c10   0x00000018   Code   RO          543    i._ZN3pin3lowEv     pin.o
-    0x00001c28   0x00000018   Code   RO          544    i._ZN3pin4highEv    pin.o
-    0x00001c40   0x0000001c   Code   RO          546    i._ZN3pin6outputEv  pin.o
-    0x00001c5c   0x000000f4   Code   RO          547    i._ZN3pinC1Ei       pin.o
-    0x00001d50   0x00000004   Code   RO          548    i._ZN3pinC1Ev       pin.o
-    0x00001d54   0x00000008   Code   RO          443    i._ZN3pll11getCpuClockEv  pll.o
-    0x00001d5c   0x0000001c   Code   RO          445    i._ZN3pll12feedSequenceEv  pll.o
-    0x00001d78   0x00000008   Code   RO          446    i._ZN3pll18getPeripheralClockEv  pll.o
-    0x00001d80   0x00000058   Code   RO          448    i._ZN3pll4getPEv    pll.o
-    0x00001dd8   0x00000064   Code   RO          449    i._ZN3pll6setPllEv  pll.o
-    0x00001e3c   0x00000018   Code   RO          450    i._ZN3pll8isLockedEv  pll.o
-    0x00001e54   0x0000004c   Code   RO          451    i._ZN3pllC1Emii     pll.o
-    0x00001ea0   0x00000014   Code   RO          816    i._ZN4spi111setClockDivEi  spi1.o
-    0x00001eb4   0x00000018   Code   RO          820    i._ZN4spi18initPinsEv  spi1.o
-    0x00001ecc   0x00000068   Code   RO          821    i._ZN4spi1C1Emii    spi1.o
-    0x00001f34   0x00000028   Code   RO          508    i._ZN5delay2msEm    delay.o
-    0x00001f5c   0x00000038   Code   RO          511    i._ZN5delayC1Em     delay.o
-    0x00001f94   0x0000007c   Code   RO          311    i._ZN5uart010getCommandEcc  uart.o
-    0x00002010   0x00000030   Code   RO          312    i._ZN5uart011callSetBaudEv  uart.o
-    0x00002040   0x0000002c   Code   RO          313    i._ZN5uart011printStringEPc  uart.o
-    0x0000206c   0x0000001c   Code   RO          314    i._ZN5uart04readEv  uart.o
-    0x00002088   0x0000001c   Code   RO          315    i._ZN5uart05writeEc  uart.o
-    0x000020a4   0x0000009c   Code   RO          318    i._ZN5uart0C1Emmjji  uart.o
-    0x00002140   0x000000c0   Code   RO          585    i._ZN7ILI922510_setWindowEjjjj  ili9229.o
-    0x00002200   0x00000024   Code   RO          586    i._ZN7ILI922510_writeDataEi  ili9229.o
-    0x00002224   0x00000040   Code   RO          591    i._ZN7ILI922511_updateCurXEi  ili9229.o
-    0x00002264   0x00000048   Code   RO          592    i._ZN7ILI922511_updateCurYEi  ili9229.o
-    0x000022ac   0x00000014   Code   RO          595    i._ZN7ILI922512setBacklightEb  ili9229.o
-    0x000022c0   0x00000024   Code   RO          596    i._ZN7ILI922513_writeCommandEi  ili9229.o
-    0x000022e4   0x00000058   Code   RO          598    i._ZN7ILI922513fillRectangleEjjjjj  ili9229.o
-    0x0000233c   0x00000020   Code   RO          599    i._ZN7ILI922514_writeRegisterEjj  ili9229.o
-    0x0000235c   0x00000044   Code   RO          601    i._ZN7ILI922514setOrientationEc  ili9229.o
-    0x000023a0   0x00000088   Code   RO          602    i._ZN7ILI922515setCursorLimitsEjjjjj  ili9229.o
-    0x00002428   0x00000094   Code   RO          603    i._ZN7ILI922518_orientCoordinatesERjS0_  ili9229.o
-    0x000024bc   0x00000400   Code   RO          610    i._ZN7ILI92255beginEm  ili9229.o
-    0x000028bc   0x00000068   Code   RO          611    i._ZN7ILI92255clearEi  ili9229.o
-    0x00002924   0x0000003c   Code   RO          613    i._ZN7ILI92257setFontEPKc  ili9229.o
-    0x00002960   0x000000fc   Code   RO          614    i._ZN7ILI92258drawCharEjjjj  ili9229.o
-    0x00002a5c   0x000000d0   Code   RO          615    i._ZN7ILI92258drawLineEjjjjj  ili9229.o
-    0x00002b2c   0x000000a4   Code   RO          616    i._ZN7ILI92258drawTextEPcj  ili9229.o
-    0x00002bd0   0x0000007c   Code   RO          617    i._ZN7ILI92258drawTextEjjPcj  ili9229.o
-    0x00002c4c   0x00000068   Code   RO          619    i._ZN7ILI92259drawPixelEjjj  ili9229.o
-    0x00002cb4   0x000000d4   Code   RO          621    i._ZN7ILI9225C1EP4spi13pinS2_S2_S2_  ili9229.o
-    0x00002d88   0x00000034   Code   RO          986    i._ZN7complex9magnitudeEv  complex.o
-    0x00002dbc   0x00000004   Code   RO          988    i._ZN7complexC1Ev   complex.o
-    0x00002dc0   0x00000010   Code   RO          989    i._ZN7complexaSEf   complex.o
-    0x00002dd0   0x00000078   Code   RO          997    i._ZN7complexmLEf   complex.o
-    0x00002e48   0x00000018   Code   RO          911    i._ZN8dacClass4initEv  dac.o
-    0x00002e60   0x00000014   Code   RO          912    i._ZN8dacClass5writeEi  dac.o
-    0x00002e74   0x00000004   Code   RO          913    i._ZN8dacClassC1Ev  dac.o
-    0x00002e78   0x00000048   Code   RO          365    i._ZN9adc0Class4readEiii  adc.o
-    0x00002ec0   0x00000004   Code   RO          366    i._ZN9adc0ClassC1Ev  adc.o
-    0x00002ec4   0x00000024   Code   RO          873    i._ZN9processor3addEPFvvEPc  process.o
-    0x00002ee8   0x00000068   Code   RO          875    i._ZN9processor7processEPc  process.o
-    0x00002f50   0x00000004   Code   RO          876    i._ZN9processorC1Ev  process.o
-    0x00002f54   0x00000002   Code   RO         1380    i.__ARM_common_call_via_r0  c_t.l(init_aeabi.o)
-    0x00002f56   0x00000002   Code   RO         1317    i.__ARM_common_call_via_r1  c_t.l(__printf.o)
-    0x00002f58   0x00000002   Code   RO         1315    i.__ARM_common_call_via_r2  c_t.l(__printf.o)
-    0x00002f5a   0x00000002   Code   RO         1387    i.__ARM_common_call_via_r6  cpprt_t.l(aeabi_vec_ctor_nocookie_nodtor.o)
-    0x00002f5c   0x00000030   Code   RO         1719    i.__ARM_fpclassify  m_ts.l(fpclassify.o)
-    0x00002f8c   0x00000008   Ven    RO         1383    i.__aeabi_vec_ctor_nocookie_nodtor  cpprt_t.l(aeabi_vec_ctor_nocookie_nodtor.o)
-    0x00002f94   0x00000028   Code   RO         1383    i.__aeabi_vec_ctor_nocookie_nodtor  cpprt_t.l(aeabi_vec_ctor_nocookie_nodtor.o)
-    0x00002fbc   0x00000514   Code   RO         1640    i.__ieee754_rem_pio2  m_ts.l(rred.o)
-    0x000034d0   0x0000019c   Code   RO         1607    i.__kernel_cos      m_ts.l(cos_i.o)
-    0x0000366c   0x00000100   Code   RO         1721    i.__kernel_poly     m_ts.l(poly.o)
-    0x0000376c   0x0000017c   Code   RO         1648    i.__kernel_sin      m_ts.l(sin_i.o)
-    0x000038e8   0x00000008   Code   RO         1611    i.__mathlib_dbl_infnan  m_ts.l(dunder.o)
-    0x000038f0   0x00000014   Code   RO         1613    i.__mathlib_dbl_invalid  m_ts.l(dunder.o)
-    0x00003904   0x00000014   Code   RO         1616    i.__mathlib_dbl_underflow  m_ts.l(dunder.o)
-    0x00003918   0x0000013c   Code   RO           15    i.__sti___8_main_cpp__clock  main.o
-    0x00003a54   0x000000f0   Code   RO         1451    i.cos               m_ts.l(cos.o)
-    0x00003b44   0x000001ac   Code   RO           16    i.main              main.o
-    0x00003cf0   0x000000f8   Code   RO         1467    i.sin               m_ts.l(sin.o)
-    0x00003de8   0x00000048   Code   RO         1483    i.sqrtf             m_ts.l(sqrtf.o)
-    0x00003e30   0x0000006c   Code   RO         1390    x$fpl$d2f           fz_ts.l(d2f.o)
-    0x00003e9c   0x00000154   Code   RO         1392    x$fpl$dadd          fz_ts.l(daddsub_noclz.o)
-    0x00003ff0   0x00000010   Code   RO         1588    x$fpl$dcheck1       fz_ts.l(dcheck1.o)
-    0x00004000   0x0000001c   Code   RO         1590    x$fpl$dcmpinf       fz_ts.l(dcmpi.o)
-    0x0000401c   0x000002e0   Code   RO         1399    x$fpl$ddiv          fz_ts.l(ddiv.o)
-    0x000042fc   0x00000070   Code   RO         1402    x$fpl$dfix          fz_ts.l(dfix.o)
-    0x0000436c   0x00000070   Code   RO         1406    x$fpl$dfixu         fz_ts.l(dfixu.o)
-    0x000043dc   0x00000058   Code   RO         1411    x$fpl$dflt          fz_ts.l(dflt_noclz.o)
-    0x00004434   0x0000000c   Code   RO         1410    x$fpl$dfltu         fz_ts.l(dflt_noclz.o)
-    0x00004440   0x00000094   Code   RO         1414    x$fpl$dleqf         fz_ts.l(dleqf.o)
-    0x000044d4   0x00000180   Code   RO         1416    x$fpl$dmul          fz_ts.l(dmul.o)
-    0x00004654   0x000000c0   Code   RO         1592    x$fpl$dnaninf       fz_ts.l(dnaninf.o)
-    0x00004714   0x00000010   Code   RO         1594    x$fpl$dretinf       fz_ts.l(dretinf.o)
-    0x00004724   0x00000018   Code   RO         1393    x$fpl$drsb          fz_ts.l(daddsub_noclz.o)
-    0x0000473c   0x00000244   Code   RO         1394    x$fpl$dsub          fz_ts.l(daddsub_noclz.o)
-    0x00004980   0x00000064   Code   RO         1418    x$fpl$f2d           fz_ts.l(f2d.o)
-    0x000049e4   0x000000c4   Code   RO         1420    x$fpl$fadd          fz_ts.l(faddsub_noclz.o)
-    0x00004aa8   0x0000001c   Code   RO         1596    x$fpl$fcmpinf       fz_ts.l(fcmpi.o)
-    0x00004ac4   0x00000190   Code   RO         1427    x$fpl$fdiv          fz_ts.l(fdiv.o)
-    0x00004c54   0x00000044   Code   RO         1430    x$fpl$ffix          fz_ts.l(ffix.o)
-    0x00004c98   0x00000054   Code   RO         1434    x$fpl$ffixu         fz_ts.l(ffixu.o)
-    0x00004cec   0x0000005c   Code   RO         1439    x$fpl$fflt          fz_ts.l(fflt_noclz.o)
-    0x00004d48   0x00000084   Code   RO         1442    x$fpl$fleqf         fz_ts.l(fleqf.o)
-    0x00004dcc   0x00000100   Code   RO         1444    x$fpl$fmul          fz_ts.l(fmul.o)
-    0x00004ecc   0x000000a8   Code   RO         1598    x$fpl$fnaninf       fz_ts.l(fnaninf.o)
-    0x00004f74   0x00000010   Code   RO         1600    x$fpl$fretinf       fz_ts.l(fretinf.o)
-    0x00004f84   0x0000007c   Code   RO         1446    x$fpl$frleqf        fz_ts.l(frleqf.o)
-    0x00005000   0x0000013c   Code   RO         1604    x$fpl$fsqrt         fz_ts.l(fsqrt.o)
-    0x0000513c   0x00000130   Code   RO         1422    x$fpl$fsub          fz_ts.l(faddsub_noclz.o)
-    0x0000526c   0x00000074   Code   RO         1715    x$fpl$retnan        fz_ts.l(retnan.o)
-    0x000052e0   0x00000068   Code   RO         1448    x$fpl$scalbn        fz_ts.l(scalbn.o)
-    0x00005348   0x0000003c   Code   RO         1759    x$fpl$trapveneer    fz_ts.l(trapv.o)
-    0x00005384   0x00000000   Code   RO         1606    x$fpl$usenofp       fz_ts.l(usenofp.o)
-    0x00005384   0x000002a4   Data   RO           24    .constdata          main.o
-    0x00005628   0x00000030   Data   RO         1608    .constdata          m_ts.l(cos_i.o)
-    0x00005658   0x000000c8   Data   RO         1642    .constdata          m_ts.l(rred.o)
-    0x00005720   0x00000028   Data   RO         1649    .constdata          m_ts.l(sin_i.o)
-    0x00005748   0x00000020   Data   RO         1812    Region$$Table       anon$$obj.o
-    0x00005768   0x00000004   Data   RO           26    .init_array         main.o
-    0x0000576c   0x00000000   Data   RO         1375    .init_array         c_t.l(init_aeabi.o)
+    0x00000bb0   0x000000ec   Code   RO         1131    i._Z10initDACoutv   oscilloscope.o
+    0x00000c9c   0x00000054   Code   RO         1132    i._Z10initTimer0v   oscilloscope.o
+    0x00000cf0   0x00000110   Code   RO         1133    i._Z12displayGraphPiiib  oscilloscope.o
+    0x00000e00   0x0000016c   Code   RO         1134    i._Z12oscilloscopev  oscilloscope.o
+    0x00000f6c   0x00000138   Code   RO         1137    i._Z14displayXY_PlotPiS_iib  oscilloscope.o
+    0x000010a4   0x000001cc   Code   RO         1138    i._Z15displayFFT_PlotPiiib  oscilloscope.o
+    0x00001270   0x0000009c   Code   RO         1139    i._Z16Timer0_Interruptv  oscilloscope.o
+    0x0000130c   0x00000058   Code   RO         1140    i._Z16Timer1_Interruptv  oscilloscope.o
+    0x00001364   0x00000058   Code   RO          936    i._Z3fftP7complexii  fft.o
+    0x000013bc   0x00000068   Code   RO           11    i._Z5draw1v         main.o
+    0x00001424   0x00000064   Code   RO           12    i._Z5draw2v         main.o
+    0x00001488   0x000000d0   Code   RO           13    i._Z5graphv         main.o
+    0x00001558   0x00000400   Code   RO           14    i._Z6graph2v        main.o
+    0x00001958   0x00000024   Code   RO         1143    i._Z7initADCv       oscilloscope.o
+    0x0000197c   0x00000298   Code   RO          939    i._Z8stockhamP7complexiiiS0_  fft.o
+    0x00001c14   0x00000018   Code   RO          543    i._ZN3pin3lowEv     pin.o
+    0x00001c2c   0x00000018   Code   RO          544    i._ZN3pin4highEv    pin.o
+    0x00001c44   0x0000001c   Code   RO          546    i._ZN3pin6outputEv  pin.o
+    0x00001c60   0x000000f4   Code   RO          547    i._ZN3pinC1Ei       pin.o
+    0x00001d54   0x00000004   Code   RO          548    i._ZN3pinC1Ev       pin.o
+    0x00001d58   0x00000008   Code   RO          443    i._ZN3pll11getCpuClockEv  pll.o
+    0x00001d60   0x0000001c   Code   RO          445    i._ZN3pll12feedSequenceEv  pll.o
+    0x00001d7c   0x00000008   Code   RO          446    i._ZN3pll18getPeripheralClockEv  pll.o
+    0x00001d84   0x00000058   Code   RO          448    i._ZN3pll4getPEv    pll.o
+    0x00001ddc   0x00000064   Code   RO          449    i._ZN3pll6setPllEv  pll.o
+    0x00001e40   0x00000018   Code   RO          450    i._ZN3pll8isLockedEv  pll.o
+    0x00001e58   0x0000004c   Code   RO          451    i._ZN3pllC1Emii     pll.o
+    0x00001ea4   0x00000014   Code   RO          816    i._ZN4spi111setClockDivEi  spi1.o
+    0x00001eb8   0x00000018   Code   RO          820    i._ZN4spi18initPinsEv  spi1.o
+    0x00001ed0   0x00000068   Code   RO          821    i._ZN4spi1C1Emii    spi1.o
+    0x00001f38   0x00000028   Code   RO          508    i._ZN5delay2msEm    delay.o
+    0x00001f60   0x00000038   Code   RO          511    i._ZN5delayC1Em     delay.o
+    0x00001f98   0x0000007c   Code   RO          311    i._ZN5uart010getCommandEcc  uart.o
+    0x00002014   0x00000030   Code   RO          312    i._ZN5uart011callSetBaudEv  uart.o
+    0x00002044   0x0000002c   Code   RO          313    i._ZN5uart011printStringEPc  uart.o
+    0x00002070   0x0000001c   Code   RO          314    i._ZN5uart04readEv  uart.o
+    0x0000208c   0x0000001c   Code   RO          315    i._ZN5uart05writeEc  uart.o
+    0x000020a8   0x0000009c   Code   RO          318    i._ZN5uart0C1Emmjji  uart.o
+    0x00002144   0x000000c0   Code   RO          585    i._ZN7ILI922510_setWindowEjjjj  ili9229.o
+    0x00002204   0x00000024   Code   RO          586    i._ZN7ILI922510_writeDataEi  ili9229.o
+    0x00002228   0x00000040   Code   RO          591    i._ZN7ILI922511_updateCurXEi  ili9229.o
+    0x00002268   0x00000048   Code   RO          592    i._ZN7ILI922511_updateCurYEi  ili9229.o
+    0x000022b0   0x00000014   Code   RO          595    i._ZN7ILI922512setBacklightEb  ili9229.o
+    0x000022c4   0x00000024   Code   RO          596    i._ZN7ILI922513_writeCommandEi  ili9229.o
+    0x000022e8   0x00000058   Code   RO          598    i._ZN7ILI922513fillRectangleEjjjjj  ili9229.o
+    0x00002340   0x00000020   Code   RO          599    i._ZN7ILI922514_writeRegisterEjj  ili9229.o
+    0x00002360   0x00000044   Code   RO          601    i._ZN7ILI922514setOrientationEc  ili9229.o
+    0x000023a4   0x00000088   Code   RO          602    i._ZN7ILI922515setCursorLimitsEjjjjj  ili9229.o
+    0x0000242c   0x00000094   Code   RO          603    i._ZN7ILI922518_orientCoordinatesERjS0_  ili9229.o
+    0x000024c0   0x00000400   Code   RO          610    i._ZN7ILI92255beginEm  ili9229.o
+    0x000028c0   0x00000068   Code   RO          611    i._ZN7ILI92255clearEi  ili9229.o
+    0x00002928   0x0000003c   Code   RO          613    i._ZN7ILI92257setFontEPKc  ili9229.o
+    0x00002964   0x000000fc   Code   RO          614    i._ZN7ILI92258drawCharEjjjj  ili9229.o
+    0x00002a60   0x000000d0   Code   RO          615    i._ZN7ILI92258drawLineEjjjjj  ili9229.o
+    0x00002b30   0x000000a4   Code   RO          616    i._ZN7ILI92258drawTextEPcj  ili9229.o
+    0x00002bd4   0x0000007c   Code   RO          617    i._ZN7ILI92258drawTextEjjPcj  ili9229.o
+    0x00002c50   0x00000068   Code   RO          619    i._ZN7ILI92259drawPixelEjjj  ili9229.o
+    0x00002cb8   0x000000d4   Code   RO          621    i._ZN7ILI9225C1EP4spi13pinS2_S2_S2_  ili9229.o
+    0x00002d8c   0x00000034   Code   RO          986    i._ZN7complex9magnitudeEv  complex.o
+    0x00002dc0   0x00000004   Code   RO          988    i._ZN7complexC1Ev   complex.o
+    0x00002dc4   0x00000010   Code   RO          989    i._ZN7complexaSEf   complex.o
+    0x00002dd4   0x00000078   Code   RO          997    i._ZN7complexmLEf   complex.o
+    0x00002e4c   0x00000018   Code   RO          911    i._ZN8dacClass4initEv  dac.o
+    0x00002e64   0x00000014   Code   RO          912    i._ZN8dacClass5writeEi  dac.o
+    0x00002e78   0x00000004   Code   RO          913    i._ZN8dacClassC1Ev  dac.o
+    0x00002e7c   0x00000048   Code   RO          365    i._ZN9adc0Class4readEiii  adc.o
+    0x00002ec4   0x00000004   Code   RO          366    i._ZN9adc0ClassC1Ev  adc.o
+    0x00002ec8   0x00000024   Code   RO          873    i._ZN9processor3addEPFvvEPc  process.o
+    0x00002eec   0x00000068   Code   RO          875    i._ZN9processor7processEPc  process.o
+    0x00002f54   0x00000004   Code   RO          876    i._ZN9processorC1Ev  process.o
+    0x00002f58   0x00000002   Code   RO         1380    i.__ARM_common_call_via_r0  c_t.l(init_aeabi.o)
+    0x00002f5a   0x00000002   Code   RO         1317    i.__ARM_common_call_via_r1  c_t.l(__printf.o)
+    0x00002f5c   0x00000002   Code   RO         1315    i.__ARM_common_call_via_r2  c_t.l(__printf.o)
+    0x00002f5e   0x00000002   Code   RO         1387    i.__ARM_common_call_via_r6  cpprt_t.l(aeabi_vec_ctor_nocookie_nodtor.o)
+    0x00002f60   0x00000030   Code   RO         1719    i.__ARM_fpclassify  m_ts.l(fpclassify.o)
+    0x00002f90   0x00000008   Ven    RO         1383    i.__aeabi_vec_ctor_nocookie_nodtor  cpprt_t.l(aeabi_vec_ctor_nocookie_nodtor.o)
+    0x00002f98   0x00000028   Code   RO         1383    i.__aeabi_vec_ctor_nocookie_nodtor  cpprt_t.l(aeabi_vec_ctor_nocookie_nodtor.o)
+    0x00002fc0   0x00000514   Code   RO         1640    i.__ieee754_rem_pio2  m_ts.l(rred.o)
+    0x000034d4   0x0000019c   Code   RO         1607    i.__kernel_cos      m_ts.l(cos_i.o)
+    0x00003670   0x00000100   Code   RO         1721    i.__kernel_poly     m_ts.l(poly.o)
+    0x00003770   0x0000017c   Code   RO         1648    i.__kernel_sin      m_ts.l(sin_i.o)
+    0x000038ec   0x00000008   Code   RO         1611    i.__mathlib_dbl_infnan  m_ts.l(dunder.o)
+    0x000038f4   0x00000014   Code   RO         1613    i.__mathlib_dbl_invalid  m_ts.l(dunder.o)
+    0x00003908   0x00000014   Code   RO         1616    i.__mathlib_dbl_underflow  m_ts.l(dunder.o)
+    0x0000391c   0x0000013c   Code   RO           15    i.__sti___8_main_cpp__clock  main.o
+    0x00003a58   0x000000f0   Code   RO         1451    i.cos               m_ts.l(cos.o)
+    0x00003b48   0x000001ac   Code   RO           16    i.main              main.o
+    0x00003cf4   0x000000f8   Code   RO         1467    i.sin               m_ts.l(sin.o)
+    0x00003dec   0x00000048   Code   RO         1483    i.sqrtf             m_ts.l(sqrtf.o)
+    0x00003e34   0x0000006c   Code   RO         1390    x$fpl$d2f           fz_ts.l(d2f.o)
+    0x00003ea0   0x00000154   Code   RO         1392    x$fpl$dadd          fz_ts.l(daddsub_noclz.o)
+    0x00003ff4   0x00000010   Code   RO         1588    x$fpl$dcheck1       fz_ts.l(dcheck1.o)
+    0x00004004   0x0000001c   Code   RO         1590    x$fpl$dcmpinf       fz_ts.l(dcmpi.o)
+    0x00004020   0x000002e0   Code   RO         1399    x$fpl$ddiv          fz_ts.l(ddiv.o)
+    0x00004300   0x00000070   Code   RO         1402    x$fpl$dfix          fz_ts.l(dfix.o)
+    0x00004370   0x00000070   Code   RO         1406    x$fpl$dfixu         fz_ts.l(dfixu.o)
+    0x000043e0   0x00000058   Code   RO         1411    x$fpl$dflt          fz_ts.l(dflt_noclz.o)
+    0x00004438   0x0000000c   Code   RO         1410    x$fpl$dfltu         fz_ts.l(dflt_noclz.o)
+    0x00004444   0x00000094   Code   RO         1414    x$fpl$dleqf         fz_ts.l(dleqf.o)
+    0x000044d8   0x00000180   Code   RO         1416    x$fpl$dmul          fz_ts.l(dmul.o)
+    0x00004658   0x000000c0   Code   RO         1592    x$fpl$dnaninf       fz_ts.l(dnaninf.o)
+    0x00004718   0x00000010   Code   RO         1594    x$fpl$dretinf       fz_ts.l(dretinf.o)
+    0x00004728   0x00000018   Code   RO         1393    x$fpl$drsb          fz_ts.l(daddsub_noclz.o)
+    0x00004740   0x00000244   Code   RO         1394    x$fpl$dsub          fz_ts.l(daddsub_noclz.o)
+    0x00004984   0x00000064   Code   RO         1418    x$fpl$f2d           fz_ts.l(f2d.o)
+    0x000049e8   0x000000c4   Code   RO         1420    x$fpl$fadd          fz_ts.l(faddsub_noclz.o)
+    0x00004aac   0x0000001c   Code   RO         1596    x$fpl$fcmpinf       fz_ts.l(fcmpi.o)
+    0x00004ac8   0x00000190   Code   RO         1427    x$fpl$fdiv          fz_ts.l(fdiv.o)
+    0x00004c58   0x00000044   Code   RO         1430    x$fpl$ffix          fz_ts.l(ffix.o)
+    0x00004c9c   0x00000054   Code   RO         1434    x$fpl$ffixu         fz_ts.l(ffixu.o)
+    0x00004cf0   0x0000005c   Code   RO         1439    x$fpl$fflt          fz_ts.l(fflt_noclz.o)
+    0x00004d4c   0x00000084   Code   RO         1442    x$fpl$fleqf         fz_ts.l(fleqf.o)
+    0x00004dd0   0x00000100   Code   RO         1444    x$fpl$fmul          fz_ts.l(fmul.o)
+    0x00004ed0   0x000000a8   Code   RO         1598    x$fpl$fnaninf       fz_ts.l(fnaninf.o)
+    0x00004f78   0x00000010   Code   RO         1600    x$fpl$fretinf       fz_ts.l(fretinf.o)
+    0x00004f88   0x0000007c   Code   RO         1446    x$fpl$frleqf        fz_ts.l(frleqf.o)
+    0x00005004   0x0000013c   Code   RO         1604    x$fpl$fsqrt         fz_ts.l(fsqrt.o)
+    0x00005140   0x00000130   Code   RO         1422    x$fpl$fsub          fz_ts.l(faddsub_noclz.o)
+    0x00005270   0x00000074   Code   RO         1715    x$fpl$retnan        fz_ts.l(retnan.o)
+    0x000052e4   0x00000068   Code   RO         1448    x$fpl$scalbn        fz_ts.l(scalbn.o)
+    0x0000534c   0x0000003c   Code   RO         1759    x$fpl$trapveneer    fz_ts.l(trapv.o)
+    0x00005388   0x00000000   Code   RO         1606    x$fpl$usenofp       fz_ts.l(usenofp.o)
+    0x00005388   0x000002a4   Data   RO           24    .constdata          main.o
+    0x0000562c   0x00000004   PAD
+    0x00005630   0x00000030   Data   RO         1608    .constdata          m_ts.l(cos_i.o)
+    0x00005660   0x000000c8   Data   RO         1642    .constdata          m_ts.l(rred.o)
+    0x00005728   0x00000028   Data   RO         1649    .constdata          m_ts.l(sin_i.o)
+    0x00005750   0x00000020   Data   RO         1812    Region$$Table       anon$$obj.o
+    0x00005770   0x00000004   Data   RO           26    .init_array         main.o
+    0x00005774   0x00000000   Data   RO         1375    .init_array         c_t.l(init_aeabi.o)
 
 
     Execution Region RW_IRAM1 (Base: 0x40000000, Size: 0x00006e48, Max: 0x00008000, ABSOLUTE)
@@ -2352,7 +2353,7 @@ Image component sizes
        752          8          0          0          0       1546   fft.o
       3144         36          0          0          0      11132   ili9229.o
       2180        232        680          8        356      17722   main.o
-      2004        156          0         12       3072       6578   oscilloscope.o
+      2008        156          0         12       3072       6586   oscilloscope.o
        324         24          0          0          0       2140   pin.o
        332         20          0          0          0       3168   pll.o
        144          8          0          4          0       1944   process.o
@@ -2361,9 +2362,9 @@ Image component sizes
        428         32          0          0          0       3208   uart.o
 
     ----------------------------------------------------------------------
-     10108        608        712         24      27884      54797   Object Totals
+     10112        608        716         24      27884      54805   Object Totals
          0          0         32          0          0          0   (incl. Generated)
-         0          0          0          0          0          0   (incl. Padding)
+         0          0          4          0          0          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
@@ -2485,15 +2486,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     21380       1272       1000         24      28208      54997   Grand Totals
-     21380       1272       1000         24      28208      54997   ELF Image Totals
-     21380       1272       1000         24          0          0   ROM Totals
+     21384       1272       1004         24      28208      55005   Grand Totals
+     21384       1272       1004         24      28208      55005   ELF Image Totals
+     21384       1272       1004         24          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                22380 (  21.86kB)
+    Total RO  Size (Code + RO Data)                22388 (  21.86kB)
     Total RW  Size (RW Data + ZI Data)             28232 (  27.57kB)
-    Total ROM Size (Code + RO Data + RW Data)      22404 (  21.88kB)
+    Total ROM Size (Code + RO Data + RW Data)      22412 (  21.89kB)
 
 ==============================================================================
 
