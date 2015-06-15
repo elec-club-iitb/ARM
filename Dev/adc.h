@@ -6,7 +6,7 @@
 	{
 		public:
 			adc0Class();
-			int read(int pin,int _clkdiv,int clockPerConversion=11);
+			int read(int pin,int _clkdiv,int resolution=10);
 			
 			
 	};

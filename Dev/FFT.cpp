@@ -111,7 +111,7 @@ void cooley_tukey(complex x[], int n, int flag, int n2)
                x[m].Im += ti;
             }
          }
-         jm += n2;
+         jm += n2;			
       } 
    }
 }

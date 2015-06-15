@@ -16,6 +16,7 @@
 ".\objects\dac.o"
 ".\objects\fft.o"
 ".\objects\complex.o"
+".\objects\oscilloscope.o"
 --scatter ".\Objects\Dev.sct"
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

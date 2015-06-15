@@ -5,10 +5,10 @@
 <h2>Tool Versions:</h2>
 IDE-Version: µVision V5.14.0.0
 Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: Ajinkya Gorad Hewlett-Packard Flex license: MDK-ARM Professional (Eval) (mdk_pro_eval) Operation stops: 12 Jun 2015
+License Information: Ajinkya Gorad, Hewlett-Packard, LIC=----
  
 Tool Versions:
-Toolchain:       MDK-ARM Professional (Eval)  Version: 5.14.0.0
+Toolchain:       MDK-Lite  Version: 5.14.0.0
 Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
 C Compiler:      Armcc.exe V5.05 update 1 (build 106)
 Assembler:       Armasm.exe V5.05 update 1 (build 106)
@@ -22,7 +22,7 @@ Dialog DLL:      TARMP.DLL V1.51
  
 <h2>Project:</h2>
 C:\Users\Ajinkya\Documents\ARM\Dev\Dev.uvproj
-Project File Date:  06/05/2015
+Project File Date:  06/14/2015
 
 <h2>Output:</h2>
 Rebuild target 'LPC2148'
@@ -44,11 +44,13 @@ dac.h(11): warning:  #1-D: last line of file ends without a newline
   #endif
 complex.h(45): warning:  #1-D: last line of file ends without a newline
   #endif
-FFT.h(91): warning:  #1-D: last line of file ends without a newline
+FFT.h(92): warning:  #1-D: last line of file ends without a newline
   #endif
-main.cpp(203): warning:  #177-D: variable "data" was declared but never referenced
+oscilloscope.h(138): warning:  #1-D: last line of file ends without a newline
+  #endif
+main.cpp(186): warning:  #177-D: variable "data" was declared but never referenced
         char data;
-main.cpp: 10 warnings, 0 errors
+main.cpp: 11 warnings, 0 errors
 compiling sampleProgram.cpp...
 sampleProgram.cpp(19): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -128,7 +130,7 @@ dac.cpp: 2 warnings, 0 errors
 compiling FFT.cpp...
 complex.h(45): warning:  #1-D: last line of file ends without a newline
   #endif
-FFT.h(91): warning:  #1-D: last line of file ends without a newline
+FFT.h(92): warning:  #1-D: last line of file ends without a newline
   #endif
 FFT.cpp(228): warning:  #1-D: last line of file ends without a newline
   */
@@ -137,10 +139,26 @@ compiling complex.cpp...
 complex.h(45): warning:  #1-D: last line of file ends without a newline
   #endif
 complex.cpp: 1 warning, 0 errors
+compiling oscilloscope.cpp...
+complex.h(45): warning:  #1-D: last line of file ends without a newline
+  #endif
+FFT.h(92): warning:  #1-D: last line of file ends without a newline
+  #endif
+spi1.h(32): warning:  #1-D: last line of file ends without a newline
+  #endif
+pin.h(22): warning:  #1-D: last line of file ends without a newline
+  #endif
+delay.h(19): warning:  #1-D: last line of file ends without a newline
+  #endif
+ILI9225.h(310): warning:  #1-D: last line of file ends without a newline
+  #endif
+oscilloscope.h(138): warning:  #1-D: last line of file ends without a newline
+  #endif
+oscilloscope.cpp: 7 warnings, 0 errors
 linking...
-Program Size: Code=18248 RO-data=1004 RW-data=12 ZI-data=25140  
+Program Size: Code=21380 RO-data=1000 RW-data=24 ZI-data=28208  
 FromELF: creating hex file...
-".\Objects\Dev.axf" - 0 Error(s), 40 Warning(s).
+".\Objects\Dev.axf" - 0 Error(s), 48 Warning(s).
 </pre>
 </body>
 </html>

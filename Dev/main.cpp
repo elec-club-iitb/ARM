@@ -17,8 +17,8 @@ pll _clock(12000000,5,1);
 #include "process.h"
 #include "adc.h"
 #include "dac.h"
-#include "FFT.h"
-
+#include "FFT.h"	
+#include "oscilloscope.h"
 
 
 
@@ -31,36 +31,7 @@ ILI9225 lcd(&s,rst,rs,cs,led);
 delay wait(_clock.getCpuClock());
 adc0Class adc0;
 dacClass dac;
-// input normalised sample
-float getFreqComp(float* sample, int size,float freq);
-void getDFT(float* sample,float* bin,int size);
-void getDFT(float* sample  ,float* bin,int size)
-{
-		for( int k=0;k<size;k++)
-		{
-			bin[k] = getFreqComp(sample,size,6.28*k/size);
-		}
-		float max=-5;
-		for(int k=0;k<size;k++)
-		{
-			if(bin[k]>max)max=bin[k];
-		}
-		for(int k=0;k<size;k++)
-		{
-			bin[k]/=max;
-		}
-}
 
-float getFreqComp(float* sample, int size,float freq)
-{
-	float real=0,img=0;
-	for(int i=0;i<size;i++)
-	{
-		real+= sample[i]*cos(freq*i);
-		img+=  sample[i]*sin(freq*i);
-	}
-	return sqrt(real*real+img*img);
-}
 void graph2(void)
 {
 	float buffer[256];	//create a buffer 
@@ -86,17 +57,19 @@ void graph2(void)
 	{
 		//sample[i]=(adc0.read(2,clock.getPeripheralClock()/4500000))/1024.0;
 		//buffer[i]=(ILI9225_LCD_WIDTH)*sample[i];	//scale it according to LCD width for displaying
-		buffer[i]=(ILI9225_LCD_WIDTH*adc0.read(2,_clock.getPeripheralClock()/4500000))/1024.0;
-		dac.write(int(400.0+200*sin(i*0.1)+200*sin(i*0.03)));
+		buffer[i]=(ILI9225_LCD_WIDTH*adc0.read(2,_clock.getPeripheralClock()/4500000,6))/1024.0;
+		dac.write(int(10*(i%75)));
+		//wait.us(200);
 		if((buffer[i]>triggerRising)/*if greater thatn trigger*/&&(buffer[i]>buffer[i-1])/*if rising*/)
 		{
 			//record continuous samples 
 			
 			for(int i=0;i<ILI9225_LCD_HEIGHT;i++){
-					dac.write(int(400.0+200*sin(i*f1*0.1)+200*sin(i*f2*0.1)));
+					dac.write(10*(i%75));
 				//	sample[i]=(adc0.read(2,clock.getPeripheralClock()/4500000))/1024.0;
 				//	buffer[i]=(ILI9225_LCD_WIDTH)*sample[i];	//scale it according to LCD width for displaying
-						buffer[i]=(ILI9225_LCD_WIDTH*adc0.read(2,_clock.getPeripheralClock()/4500000))/1024.0;
+						buffer[i]=(ILI9225_LCD_WIDTH*adc0.read(2,_clock.getPeripheralClock()/4500000,6))/1024.0;
+						//wait.us(200);
 					}
 			break;		//break out of loop
 		}
@@ -108,7 +81,10 @@ void graph2(void)
 	//lcd.drawText("DFT",COLOR_BLUEVIOLET);
 	//float dft[ILI9225_LCD_HEIGHT];
 	complex fftBins[256];
-	for(int i=0;i<256;i++)fftBins[i]=buffer[i];
+	for(int i=0;i<256;i++)
+	{
+		fftBins[i]=buffer[i]* (128-abs(128-i));		//triangular window
+	}
 	//getDFT(buffer,dft,ILI9225_LCD_HEIGHT);
 	fft(fftBins,256,1);
 	
@@ -120,10 +96,15 @@ void graph2(void)
 	
 	//char str[50];
 	//setup grid+clear last data on lcd
-	float max=0;
+	
 	for(int i=0;i<256;i++)
 	{
 		fftBins[i]=fftBins[i].magnitude();
+	}
+	
+	float max=0;
+	for(int i=5;i<250;i++)
+	{
 		if(fftBins[i].Re>max)max=fftBins[i].Re;
 	}
 	for(int i=0;i<256;i++)
@@ -137,7 +118,7 @@ void graph2(void)
 	else lcd._writeData(COLOR_BLACK);
 	
 	//lcd.drawText(0,0,str,COLOR_WHITE);	
-	float eq = 256.0/ILI9225_LCD_HEIGHT;
+	float eq = 256.0/ILI9225_LCD_HEIGHT/2;
 	for(float i=1; i<256;i++){
 					lcd.drawLine(buffer[int(i)-1],(i-1),
 											buffer[int(i)],i,COLOR_YELLOWGREEN);
@@ -182,7 +163,8 @@ int main()
 	#define D(x) serial.printString((char*)(x)); serial.write(0x0d);
 
 	
-	lcd.begin(_clock.getCpuClock());			
+	lcd.begin(_clock.getCpuClock());		
+	lcd.setOrientation(1/*landscape*/);
 	lcd.clear();												
 	D("Initialised");
 	
@@ -199,7 +181,8 @@ int main()
 	processing.add(graph,"g");
 	processing.add(draw1,"1");
 	processing.add(draw2,"2");
-	graph2();
+	//graph2();
+	oscilloscope();
 	char data;
 	while (1)
 	{

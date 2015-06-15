@@ -629,8 +629,8 @@ e)
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --apcs=interwork --depend=.\o
 bjects\startup.d -o.\objects\startup.o -IC:\Keil_v5\ARM\RV31\INC -IC:\Keil_v5\A
-RM\CMSIS\Include -IC:\Keil_v5\ARM\Inc\Philips --predefine="__UVISION_VERSION SE
-TA 514" --list=.\listings\startup.lst Startup.s
+RM\CMSIS\Include -IC:\Keil_v5\ARM\Inc\Philips --predefine="__EVAL SETA 1" --pre
+define="__UVISION_VERSION SETA 514" --list=.\listings\startup.lst Startup.s
 
 
 
@@ -1416,4 +1416,4 @@ Symbol: __use_two_region_memory
       None
 Comment: __use_two_region_memory unused
 2 symbols
-428 symbols in table
+429 symbols in table

@@ -52,3 +52,4 @@
 .\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\assert.h
 .\objects\main.o: complex.h
+.\objects\main.o: oscilloscope.h
